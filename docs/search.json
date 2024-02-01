@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "week1.html",
+    "href": "week1.html",
+    "title": "Week 1",
+    "section": "",
+    "text": "This is the week 1, practical result, I sniped only Bristol downtown area. Thus the output indicates high urban.\n\n\n\nWeek 1 Result"
+  },
+  {
+    "objectID": "week4.html",
+    "href": "week4.html",
+    "title": "Week 4 Remote Sensing and Policy Implications",
+    "section": "",
+    "text": "Remote Sensing and Policy Implication\nFocusing on Melbourne with Methodology derived from (MacLachlan et al. 2017)\nUtilizing(Trinder and Liu 2020) the Sentinel 5P data\n\n\n\n\n\n\n\n\n\nArea of Research\nGlobal Agenda\nMethods\nData\n\n\n\n\nMelbourne urban growth, provide forecasting advice for population growth\nUN SDG\nUsing Remote Sensing Data\nCombine the local councils’ plans\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMacLachlan, Andrew, Eloise Biggs, Gareth Roberts, and Bryan Boruff. 2017. “Urban Growth Dynamics in Perth, Western Australia: Using Applied Remote Sensing for Sustainable Future Planning.” Land 6 (1): 9.\n\n\nTrinder, John, and Qingxiang Liu. 2020. “Assessing Environmental Impacts of Urban Growth Using Remote Sensing.” Geo-Spatial Information Science 23 (1): 20–39. https://doi.org/10.1080/10095020.2019.1710438."
+  },
+  {
+    "objectID": "week5.html",
+    "href": "week5.html",
+    "title": "Week 5 GEE",
+    "section": "",
+    "text": "Google Earth Engine"
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CASA 0023 Remote Sensing Learning Diary",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\nprint(\"hello this is Week 1\")\n\n[1] \"hello this is Week 1\""
+  }
+]

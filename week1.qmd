@@ -1,0 +1,5 @@
+# Week 1 {.unnumbered}
+
+This is the week 1, practical result, I sniped only Bristol downtown area. Thus the output indicates high urban.
+
+![Week 1 Result](images/Screenshot 2024-01-29 202650.png){width="800"}
