@@ -4,25 +4,22 @@ In week 5, we had two sessions but mostly dedicated for group work planning and 
 
 ## Temperature and Urban Heat Island {.unnumbered}
 
-asdas
-
-sadasd
-
-sad
+This week's discussion on the temperature and Urban Heat Island is carried on from last week's content.
 
 ## Group Assessment Key Points {.unnumbered}
 
 Here are some key takeaways for group assessment references:
 
 1.  How to perform the feasibility analysis? Approach from the following aspects:
-    i.  Technical
-    ii. Economic:
-    iii. Legal:
-    iv. Operational:
-    v.  Scheduling:
+    i.  Technical: Can we do it with the tech we have?
+    ii. Economic: Is it worth the hassle?
+    iii. Legal: Are we breaking any local or international laws?
+    iv. Operational: How will the project unravel?
+    v.  Scheduling: When to do what?
 2.  Common global agendas related to remote sensing and urban studies:
     i.  UN Sustainable Development Goals
     ii. the Sendai Framework for Disaster Risk Reduction 2015-2030
     iii. The New Urban Agenda (NUA)
     iv. The Global Green New Deal (GND)
-3.  Develop the pitch into Workpacks and add a Gantt Chart.
+3.  Other keypoints that we agreed upon for this project is to develop the work covered in the pitch into Work-packs, perform SWOT analysis, design automated Data Pipelines, and adding a Gantt Chart.
+4.  The topic and scope is also settle with the help of Andy and our PGTAS! (But the brainstorming is utterly a thrill since everyone has contributed novel ideas to develop!)

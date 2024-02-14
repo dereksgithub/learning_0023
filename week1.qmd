@@ -2,12 +2,24 @@
 
 ## Overview
 
-For the first week, we are introduced to the concept of
+For the first week, we are introduced to the concept of remote sensing and how to download data and images collected by satellites and perform basic analysis with SNAP and R.
 
-How to download data and images collected by satellites and perform basic analysis with SNAP and R.
+For this practical, I picked Bristol as its distinct urban and suburb area split. The data is downloaded from [EU Copernicus Data Portal](https://dataspace.copernicus.eu/) and [Earth Explorer](https://earthexplorer.usgs.gov).
 
-## Summary
+## Case Study of Bristol
+
+Down-sampled and compared Sentiniel data and LandSat of Bristol. Then clipped the most city-urban-ish area of Bristol.
+
+![A side-by-side of two Image Sources. The area selected, I forgot to snip a picture while doing the practical, this blue markup is indication of the area picked](images/areaselection.png){fig-align="center" width="734"}
+
+![Scatter Plot Analysis](images/scatterplot.png){fig-align="center" width="792"}
+
+## Results
 
 This is the week 1, practical result, I sniped only Bristol downtown area. Thus the output indicates high urban.
 
-![Week 1 Result](images/Screenshot%202024-01-29%20202650.png){width="800"}
+![Week 1 Result](images/Screenshot%202024-01-29%20202650.png){fig-align="center" width="647"}
+
+## Summary and Reflection
+
+Remote sensing is certainly more than what I have previously pictured, an extension version of image processing i.e. a glorified version of Lena.png processing. On the contrary, it consists of a health amount of geophysics, actual physics, and last but not least geography. In short, it is an interdisciplinary realm comprised of decades of studies and applications.

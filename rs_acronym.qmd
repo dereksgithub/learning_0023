@@ -1,0 +1,54 @@
+# Common Acronyms in Remote Sensing
+
+RS: Remote Sensing
+
+GIS: Geographic Information System
+
+GPS: Global Positioning System
+
+LIDAR: Light Detection and Ranging
+
+NDVI: Normalized Difference Vegetation Index
+
+EVI: Enhanced Vegetation Index
+
+MODIS: Moderate Resolution Imaging Spectroradiometer
+
+```         
+"Landsat": "Land Satellite",     
+
+"AVHRR": "Advanced Very High Resolution Radiometer",     
+
+"GOES": "Geostationary Operational Environmental Satellite",    
+
+"NOAA": "National Oceanic and Atmospheric Administration",     
+"EOS": "Earth Observing System",     
+
+"DEM": "Digital Elevation Model",     
+
+"DSM": "Digital Surface Model",     
+
+"DTM": "Digital Terrain Model",     
+"VIIRS": "Visible Infrared Imaging Radiometer Suite",     
+
+"UAV": "Unmanned Aerial Vehicle",     
+
+"INSAR": "Interferometric Synthetic Aperture Radar",     
+
+"ASTER": "Advanced Spaceborne Thermal Emission and Reflection Radiometer",     
+
+"TM": "Thematic Mapper",     
+
+"ETM+": "Enhanced Thematic Mapper Plus",     "OLI": "Operational Land Imager",     "TIRS": "Thermal Infrared Sensor",     "SWIR": "Shortwave Infrared",     "MWIR": "Mid-Wave Infrared",     "LWIR": "Long-Wave Infrared",     "PAN": "Panchromatic",     "MSI": "Multispectral Imaging",     "HSI": "Hyperspectral Imaging",     "RADAR": "Radio Detection and Ranging",     "GNSS": "Global Navigation Satellite System",     "VHR": "Very High Resolution",     "FOV": "Field of View",     "AOI": "Area of Interest",     "ROI": "Region of Interest",     "GCP": "Ground Control Point",     "RMSE": "Root Mean Square Error",    ,     
+
+"GHz": "Gigahertz",     
+
+"MHz": "Megahertz",
+"SNR": "Signal to Noise Ratio",    
+"CAD": "Computer-Aided Design",     
+"BIM": "Building Information Modeling",     
+"WMS": "Web Map Service",    
+"WFS": "Web Feature Service",     
+"API": "Application Programming Interface",    
+"RGB": "Red, Green, Blue",     "IR": "Infrared",     "UV": "Ultraviolet",     "PCA": "Principal Component Analysis",     "SVM": "Support Vector Machine",     "RF": "Random Forest",     "DL": "Deep Learning",     "AI": "Artificial Intelligence",     "ML": "Machine Learning",     "EO": "Earth Observation"
+```
