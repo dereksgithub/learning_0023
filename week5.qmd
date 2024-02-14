@@ -1,3 +1,28 @@
-# Week 5 Group Work Discussion {.unnumbered}
+# Week 5 More on Temperature and Group Work Discussion {.unnumbered}
 
-This week we had two sessions for group work planning and discussions.
+In week 5, we had two sessions but mostly dedicated for group work planning and discussions.
+
+## Temperature and Urban Heat Island {.unnumbered}
+
+asdas
+
+sadasd
+
+sad
+
+## Group Assessment Key Points {.unnumbered}
+
+Here are some key takeaways for group assessment references:
+
+1.  How to perform the feasibility analysis? Approach from the following aspects:
+    i.  Technical
+    ii. Economic:
+    iii. Legal:
+    iv. Operational:
+    v.  Scheduling:
+2.  Common global agendas related to remote sensing and urban studies:
+    i.  UN Sustainable Development Goals
+    ii. the Sendai Framework for Disaster Risk Reduction 2015-2030
+    iii. The New Urban Agenda (NUA)
+    iv. The Global Green New Deal (GND)
+3.  Develop the pitch into Workpacks and add a Gantt Chart.

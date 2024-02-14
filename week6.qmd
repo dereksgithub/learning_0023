@@ -1,1 +1,9 @@
 # Week 6 Google Earth Engine {.unnumbered}
+
+This is a very exciting week, GEE is something that interested me before selecting this module. But that was mostly working alongside GIS folk in a project, seeing them making satellite maps with GEE was a curious experience back then.
+
+Here is a video that I used for learning GEE:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Tas0c4e_E0M?si=4eGMSoAuKDTMLE3L&amp;start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>

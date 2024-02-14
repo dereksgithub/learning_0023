@@ -1,1 +1,3 @@
 # Week 2 Quarto and Xaringan {.unnumbered}
+
+Here is the slide made with Xaringan for sensor:

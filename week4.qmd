@@ -4,11 +4,11 @@ Remote Sensing and Policy Implication
 
 Focusing on Melbourne with Methodology derived from [@maclachlan2017urban]
 
-Utilizing[@trinder2020] the Sentinel 5P data
+Utilizing[@trinder2020] the Sentinel 5P data.
 
 | Area of Research                                                         | Global Agenda | Methods                   | Data                              |
 |--------------------------------------------------------------------------|---------------|---------------------------|-----------------------------------|
-| Melbourne urban growth, provide forecasting advice for population growth |  UN SDG       | Using Remote Sensing Data | Combine the local councils' plans |
+| Melbourne urban growth, provide forecasting advice for population growth | UN SDG        | Using Remote Sensing Data | Combine the local councils' plans |
 |                                                                          |               |                           |                                   |
 |                                                                          |               |                           |                                   |
 |                                                                          |               |                           |                                   |

@@ -1,5 +1,13 @@
-# Week 1 {.unnumbered}
+# Week 1 Introduction to Remote Sensing {.unnumbered}
+
+## Overview
+
+For the first week, we are introduced to the concept of
+
+How to download data and images collected by satellites and perform basic analysis with SNAP and R.
+
+## Summary
 
 This is the week 1, practical result, I sniped only Bristol downtown area. Thus the output indicates high urban.
 
-![Week 1 Result](images/Screenshot 2024-01-29 202650.png){width="800"}
+![Week 1 Result](images/Screenshot%202024-01-29%20202650.png){width="800"}
