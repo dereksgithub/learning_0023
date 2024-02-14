@@ -1,6 +1,13 @@
 .Rproj.user
 .Rhistory
 .RData
+.Rapp.history
 .Ruserdata
-docs
+
 /.quarto/
+.httr-oauth
+.DS_Store
+
+.quarto
+week6_files
+.quarto/

@@ -4,21 +4,21 @@
     "href": "intro.html",
     "title": "Introduction",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "Hi, welcome to my CASA0023 Learning Diary. A bit about myself:\nI am an engineer by training. Graduated from University of Alberta in 2015 with a B.Sc in Electrical Engineering. Been working in the ITS industry since. I’ve also got a Master of Information Technology from Monash University in 2019. Working as a graduate engineer in Melbourne for a few years and then product/solutions manager in the autonomous driving and smart cities industry.\nI am interested in transportation and urban evolution mostly. My career will be focusing on urban mobility and smart transportation from this degree on.\nBesides working on transportation challenges, I like to imagine how technology will evolve with us, humanity, into the future. Read and watched quite a few science fictions and learning about random subjects. For example, I was into hand-made Corsi-Rosenthal boxes during 2021 and 2022. I also likes to code. Here is the link to my side projects hosted on github:"
   },
   {
     "objectID": "week1.html",
     "href": "week1.html",
-    "title": "Week 1",
+    "title": "Week 1 Introduction to Remote Sensing",
     "section": "",
-    "text": "This is the week 1, practical result, I sniped only Bristol downtown area. Thus the output indicates high urban.\n\n\n\nWeek 1 Result"
+    "text": "For the first week\nThis is the week 1, practical result, I sniped only Bristol downtown area. Thus the output indicates high urban.\n\n\n\nWeek 1 Result"
   },
   {
     "objectID": "week4.html",
     "href": "week4.html",
     "title": "Week 4 Remote Sensing and Policy Implications",
     "section": "",
-    "text": "Remote Sensing and Policy Implication\nFocusing on Melbourne with Methodology derived from (MacLachlan et al. 2017)\nUtilizing(Trinder and Liu 2020) the Sentinel 5P data\n\n\n\n\n\n\n\n\n\nArea of Research\nGlobal Agenda\nMethods\nData\n\n\n\n\nMelbourne urban growth, provide forecasting advice for population growth\nUN SDG\nUsing Remote Sensing Data\nCombine the local councils’ plans\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMacLachlan, Andrew, Eloise Biggs, Gareth Roberts, and Bryan Boruff. 2017. “Urban Growth Dynamics in Perth, Western Australia: Using Applied Remote Sensing for Sustainable Future Planning.” Land 6 (1): 9.\n\n\nTrinder, John, and Qingxiang Liu. 2020. “Assessing Environmental Impacts of Urban Growth Using Remote Sensing.” Geo-Spatial Information Science 23 (1): 20–39. https://doi.org/10.1080/10095020.2019.1710438."
+    "text": "Remote Sensing and Policy Implication\nFocusing on Melbourne with Methodology derived from (MacLachlan et al. 2017)\nUtilizing(Trinder and Liu 2020) the Sentinel 5P data.\n\n\n\n\n\n\n\n\n\nArea of Research\nGlobal Agenda\nMethods\nData\n\n\n\n\nMelbourne urban growth, provide forecasting advice for population growth\nUN SDG\nUsing Remote Sensing Data\nCombine the local councils’ plans\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMacLachlan, Andrew, Eloise Biggs, Gareth Roberts, and Bryan Boruff. 2017. “Urban Growth Dynamics in Perth, Western Australia: Using Applied Remote Sensing for Sustainable Future Planning.” Land 6 (1): 9.\n\n\nTrinder, John, and Qingxiang Liu. 2020. “Assessing Environmental Impacts of Urban Growth Using Remote Sensing.” Geo-Spatial Information Science 23 (1): 20–39. https://doi.org/10.1080/10095020.2019.1710438."
   },
   {
     "objectID": "week5.html",
@@ -47,5 +47,47 @@
     "title": "CASA 0023 Remote Sensing Learning Diary",
     "section": "",
     "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\nprint(\"hello this is Week 1\")\n\n[1] \"hello this is Week 1\""
+  },
+  {
+    "objectID": "week5.html#temperature-and-urban-heat-island",
+    "href": "week5.html#temperature-and-urban-heat-island",
+    "title": "Week 5 More on Temperature and Group Work Discussion",
+    "section": "Temperature and Urban Heat Island",
+    "text": "Temperature and Urban Heat Island\nasdas\nsadasd\nsad"
+  },
+  {
+    "objectID": "week5.html#group-assessment-key-points",
+    "href": "week5.html#group-assessment-key-points",
+    "title": "Week 5 More on Temperature and Group Work Discussion",
+    "section": "Group Assessment Key Points",
+    "text": "Group Assessment Key Points\nHere are some key takeaways for group assessment references:\n\nHow to perform the feasibility analysis? Approach from the following aspects:\n\nTechnical\nEconomic:\nLegal:\nOperational:\nScheduling:\n\nCommon global agendas related to remote sensing and urban studies:\n\nUN Sustainable Development Goals\nthe Sendai Framework for Disaster Risk Reduction 2015-2030\nThe New Urban Agenda (NUA)\nThe Global Green New Deal (GND)\n\nDevelop the pitch into Workpacks and add a Gantt Chart."
+  },
+  {
+    "objectID": "week6.html",
+    "href": "week6.html",
+    "title": "Week 6 Google Earth Engine",
+    "section": "",
+    "text": "This is a very exciting week, GEE is something that interested me before selecting this module. But that was mostly working alongside GIS folk in a project, seeing them making satellite maps with GEE was a curious experience back then.\nHere is a video that I used for learning GEE:"
+  },
+  {
+    "objectID": "week1.html#overview",
+    "href": "week1.html#overview",
+    "title": "Week 1 Introduction to Remote Sensing",
+    "section": "Overview",
+    "text": "Overview\nFor the first week, we are introduced to the concept of\nHow to download data and images collected by satellites and perform basic analysis with SNAP and R."
+  },
+  {
+    "objectID": "week1.html#summary",
+    "href": "week1.html#summary",
+    "title": "Week 1 Introduction to Remote Sensing",
+    "section": "Summary",
+    "text": "Summary\nThis is the week 1, practical result, I sniped only Bristol downtown area. Thus the output indicates high urban.\n\n\n\nWeek 1 Result"
+  },
+  {
+    "objectID": "week2.html",
+    "href": "week2.html",
+    "title": "Week 2 Quarto and Xaringan",
+    "section": "",
+    "text": "Here is the slide made with Xaringan for sensor:"
   }
 ]
