@@ -1,3 +1,7 @@
 # Week 2 Quarto and Xaringan {.unnumbered}
 
-Here is the slide made with Xaringan for sensor:
+Here is the slide made with Xaringan for CloudSat and its Cloud Profiling Radar (CPR).
+
+```{r xaringan_embed, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://dereksgithub.github.io/practicalquarto0023/", ratio = "4:3")
+```
