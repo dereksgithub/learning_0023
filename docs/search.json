@@ -18,7 +18,7 @@
     "href": "week4.html",
     "title": "Week 4 Remote Sensing and Policy Implications",
     "section": "",
-    "text": "Remote Sensing and Policy Implication\nFocusing on Melbourne with Methodology derived from (MacLachlan et al. 2017)\nUtilizing(Trinder and Liu 2020) the Sentinel 5P data.\n\n\n\n\n\n\n\n\n\nArea of Research\nGlobal Agenda\nMethods\nData\n\n\n\n\nMelbourne urban growth, provide forecasting advice for population growth\nUN SDG\nUsing Remote Sensing Data\nCombine the local councils’ plans\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMacLachlan, Andrew, Eloise Biggs, Gareth Roberts, and Bryan Boruff. 2017. “Urban Growth Dynamics in Perth, Western Australia: Using Applied Remote Sensing for Sustainable Future Planning.” Land 6 (1): 9.\n\n\nTrinder, John, and Qingxiang Liu. 2020. “Assessing Environmental Impacts of Urban Growth Using Remote Sensing.” Geo-Spatial Information Science 23 (1): 20–39. https://doi.org/10.1080/10095020.2019.1710438."
+    "text": "Remote Sensing and Policy Implication\nFocusing on Melbourne with Methodology derived from (MacLachlan et al. 2017)\nUtilizing(Trinder and Liu 2020) the Sentinel 5P data.\n\n\n\n\n\n\n\n\n\nArea of Research\nGlobal Agenda\nMethods\nData\n\n\n\n\nMelbourne urban growth, provide forecasting advice for population growth.\nUN SDG\nUsing Remote Sensing Data\nCombine the local councils’ plans\n\n\nForecast bush fires in areas that may impact the residents.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMacLachlan, Andrew, Eloise Biggs, Gareth Roberts, and Bryan Boruff. 2017. “Urban Growth Dynamics in Perth, Western Australia: Using Applied Remote Sensing for Sustainable Future Planning.” Land 6 (1): 9.\n\n\nTrinder, John, and Qingxiang Liu. 2020. “Assessing Environmental Impacts of Urban Growth Using Remote Sensing.” Geo-Spatial Information Science 23 (1): 20–39. https://doi.org/10.1080/10095020.2019.1710438."
   },
   {
     "objectID": "week5.html",
@@ -53,14 +53,14 @@
     "href": "week5.html#temperature-and-urban-heat-island",
     "title": "Week 5 More on Temperature and Group Work Discussion",
     "section": "Temperature and Urban Heat Island",
-    "text": "Temperature and Urban Heat Island\nasdas\nsadasd\nsad"
+    "text": "Temperature and Urban Heat Island\nThis week’s discussion on the temperature and Urban Heat Island is carried on from last week’s content."
   },
   {
     "objectID": "week5.html#group-assessment-key-points",
     "href": "week5.html#group-assessment-key-points",
     "title": "Week 5 More on Temperature and Group Work Discussion",
     "section": "Group Assessment Key Points",
-    "text": "Group Assessment Key Points\nHere are some key takeaways for group assessment references:\n\nHow to perform the feasibility analysis? Approach from the following aspects:\n\nTechnical\nEconomic:\nLegal:\nOperational:\nScheduling:\n\nCommon global agendas related to remote sensing and urban studies:\n\nUN Sustainable Development Goals\nthe Sendai Framework for Disaster Risk Reduction 2015-2030\nThe New Urban Agenda (NUA)\nThe Global Green New Deal (GND)\n\nDevelop the pitch into Workpacks and add a Gantt Chart."
+    "text": "Group Assessment Key Points\nHere are some key takeaways for group assessment references:\n\nHow to perform the feasibility analysis? Approach from the following aspects:\n\nTechnical: Can we do it with the tech we have?\nEconomic: Is it worth the hassle?\nLegal: Are we breaking any local or international laws?\nOperational: How will the project unravel?\nScheduling: When to do what?\n\nCommon global agendas related to remote sensing and urban studies:\n\nUN Sustainable Development Goals\nthe Sendai Framework for Disaster Risk Reduction 2015-2030\nThe New Urban Agenda (NUA)\nThe Global Green New Deal (GND)\n\nOther keypoints that we agreed upon for this project is to develop the work covered in the pitch into Work-packs, perform SWOT analysis, design automated Data Pipelines, and adding a Gantt Chart.\nThe topic and scope is also settle with the help of Andy and our PGTAS! (But the brainstorming is utterly a thrill since everyone has contributed novel ideas to develop!)"
   },
   {
     "objectID": "week6.html",
@@ -74,7 +74,7 @@
     "href": "week1.html#overview",
     "title": "Week 1 Introduction to Remote Sensing",
     "section": "Overview",
-    "text": "Overview\nFor the first week, we are introduced to the concept of\nHow to download data and images collected by satellites and perform basic analysis with SNAP and R."
+    "text": "Overview\nFor the first week, we are introduced to the concept of remote sensing and how to download data and images collected by satellites and perform basic analysis with SNAP and R.\nFor this practical, I picked Bristol as its distinct urban and suburb area split. The data is downloaded from EU Copernicus Data Portal and Earth Explorer."
   },
   {
     "objectID": "week1.html#summary",
@@ -88,6 +88,41 @@
     "href": "week2.html",
     "title": "Week 2 Quarto and Xaringan",
     "section": "",
-    "text": "Here is the slide made with Xaringan for sensor:"
+    "text": "Here is the slide made with Xaringan for CloudSat and its Cloud Profiling Radar (CPR)."
+  },
+  {
+    "objectID": "week1.html#case-study-of-bristol",
+    "href": "week1.html#case-study-of-bristol",
+    "title": "Week 1 Introduction to Remote Sensing",
+    "section": "Case Study of Bristol",
+    "text": "Case Study of Bristol\nDown-sampled and compared Sentiniel data and LandSat of Bristol. Then clipped the most city-urban-ish area of Bristol.\n\n\n\nA side-by-side of two Image Sources. The area selected, I forgot to snip a picture while doing the practical, this blue markup is indication of the area picked\n\n\n\n\n\nScatter Plot Analysis"
+  },
+  {
+    "objectID": "week1.html#results",
+    "href": "week1.html#results",
+    "title": "Week 1 Introduction to Remote Sensing",
+    "section": "Results",
+    "text": "Results\nThis is the week 1, practical result, I sniped only Bristol downtown area. Thus the output indicates high urban.\n\n\n\nWeek 1 Result"
+  },
+  {
+    "objectID": "week1.html#summary-and-reflection",
+    "href": "week1.html#summary-and-reflection",
+    "title": "Week 1 Introduction to Remote Sensing",
+    "section": "Summary and Reflection",
+    "text": "Summary and Reflection\nRemote sensing is certainly more than what I have previously pictured, an extension version of image processing i.e. a glorified version of Lena.png processing. On the contrary, it consists of a health amount of geophysics, actual physics, and last but not least geography. In short, it is an interdisciplinary realm comprised of decades of studies and applications."
+  },
+  {
+    "objectID": "week3.html",
+    "href": "week3.html",
+    "title": "Week 3 Corrections",
+    "section": "",
+    "text": "This week we covered the corrections\nThis is an interesting concept since it is very interesting to explore the concept of this and that."
+  },
+  {
+    "objectID": "rs_acronym.html",
+    "href": "rs_acronym.html",
+    "title": "1  Common Acronyms in Remote Sensing",
+    "section": "",
+    "text": "RS: Remote Sensing\nGIS: Geographic Information System\nGPS: Global Positioning System\nLIDAR: Light Detection and Ranging\nNDVI: Normalized Difference Vegetation Index\nEVI: Enhanced Vegetation Index\nMODIS: Moderate Resolution Imaging Spectroradiometer\n\"Landsat\": \"Land Satellite\",     \n\n\"AVHRR\": \"Advanced Very High Resolution Radiometer\",     \n\n\"GOES\": \"Geostationary Operational Environmental Satellite\",    \n\n\"NOAA\": \"National Oceanic and Atmospheric Administration\",     \n\"EOS\": \"Earth Observing System\",     \n\n\"DEM\": \"Digital Elevation Model\",     \n\n\"DSM\": \"Digital Surface Model\",     \n\n\"DTM\": \"Digital Terrain Model\",     \n\"VIIRS\": \"Visible Infrared Imaging Radiometer Suite\",     \n\n\"UAV\": \"Unmanned Aerial Vehicle\",     \n\n\"INSAR\": \"Interferometric Synthetic Aperture Radar\",     \n\n\"ASTER\": \"Advanced Spaceborne Thermal Emission and Reflection Radiometer\",     \n\n\"TM\": \"Thematic Mapper\",     \n\n\"ETM+\": \"Enhanced Thematic Mapper Plus\",     \"OLI\": \"Operational Land Imager\",     \"TIRS\": \"Thermal Infrared Sensor\",     \"SWIR\": \"Shortwave Infrared\",     \"MWIR\": \"Mid-Wave Infrared\",     \"LWIR\": \"Long-Wave Infrared\",     \"PAN\": \"Panchromatic\",     \"MSI\": \"Multispectral Imaging\",     \"HSI\": \"Hyperspectral Imaging\",     \"RADAR\": \"Radio Detection and Ranging\",     \"GNSS\": \"Global Navigation Satellite System\",     \"VHR\": \"Very High Resolution\",     \"FOV\": \"Field of View\",     \"AOI\": \"Area of Interest\",     \"ROI\": \"Region of Interest\",     \"GCP\": \"Ground Control Point\",     \"RMSE\": \"Root Mean Square Error\",    ,     \n\n\"GHz\": \"Gigahertz\",     \n\n\"MHz\": \"Megahertz\",\n\"SNR\": \"Signal to Noise Ratio\",    \n\"CAD\": \"Computer-Aided Design\",     \n\"BIM\": \"Building Information Modeling\",     \n\"WMS\": \"Web Map Service\",    \n\"WFS\": \"Web Feature Service\",     \n\"API\": \"Application Programming Interface\",    \n\"RGB\": \"Red, Green, Blue\",     \"IR\": \"Infrared\",     \"UV\": \"Ultraviolet\",     \"PCA\": \"Principal Component Analysis\",     \"SVM\": \"Support Vector Machine\",     \"RF\": \"Random Forest\",     \"DL\": \"Deep Learning\",     \"AI\": \"Artificial Intelligence\",     \"ML\": \"Machine Learning\",     \"EO\": \"Earth Observation\""
   }
 ]
