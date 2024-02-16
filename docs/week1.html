@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -156,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./rs_acronym.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Common Acronyms in Remote Sensing</span></span></a>
+ <span class="menu-text">Common Acronyms in Remote Sensing</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -176,9 +195,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#spectral-analysis" id="toc-spectral-analysis" class="nav-link" data-scroll-target="#spectral-analysis">Spectral Analysis</a></li>
   <li><a href="#case-study-of-bristol" id="toc-case-study-of-bristol" class="nav-link" data-scroll-target="#case-study-of-bristol">Case Study of Bristol</a></li>
   <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
-  <li><a href="#summary-and-reflection" id="toc-summary-and-reflection" class="nav-link" data-scroll-target="#summary-and-reflection">Summary and Reflection</a></li>
+  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections">Reflections</a></li>
   </ul>
 </nav>
     </div>
@@ -205,27 +225,43 @@ ul.task-list li input[type="checkbox"] {
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>For the first week, we are introduced to the concept of remote sensing and how to download data and images collected by satellites and perform basic analysis with SNAP and R.</p>
-<p>For this practical, I picked Bristol as its distinct urban and suburb area split. The data is downloaded from <a href="https://dataspace.copernicus.eu/">EU Copernicus Data Portal</a> and <a href="https://earthexplorer.usgs.gov">Earth Explorer</a>.</p>
+</section>
+<section id="spectral-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="spectral-analysis">Spectral Analysis</h2>
 </section>
 <section id="case-study-of-bristol" class="level2">
 <h2 class="anchored" data-anchor-id="case-study-of-bristol">Case Study of Bristol</h2>
-<p>Down-sampled and compared Sentiniel data and LandSat of Bristol. Then clipped the most city-urban-ish area of Bristol.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/areaselection.png" class="img-fluid figure-img" width="734"></p>
-<figcaption class="figure-caption">A side-by-side of two Image Sources. The area selected, I forgot to snip a picture while doing the practical, this blue markup is indication of the area picked</figcaption>
-</figure>
-</div>
+<p>For this practical, I picked Bristol as its distinct urban and suburb area split. The data is downloaded from <a href="https://dataspace.copernicus.eu/">EU Copernicus Data Portal</a> and <a href="https://earthexplorer.usgs.gov">Earth Explorer</a>.</p>
+<p>First, I performed a scatter analysis for the greater Bristol area that I have picked for the analysis, this includes a large portion of suburb land, which indicates high biomass in the analysis.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/scatterplot.png" class="img-fluid figure-img" width="792"></p>
 <figcaption class="figure-caption">Scatter Plot Analysis</figcaption>
 </figure>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/histogram.png" class="img-fluid figure-img" width="736"></p>
+<figcaption class="figure-caption">Histogram Analysis</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/areaselection.png" class="img-fluid figure-img" width="734"></p>
+<figcaption class="figure-caption">A side-by-side of two Image Sources. The area selected, I forgot to snip a picture while doing the practical, this blue markup is indication of the POI picked</figcaption>
+</figure>
+</div>
+<p>Later on, I performed the down sampling for Sentinel-2A images to align its resolution with Landsat images.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/resampling.png" class="img-fluid figure-img" width="495"></p>
+<figcaption class="figure-caption">Down-sampling of Sentinel-2A Images</figcaption>
+</figure>
+</div>
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>
-<p>This is the week 1, practical result, I sniped only Bristol downtown area. Thus the output indicates high urban.</p>
+<p>After down-sampling Sentinel images and cross-analyzing it with LandSat of the POI, downtown area of Bristol, the result is recorded below, indicating high urban.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Screenshot 2024-01-29 202650.png" class="img-fluid figure-img" width="647"></p>
@@ -233,11 +269,20 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </section>
-<section id="summary-and-reflection" class="level2">
-<h2 class="anchored" data-anchor-id="summary-and-reflection">Summary and Reflection</h2>
-<p>Remote sensing is certainly more than what I have previously pictured, an extension version of image processing i.e.&nbsp;a glorified version of Lena.png processing. On the contrary, it consists of a health amount of geophysics, actual physics, and last but not least geography. In short, it is an interdisciplinary realm comprised of decades of studies and applications.</p>
+<section id="reflections" class="level2">
+<h2 class="anchored" data-anchor-id="reflections">Reflections</h2>
+<p>Remote sensing is certainly more than what I have previously pictured, which involves mainly a great deal of image processing. On the contrary, it consists of a balanced amount of geophysics, actual physics, and last but not least geography. <span class="citation" data-cites="navalgund2007remote">(<a href="references.html#ref-navalgund2007remote" role="doc-biblioref">Navalgund, Jayaraman, and Roy 2007</a>)</span> In short, it is an interdisciplinary realm comprised of decades of studies and applications. While traditional image processing or computer vision certainly plays an important role, <span class="citation" data-cites="wilkinson1999recent">(<a href="references.html#ref-wilkinson1999recent" role="doc-biblioref">Wilkinson 1999</a>)</span> further development in remote sensing certainly will demand a deep understanding of GIS, atmospheric science, spectral analysis, environmental science, ecology, and sensor technology etc.</p>
+<p>Aside from the metaphysical overview of remote sensing as an interesting area of research, I further browsed around <a href="https://dataspace.copernicus.eu/">EU Copernicus Data Portal</a> and <a href="https://earthexplorer.usgs.gov">Earth Explorer</a> to see what data I can have access for future research uses within and beyond the module.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-navalgund2007remote" class="csl-entry" role="listitem">
+Navalgund, Ranganath R, V Jayaraman, and PS Roy. 2007. <span>“Remote Sensing Applications: An Overview.”</span> <em>Current Science</em>, 1747–66.
+</div>
+<div id="ref-wilkinson1999recent" class="csl-entry" role="listitem">
+Wilkinson, Graeme G. 1999. <span>“Recent Developments in Remote Sensing Technology and the Importance of Computer Vision Analysis Techniques.”</span> <em>Machine Vision and Advanced Image Processing in Remote Sensing: Proceedings of Concerted Action MAVIRIC (Machine Vision in Remotely Sensed Image Comprehension)</em>, 5–11.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
