@@ -6,7 +6,7 @@ This week we covered the corrections
 
 This week's topic is on correction, the author carried on with the Bristol study as Bristol area happens to have overlap of Landsat 8 and 9.
 
-![Selecting the Landsat 8 and 9 Data with Overlap at Bristol](images/Screenshot 2024-02-17 173551.png){fig-align="center" width="600"}
+![Selecting the Landsat 8 and 9 Data with Overlap at Bristol](images/Screenshot%202024-02-17%20173551.png){fig-align="center" width="600"}
 
 Landsat 8 image corrected (Dark Object Substration method) with adjusted reflectance values that account for atmospheric effects, leading to a more accurate image.
 

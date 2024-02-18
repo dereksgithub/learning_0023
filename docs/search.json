@@ -151,6 +151,20 @@
     "href": "week1.html#remote-sensing-overview",
     "title": "Week 1 Introduction to Remote Sensing",
     "section": "Remote Sensing Overview",
-    "text": "Remote Sensing Overview\n\nActive vs Passive sensors,\n\n\n\nData in Remote Sensing: Rasters\nFour resolutions: Remotely sensed data and applications will vary based on the four resolutions\nSpatial = the size of the raster grid per pixel (e.g. 20cm or 30m)\nSpectral = the number of bands it records data in… more soon\nTemporal = the time it revisits (e.g. daily, every 7 days, on demand ✈️)\nRadiometric = identify differences in light or reflectance, in practice this is the range of possible values.\n\n-   an 8-bit sensor has values between 0 and 255 (256 possibilities)\n\n-   an 11-bit sensor has values between 0 and 2047(2048 possibilities)"
+    "text": "Remote Sensing Overview\n\nActive vs Passive sensors\n\nActive\nPassive\n\nData in Remote Sensing: Mainly raster data.\nFour resolutions: Remotely sensed data and applications will vary based on the four resolutions\n\nSpatial = the size of the raster grid per pixel (e.g. 20cm or 30m)\nSpectral = the number of bands it records data in… more soon\nTemporal = the time it revisits (e.g. daily, every 7 days, on demand ✈️)\nRadiometric = identify differences in light or reflectance, in practice this is the range of possible values.\n\n\nan 8-bit sensor has values between 0 and 255 (256 possibilities)\nan 11-bit sensor has values between 0 and 2047(2048 possibilities)"
+  },
+  {
+    "objectID": "week3.html#case-study-of-bristol---continued",
+    "href": "week3.html#case-study-of-bristol---continued",
+    "title": "Week 3 Corrections",
+    "section": "Case Study of Bristol - Continued",
+    "text": "Case Study of Bristol - Continued\nThis week’s topic is on correction, the author carried on with the Bristol study as Bristol area happens to have overlap of Landsat 8 and 9.\n\n\n\nSelecting the Landsat 8 and 9 Data with Overlap at Bristol\n\n\nLandsat 8 image corrected (Dark Object Substration method) with adjusted reflectance values that account for atmospheric effects, leading to a more accurate image.\n\n\n\nCorrected Bristol Area for Landsat 8 (Or a large area that includes Bristol)\n\n\n\n\n\nNDVI at different levels\n\n\nThis is an interesting concept since it is very interesting to explore the concept of this and that.\n\n\n\nPCA Result Summary\n\n\nThe first 3 contains 86.6% of variances\n\n\n\nPCA Result Plots\n\n\n\n\n\nGLCM 4 Methods"
+  },
+  {
+    "objectID": "week3.html#reflection",
+    "href": "week3.html#reflection",
+    "title": "Week 3 Corrections",
+    "section": "Reflection",
+    "text": "Reflection\nNormalized Difference Vegetation Index (NDVI) is a remote sensing index that measures the health and density of vegetation on the Earth’s surface. NIR represents the near-infrared light reflected by vegetation, and RED represents the visible red light reflected by vegetation.\n\\(NDVI = \\frac{(NIR - RED)}{(NIR+RED)}\\)\nThe technical part for this week’s practical is relatively simple, however the data collection and alignment do consume a lot of time. I also spent too much time trying to overlay the Landsat data to shapefile as the CRS was not consistent."
   }
 ]
