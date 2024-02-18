@@ -2,4 +2,32 @@
 
 This week we covered the corrections
 
+## Case Study of Bristol - Continued
+
+This week's topic is on correction, the author carried on with the Bristol study as Bristol area happens to have overlap of Landsat 8 and 9.
+
+![Selecting the Landsat 8 and 9 Data with Overlap at Bristol](images/Screenshot 2024-02-17 173551.png){fig-align="center" width="600"}
+
+Landsat 8 image corrected (Dark Object Substration method) with adjusted reflectance values that account for atmospheric effects, leading to a more accurate image.
+
+![Corrected Bristol Area for Landsat 8 (Or a large area that includes Bristol)](images/000010.png){fig-align="center" width="648"}
+
+![NDVI at different levels](images/ndvi_allplots.png){fig-align="center" width="593"}
+
 This is an interesting concept since it is very interesting to explore the concept of this and that.
+
+![PCA Result Summary](images/wk3_pca_importance.png){fig-align="center"}
+
+The first 3 contains 86.6% of variances
+
+![PCA Result Plots](images/wk3_1st_pca_plot.png){fig-align="center" width="648"}
+
+![GLCM 4 Methods](images/glcm.png){fig-align="center" width="697"}
+
+## Reflection
+
+Normalized Difference Vegetation Index (NDVI) is a remote sensing index that measures the health and density of vegetation on the Earth's surface. NIR represents the near-infrared light reflected by vegetation, and RED represents the visible red light reflected by vegetation.
+
+$NDVI = \frac{(NIR - RED)}{(NIR+RED)}$
+
+The technical part for this week's practical is relatively simple, however the data collection and alignment do consume a lot of time. I also spent too much time trying to overlay the Landsat data to shapefile as the CRS was not consistent.

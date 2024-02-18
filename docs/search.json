@@ -18,7 +18,7 @@
     "href": "week4.html",
     "title": "Week 4 Remote Sensing and Policy Implications",
     "section": "",
-    "text": "Remote Sensing and Policy Implication\nFocusing on Melbourne with Methodology derived from (MacLachlan et al. 2017)\nUtilizing(Trinder and Liu 2020) the Sentinel 5P data.\n\n\n\n\n\n\n\n\n\nArea of Research\nGlobal Agenda\nMethods\nData\n\n\n\n\nMelbourne urban growth, provide forecasting advice for population growth.\nUN SDG\nUsing Remote Sensing Data\nCombine the local councils’ plans\n\n\nForecast bush fires in areas that may impact the residents.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMacLachlan, Andrew, Eloise Biggs, Gareth Roberts, and Bryan Boruff. 2017. “Urban Growth Dynamics in Perth, Western Australia: Using Applied Remote Sensing for Sustainable Future Planning.” Land 6 (1): 9.\n\n\nTrinder, John, and Qingxiang Liu. 2020. “Assessing Environmental Impacts of Urban Growth Using Remote Sensing.” Geo-Spatial Information Science 23 (1): 20–39. https://doi.org/10.1080/10095020.2019.1710438."
+    "text": "Remote Sensing and Policy Implication\nCase Study of Melbourne\nFocusing on Melbourne with Methodology derived from (MacLachlan et al. 2017)\nUtilizing(Trinder and Liu 2020) the Sentinel 5P data, I plan in this study to design a\n\n\n\n\n\n\n\n\n\nArea of Research\nGlobal Agenda\nMethods\nData\n\n\n\n\nMelbourne urban growth, provide forecasting advice for population growth.\nUN SDG\nUsing Remote Sensing Data\nCombine the local councils’ plans\n\n\nForecast bush fires in areas that may impact the residents.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUsing remote sensing for monitoring wild fire and identifying\n\n\n\n\nMacLachlan, Andrew, Eloise Biggs, Gareth Roberts, and Bryan Boruff. 2017. “Urban Growth Dynamics in Perth, Western Australia: Using Applied Remote Sensing for Sustainable Future Planning.” Land 6 (1): 9.\n\n\nTrinder, John, and Qingxiang Liu. 2020. “Assessing Environmental Impacts of Urban Growth Using Remote Sensing.” Geo-Spatial Information Science 23 (1): 20–39. https://doi.org/10.1080/10095020.2019.1710438."
   },
   {
     "objectID": "week5.html",
@@ -74,7 +74,7 @@
     "href": "week1.html#overview",
     "title": "Week 1 Introduction to Remote Sensing",
     "section": "Overview",
-    "text": "Overview\nFor the first week, we are introduced to the concept of remote sensing and how to download data and images collected by satellites and perform basic analysis with SNAP and R."
+    "text": "Overview\nFor the first week, we are introduced to the concept of remote sensing and how to download data and images collected by satellites and perform basic analysis with SNAP and R.\nRemote sensing is part of GIS but it involves more than just GIS."
   },
   {
     "objectID": "week1.html#summary",
@@ -95,7 +95,7 @@
     "href": "week1.html#case-study-of-bristol",
     "title": "Week 1 Introduction to Remote Sensing",
     "section": "Case Study of Bristol",
-    "text": "Case Study of Bristol\nFor this practical, I picked Bristol as its distinct urban and suburb area split. The data is downloaded from EU Copernicus Data Portal and Earth Explorer.\nFirst, I performed a scatter analysis for the greater Bristol area that I have picked for the analysis, this includes a large portion of suburb land, which indicates high biomass in the analysis.\n\n\n\nScatter Plot Analysis\n\n\n\n\n\nHistogram Analysis\n\n\n\n\n\nA side-by-side of two Image Sources. The area selected, I forgot to snip a picture while doing the practical, this blue markup is indication of the POI picked\n\n\nLater on, I performed the down sampling for Sentinel-2A images to align its resolution with Landsat images.\n\n\n\nDown-sampling of Sentinel-2A Images"
+    "text": "Case Study of Bristol\nFor this practical, I picked Bristol as its distinct urban and suburb area split. The data is downloaded from EU Copernicus Data Portal and Earth Explorer. The Sentinel 2A data is from April 17th, 2022 and the Landsat 8 data is from Sept 07th, 2023.\nFirst, I performed a scatter analysis for the greater Bristol area that I have picked for the analysis, this includes a large portion of suburb land, which indicates high biomass in the analysis.\n\n\n\nScatter Plot Analysis\n\n\n\n\n\nHistogram Analysis\n\n\n\n\n\nSentinel 2 Image\n\n\n\n\n\nSentinel and Landsat Side-by-side\n\n\nLater on, I performed the down sampling for Sentinel-2A images to align its resolution with Landsat images.\n\n\n\nDown-sampling of Sentinel-2A Images"
   },
   {
     "objectID": "week1.html#results",
@@ -116,7 +116,7 @@
     "href": "week3.html",
     "title": "Week 3 Corrections",
     "section": "",
-    "text": "This week we covered the corrections\nThis is an interesting concept since it is very interesting to explore the concept of this and that."
+    "text": "This week we covered the corrections\nThis week’s topic is\nThis is an interesting concept since it is very interesting to explore the concept of this and that."
   },
   {
     "objectID": "rs_acronym.html",
@@ -145,5 +145,12 @@
     "title": "Week 6 Google Earth Engine",
     "section": "GEE Project",
     "text": "GEE Project"
+  },
+  {
+    "objectID": "week1.html#remote-sensing-overview",
+    "href": "week1.html#remote-sensing-overview",
+    "title": "Week 1 Introduction to Remote Sensing",
+    "section": "Remote Sensing Overview",
+    "text": "Remote Sensing Overview\n\nActive vs Passive sensors,\n\n\n\nData in Remote Sensing: Rasters\nFour resolutions: Remotely sensed data and applications will vary based on the four resolutions\nSpatial = the size of the raster grid per pixel (e.g. 20cm or 30m)\nSpectral = the number of bands it records data in… more soon\nTemporal = the time it revisits (e.g. daily, every 7 days, on demand ✈️)\nRadiometric = identify differences in light or reflectance, in practice this is the range of possible values.\n\n-   an 8-bit sensor has values between 0 and 255 (256 possibilities)\n\n-   an 11-bit sensor has values between 0 and 2047(2048 possibilities)"
   }
 ]

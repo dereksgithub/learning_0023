@@ -6,11 +6,24 @@ For the first week, we are introduced to the concept of remote sensing and how t
 
 Remote sensing is part of GIS but it involves more than just GIS.
 
-## Spectral Analysis
+## Remote Sensing Overview
+
+-   Active vs Passive sensors
+    -   Active
+    -   Passive
+-   Data in Remote Sensing: Mainly raster data.
+-   Four resolutions: Remotely sensed data and applications will vary based on the four resolutions
+    -   Spatial = the size of the raster grid per pixel (e.g. 20cm or 30m)
+    -   Spectral = the number of bands it records data in... more soon
+    -   Temporal = the time it revisits (e.g. daily, every 7 days, on demand ✈️)
+    -   Radiometric = identify differences in light or reflectance, in practice this is the range of possible values.
+-   
+    -   an 8-bit sensor has values between 0 and 255 (256 possibilities)
+    -   an 11-bit sensor has values between 0 and 2047(2048 possibilities)
 
 ## Case Study of Bristol
 
-For this practical, I picked Bristol as its distinct urban and suburb area split. The data is downloaded from [EU Copernicus Data Portal](https://dataspace.copernicus.eu/) and [Earth Explorer](https://earthexplorer.usgs.gov).
+For this practical, I picked Bristol as its distinct urban and suburb area split. The data is downloaded from [EU Copernicus Data Portal](https://dataspace.copernicus.eu/) and [Earth Explorer](https://earthexplorer.usgs.gov). The Sentinel 2A data is from April 17th, 2022 and the Landsat 8 data is from Sept 07th, 2023.
 
 First, I performed a scatter analysis for the greater Bristol area that I have picked for the analysis, this includes a large portion of suburb land, which indicates high biomass in the analysis.
 
@@ -18,7 +31,9 @@ First, I performed a scatter analysis for the greater Bristol area that I have p
 
 ![Histogram Analysis](images/histogram.png){fig-align="center" width="736"}
 
-![A side-by-side of two Image Sources. The area selected, I forgot to snip a picture while doing the practical, this blue markup is indication of the POI picked](images/areaselection.png){fig-align="center" width="734"}
+![Sentinel 2 Image](images/sent2.png){fig-align="center" width="735"}
+
+![Sentinel and Landsat Side-by-side](images/Screenshot%202024-01-29%20190738.png){fig-align="center" width="734"}
 
 Later on, I performed the down sampling for Sentinel-2A images to align its resolution with Landsat images.
 

@@ -195,7 +195,7 @@ div.csl-indent {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#spectral-analysis" id="toc-spectral-analysis" class="nav-link" data-scroll-target="#spectral-analysis">Spectral Analysis</a></li>
+  <li><a href="#remote-sensing-overview" id="toc-remote-sensing-overview" class="nav-link" data-scroll-target="#remote-sensing-overview">Remote Sensing Overview</a></li>
   <li><a href="#case-study-of-bristol" id="toc-case-study-of-bristol" class="nav-link" data-scroll-target="#case-study-of-bristol">Case Study of Bristol</a></li>
   <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
   <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections">Reflections</a></li>
@@ -225,13 +225,29 @@ div.csl-indent {
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>For the first week, we are introduced to the concept of remote sensing and how to download data and images collected by satellites and perform basic analysis with SNAP and R.</p>
+<p>Remote sensing is part of GIS but it involves more than just GIS.</p>
 </section>
-<section id="spectral-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="spectral-analysis">Spectral Analysis</h2>
+<section id="remote-sensing-overview" class="level2">
+<h2 class="anchored" data-anchor-id="remote-sensing-overview">Remote Sensing Overview</h2>
+<ul>
+<li>Active vs Passive sensors,</li>
+</ul>
+<!-- -->
+<ul>
+<li><p>Data in Remote Sensing: Rasters</p></li>
+<li><p>Four resolutions: Remotely sensed data and applications will vary based on the four resolutions</p></li>
+<li><p>Spatial = the size of the raster grid per pixel (e.g.&nbsp;20cm or 30m)</p></li>
+<li><p>Spectral = the number of bands it records data in… more soon</p></li>
+<li><p>Temporal = the time it revisits (e.g.&nbsp;daily, every 7 days, on demand ✈️)</p></li>
+<li><p>Radiometric = identify differences in light or reflectance, in practice this is the range of possible values.</p></li>
+</ul>
+<pre><code>-   an 8-bit sensor has values between 0 and 255 (256 possibilities)
+
+-   an 11-bit sensor has values between 0 and 2047(2048 possibilities)</code></pre>
 </section>
 <section id="case-study-of-bristol" class="level2">
 <h2 class="anchored" data-anchor-id="case-study-of-bristol">Case Study of Bristol</h2>
-<p>For this practical, I picked Bristol as its distinct urban and suburb area split. The data is downloaded from <a href="https://dataspace.copernicus.eu/">EU Copernicus Data Portal</a> and <a href="https://earthexplorer.usgs.gov">Earth Explorer</a>.</p>
+<p>For this practical, I picked Bristol as its distinct urban and suburb area split. The data is downloaded from <a href="https://dataspace.copernicus.eu/">EU Copernicus Data Portal</a> and <a href="https://earthexplorer.usgs.gov">Earth Explorer</a>. The Sentinel 2A data is from April 17th, 2022 and the Landsat 8 data is from Sept 07th, 2023.</p>
 <p>First, I performed a scatter analysis for the greater Bristol area that I have picked for the analysis, this includes a large portion of suburb land, which indicates high biomass in the analysis.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -247,8 +263,14 @@ div.csl-indent {
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/areaselection.png" class="img-fluid figure-img" width="734"></p>
-<figcaption class="figure-caption">A side-by-side of two Image Sources. The area selected, I forgot to snip a picture while doing the practical, this blue markup is indication of the POI picked</figcaption>
+<p><img src="images/sent2.png" class="img-fluid figure-img" width="735"></p>
+<figcaption class="figure-caption">Sentinel 2 Image</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2024-01-29 190738.png" class="img-fluid figure-img" width="734"></p>
+<figcaption class="figure-caption">Sentinel and Landsat Side-by-side</figcaption>
 </figure>
 </div>
 <p>Later on, I performed the down sampling for Sentinel-2A images to align its resolution with Landsat images.</p>
