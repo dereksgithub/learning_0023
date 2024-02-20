@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CASA 0023 Remote Sensing Learning Diary - Week 3 Corrections</title>
+<title>CASA 0023 Remote Sensing Learning Diary - Week 3 Atmosphere Corrections</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -76,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week3.html">Week 3 Corrections</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week3.html">Week 3 Atmosphere Corrections</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -128,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week3.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Week 3 Corrections</span></a>
+ <span class="menu-text">Week 3 Atmosphere Corrections</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -187,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 3 Corrections</h1>
+<h1 class="title">Week 3 Atmosphere Corrections</h1>
 </div>
 
 
@@ -202,46 +221,61 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This week we covered the corrections</p>
+<p>This week we covered the corrections and enhancements for satellite imagery. It is importance to select proper appropriate imagery (Collection, Level, Tier) and understanding limitations like Top-of-Atmosphere (TOA) vs.&nbsp;Bottom-of-Atmosphere (BOA) reflectance.</p>
 <section id="case-study-of-bristol---continued" class="level2">
 <h2 class="anchored" data-anchor-id="case-study-of-bristol---continued">Case Study of Bristol - Continued</h2>
-<p>This week’s topic is on correction, the author carried on with the Bristol study as Bristol area happens to have overlap of Landsat 8 and 9.</p>
+<p>This week’s topic is on correction, the author carried on with the Bristol study as the Bristol area happens to have overlap of Landsat 8 and 9. (Landsat 8 C1L1 for the first part of the practical time of capture is Jan19 to Jan29, 2024)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Screenshot 2024-02-17 173551.png" class="img-fluid figure-img" width="600"></p>
-<figcaption class="figure-caption">Selecting the Landsat 8 and 9 Data with Overlap at Bristol</figcaption>
+<figcaption class="figure-caption">Selecting the Landsat 8 and 9 Data with Overlap at Bristol for the second part of practical</figcaption>
 </figure>
 </div>
-<p>Landsat 8 image corrected (Dark Object Substration method) with adjusted reflectance values that account for atmospheric effects, leading to a more accurate image.</p>
+<p>Landsat 8 image corrected (Dark Object Subtraction method) with adjusted reflectance values that account for atmospheric effects, leading to a more accurate image.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wk3_01_band_2to4.png" class="img-fluid figure-img" width="647"></p>
+<figcaption class="figure-caption">DN Results</figcaption>
+</figure>
+</div>
+<p>The values of the estimated minimum digital number (DN) across the image for Band 2, 3, and 4 that are considered to be affected by haze are 19, 12, and 8. Among the three, band 2 shows the most atmospheric scattering effects while band 4 shows the least around the red part of the spectrum.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/000010.png" class="img-fluid figure-img" width="648"></p>
 <figcaption class="figure-caption">Corrected Bristol Area for Landsat 8 (Or a large area that includes Bristol)</figcaption>
 </figure>
 </div>
+<p>In the second part of the practical, I downloaded Landsat 8 and 9, L2, with cloud cover 0 to 5% taken at Nov/25/2023 and Sep/05/2023 respectively.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ndvi_allplots.png" class="img-fluid figure-img" width="593"></p>
 <figcaption class="figure-caption">NDVI at different levels</figcaption>
 </figure>
 </div>
-<p>This is an interesting concept since it is very interesting to explore the concept of this and that.</p>
+<p>After the NDVI plots, I clipped the shapefile of the Bristol surrounding area. (Again, it is acually a large area that includes Bristol and multiple other cities/towns)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2024-02-17 181559.png" class="img-fluid figure-img" width="461"></p>
+<figcaption class="figure-caption">QGis Clipping</figcaption>
+</figure>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/wk3_pca_importance.png" class="img-fluid figure-img"></p>
 <figcaption class="figure-caption">PCA Result Summary</figcaption>
 </figure>
 </div>
-<p>The first 3 contains 86.6% of variances</p>
+<p>The first 3 components contain 86.6% of variances.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/wk3_1st_pca_plot.png" class="img-fluid figure-img" width="648"></p>
 <figcaption class="figure-caption">PCA Result Plots</figcaption>
 </figure>
 </div>
+<p>Using glcm to perform texture analysis for Landsat images. Homogeneity measures the closeness of the distribution of elements in the GLCM to the GLCM diagonal, indicating areas where pixel values are similar to their neighbors, while reflecting uniform textures within the image. Second moment, or energy, quantifies texture uniformity an indicator where higher values denote areas with more consistent or smooth textures. Correlation assesses how a pixel’s value is predictably related to its neighbors, with high values indicating a linear or predictable relationship in gray-level values across the texture. For GLCM, Mean refers to the average intensity or gray level within the analyzed window, offering insights into the overall brightness or reflectance of the area being studied.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/glcm.png" class="img-fluid figure-img" width="697"></p>
+<p><img src="images/glcm.png" class="img-fluid figure-img" width="648"></p>
 <figcaption class="figure-caption">GLCM 4 Methods</figcaption>
 </figure>
 </div>
@@ -250,9 +284,78 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
 <p>Normalized Difference Vegetation Index (NDVI) is a remote sensing index that measures the health and density of vegetation on the Earth’s surface. NIR represents the near-infrared light reflected by vegetation, and RED represents the visible red light reflected by vegetation.</p>
 <p><span class="math inline">\(NDVI = \frac{(NIR - RED)}{(NIR+RED)}\)</span></p>
-<p>The technical part for this week’s practical is relatively simple, however the data collection and alignment do consume a lot of time. I also spent too much time trying to overlay the Landsat data to shapefile as the CRS was not consistent.</p>
+<p>Aside from the NDVI, here are some other indicators that I have investigated and sumarized:</p>
+<ul>
+<li><p><strong>ARVI (Atmospherically Resistant Vegetation Index)</strong> is commonly employed to tackle regions of high atmospheric aerosol content. It was originally proposed for remote sensing of EOS MODIS sensor. <span class="citation" data-cites="kaufman1992atmospherically">(<a href="references.html#ref-kaufman1992atmospherically" role="doc-biblioref">Kaufman and Tanre 1992</a>)</span> The range for an ARVI is -1 to 1 where green vegetation generally falls between values of 0.20 to 0.80.</p>
+<ul>
+<li><p><span class="math inline">\(ARVI = \frac{(NIR - RED - y * (RED - BLUE))}{(NIR + RED - y*(RED-BLUE))}\)</span></p></li>
+<li><p>According to ArcGIS: <a href="https://www.arcgis.com/home/item.html?id=56a6db4cdd1c46988a1411d0365fd5f7" style="color:#7294D4;">“ARVI is a vegetation-based index that minimizes the effects of atmospheric scattering caused by rain, fog, dust, smoke, or air pollution.”</a></p></li>
+<li><p>y is a constant to correct for the atmospheric effects caused by aerosol scattering in red channel.</p></li>
+</ul></li>
+<li><p><strong>NDMI (Normalized Difference Moisture Index)</strong> helps monitoring and mapping water content in soil and vegetation. <span class="citation" data-cites="wilson2002detection">(<a href="references.html#ref-wilson2002detection" role="doc-biblioref">Wilson and Sader 2002</a>)</span> It is calculated as Near-Infrared’s and Short-Wave Infrared’s difference over sum.:</p>
+<p><span class="math inline">\(NDMI = \frac{NIR - SWIR}{NIR + SWIR}\)</span></p>
+<ul>
+<li>In Landsat 8-9: <span class="math inline">\(NDMI =\frac{(Band5 - Band6)}{(Band5+Band6)}​\)</span></li>
+</ul></li>
+<li><p><strong>SAVI (Soil-Adjusted Vegetation Index)</strong> is originally constructed to minimize soil brightness influences on NDVI, especially useful in areas with sparse vegetation. <span class="citation" data-cites="huete1988soil">(<a href="references.html#ref-huete1988soil" role="doc-biblioref">AR Huete 1988</a>)</span></p>
+<ul>
+<li><p><span class="math inline">\(SAVI =\frac{(NIR+Red+L)}{(NIR−Red)}​∗(1+L)\)</span></p></li>
+<li><p>SAVI introduces a soil brightness correction factor (L) to adjust the NDVI calculation, making it more accurate in sparse vegetation areas.</p></li>
+<li><p>In Landsat 8-9: <span class="math inline">\(SAVI - \frac{Band5 - Band4}{Band5 + Band4 +0.5}\)</span></p></li>
+</ul></li>
+<li><p><strong>MSAVI (Modified Soil-Adjusted Vegetation Index)</strong> is an adjustment of SAVI, designed to minimize bare soil background effects more effectively and optimize vegetation monitoring. <span class="citation" data-cites="qi1994modified">(<a href="references.html#ref-qi1994modified" role="doc-biblioref">Qi et al. 1994</a>)</span></p>
+<ul>
+<li><p><span class="math inline">\(MSAVI = \frac{2*NIR + 1 - \sqrt{(2*NIR+1)-8*(NIR-RED)}}{2}\)</span></p></li>
+<li><p>In Landsat 8-9: <span class="math inline">\(SAVI - \frac{2*Band5 + 1 - \sqrt{(Band5+1)^2 -8*(Band5-Band4)}}{2}\)</span></p></li>
+</ul></li>
+<li><p><strong>GNDVI (Green Normalized Difference Vegetation Index)</strong> focuses on chlorophyll content, primarily on the green spectral region for enahnced sensitivity to vegetation density. <span class="citation" data-cites="gitelson1996use">(<a href="references.html#ref-gitelson1996use" role="doc-biblioref">Gitelson, Kaufman, and Merzlyak 1996</a>)</span></p>
+<ul>
+<li><p>$ GNDVI = $</p></li>
+<li><p>Landsat 8-9: <span class="math inline">\(NDMI =\frac{Band5 - Band3}{Band5 + Band3}\)</span></p></li>
+</ul></li>
+<li><p><strong>EVI (Enhanced Vegetation Index)</strong> was proposed to improve the sensitivity in high biomass regions and improves vegetation monitoring through a de-coupling of the canopy background signal and a reduction in atmospheric influences. <span class="citation" data-cites="huete2002overview">(<a href="references.html#ref-huete2002overview" role="doc-biblioref">Alfredo Huete et al. 2002</a>)</span></p>
+<ul>
+<li><p><span class="math inline">\(EVI=G \frac{(NIR−Red)}{(NIR+C1⋅Red−C2⋅Blue+L)}\)</span></p></li>
+<li><p>In Landsat 8-9: <span class="math inline">\(EVI = 2.5 * \frac{Band5 - Band4}{Band5 + 6* Band4 - 7.5*Band2 + 1}\)</span></p></li>
+</ul></li>
+<li><p><strong>NDWI (Normalized Difference Water Index)</strong> was formulated for the detection of liquid water and moisture content of vegetation and soil.<span class="citation" data-cites="gao1996ndwi">(<a href="references.html#ref-gao1996ndwi" role="doc-biblioref">Gao 1996</a>)</span></p>
+<ul>
+<li><p><span class="math inline">\(NDWI_{veg​}= \frac{(NIR+Green)}{(NIR−Green)}\)</span></p></li>
+<li><p>In Landsat 8-9: <span class="math inline">\(NDWI = \frac{Band4-Band2}{Band4+band2}\)</span></p></li>
+</ul></li>
+</ul>
+<p>These indicators, are sufficient only for basic analysis demands, to dderive more hidden relations, more modern techniques such as deep learning,<span class="citation" data-cites="ma2019deep">(<a href="references.html#ref-ma2019deep" role="doc-biblioref">Ma et al. 2019</a>)</span> and Semi-supervised representation learning <span class="citation" data-cites="yan2020semi">(<a href="references.html#ref-yan2020semi" role="doc-biblioref">Yan et al. 2020</a>)</span> can also be employed. As for the technical part for this week’s practical, coding part is smooth, however the data collection and alignment do require a high level of dedication to get right at first run.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-gao1996ndwi" class="csl-entry" role="listitem">
+Gao, Bo-Cai. 1996. <span>“NDWI—a Normalized Difference Water Index for Remote Sensing of Vegetation Liquid Water from Space.”</span> <em>Remote Sensing of Environment</em> 58 (3): 257–66.
+</div>
+<div id="ref-gitelson1996use" class="csl-entry" role="listitem">
+Gitelson, Anatoly A, Yoram J Kaufman, and Mark N Merzlyak. 1996. <span>“Use of a Green Channel in Remote Sensing of Global Vegetation from EOS-MODIS.”</span> <em>Remote Sensing of Environment</em> 58 (3): 289–98.
+</div>
+<div id="ref-huete2002overview" class="csl-entry" role="listitem">
+Huete, Alfredo, Kamel Didan, Tomoaki Miura, E Patricia Rodriguez, Xiang Gao, and Laerte G Ferreira. 2002. <span>“Overview of the Radiometric and Biophysical Performance of the MODIS Vegetation Indices.”</span> <em>Remote Sensing of Environment</em> 83 (1-2): 195–213.
+</div>
+<div id="ref-huete1988soil" class="csl-entry" role="listitem">
+Huete, AR. 1988. <span>“A Soil-Adjusted Vegetation Index (SAVI). Remote Ssensing of Environment, 25, 295-309.”</span>
+</div>
+<div id="ref-kaufman1992atmospherically" class="csl-entry" role="listitem">
+Kaufman, Yoram J, and Didier Tanre. 1992. <span>“Atmospherically Resistant Vegetation Index (ARVI) for EOS-MODIS.”</span> <em>IEEE Transactions on Geoscience and Remote Sensing</em> 30 (2): 261–70.
+</div>
+<div id="ref-ma2019deep" class="csl-entry" role="listitem">
+Ma, Lei, Yu Liu, Xueliang Zhang, Yuanxin Ye, Gaofei Yin, and Brian Alan Johnson. 2019. <span>“Deep Learning in Remote Sensing Applications: A Meta-Analysis and Review.”</span> <em>ISPRS Journal of Photogrammetry and Remote Sensing</em> 152: 166–77.
+</div>
+<div id="ref-qi1994modified" class="csl-entry" role="listitem">
+Qi, Jiaguo, Abdelghani Chehbouni, Alfredo R Huete, Yann H Kerr, and Soroosh Sorooshian. 1994. <span>“A Modified Soil Adjusted Vegetation Index.”</span> <em>Remote Sensing of Environment</em> 48 (2): 119–26.
+</div>
+<div id="ref-wilson2002detection" class="csl-entry" role="listitem">
+Wilson, Emily Hoffhine, and Steven A Sader. 2002. <span>“Detection of Forest Harvest Type Using Multiple Dates of Landsat TM Imagery.”</span> <em>Remote Sensing of Environment</em> 80 (3): 385–96.
+</div>
+<div id="ref-yan2020semi" class="csl-entry" role="listitem">
+Yan, Peiyao, Feng He, Yajie Yang, and Fei Hu. 2020. <span>“Semi-Supervised Representation Learning for Remote Sensing Image Classification Based on Generative Adversarial Networks.”</span> <em>IEEE Access</em> 8: 54135–44.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

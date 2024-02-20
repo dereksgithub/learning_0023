@@ -9,21 +9,18 @@ Remote sensing is part of GIS but it involves more than just GIS.
 ## Remote Sensing Overview
 
 -   Active vs Passive sensors
-    -   Active
-    -   Passive
+    -   Active: Emits EM waves or other energy from its own sensors (radar, LiDar etc.) to measure and capture the landscapes/features of the area of interest.
+    -   Passive: Detects and captures the natural energy signals radiated by of the area of interest.
 -   Data in Remote Sensing: Mainly raster data.
 -   Four resolutions: Remotely sensed data and applications will vary based on the four resolutions
-    -   Spatial = the size of the raster grid per pixel (e.g. 20cm or 30m)
-    -   Spectral = the number of bands it records data in... more soon
-    -   Temporal = the time it revisits (e.g. daily, every 7 days, on demand ✈️)
-    -   Radiometric = identify differences in light or reflectance, in practice this is the range of possible values.
--   
-    -   an 8-bit sensor has values between 0 and 255 (256 possibilities)
-    -   an 11-bit sensor has values between 0 and 2047(2048 possibilities)
+    -   Spatial: Refers to the size of one pixel on the ground (e.g. 20cm or 30m) Higher Spatial resolution means finer details.
+    -   Spectral: Describes the number and width of spectral bands the sensor records data in.
+    -   Temporal: The frequency with which a sensor revisits the same location.
+    -   Radiometric: identify differences in light or reflectance, in practice this is the range of possible values for example, an 8-bit sensor has values between 0 and 255 (256 possibilities), captures much fewer energy levels than an 11-bit sensor has values between 0 and 2047 (2048 possibilities), in this sense, the 11-bit sensors captures finer-grained data.
 
 ## Case Study of Bristol
 
-For this practical, I picked Bristol as its distinct urban and suburb area split. The data is downloaded from [EU Copernicus Data Portal](https://dataspace.copernicus.eu/) and [Earth Explorer](https://earthexplorer.usgs.gov). The Sentinel 2A data is from April 17th, 2022 and the Landsat 8 data is from Sept 07th, 2023.
+For this practical, I picked Bristol as its distinct urban and suburb area split. The data is downloaded from [EU Copernicus Data Portal](https://dataspace.copernicus.eu/){style="color:#7294D4;"} and [Earth Explorer](https://earthexplorer.usgs.gov){style="color:#D8A499;"}. The Sentinel 2A data is from April 17th, 2022 and the Landsat 8 data is from Sept 07th, 2023.
 
 First, I performed a scatter analysis for the greater Bristol area that I have picked for the analysis, this includes a large portion of suburb land, which indicates high biomass in the analysis.
 
@@ -49,4 +46,4 @@ After down-sampling Sentinel images and cross-analyzing it with LandSat of the P
 
 Remote sensing is certainly more than what I have previously pictured, which involves mainly a great deal of image processing. On the contrary, it consists of a balanced amount of geophysics, actual physics, and last but not least geography. [@navalgund2007remote] In short, it is an interdisciplinary realm comprised of decades of studies and applications. While traditional image processing or computer vision certainly plays an important role, [@wilkinson1999recent] further development in remote sensing certainly will demand a deep understanding of GIS, atmospheric science, spectral analysis, environmental science, ecology, and sensor technology etc.
 
-Aside from the metaphysical overview of remote sensing as an interesting area of research, I further browsed around [EU Copernicus Data Portal](https://dataspace.copernicus.eu/) and [Earth Explorer](https://earthexplorer.usgs.gov) to see what data I can have access for future research uses within and beyond the module.
+Aside from the metaphysical overview of remote sensing as an interesting area of research, I further browsed around [EU Copernicus Data Portal](https://dataspace.copernicus.eu/){style="color: #E6A0C4;"} and [Earth Explorer](https://earthexplorer.usgs.gov){style="color : #C6CDF7;"} to see what data I can have access for future research uses within and beyond the module.

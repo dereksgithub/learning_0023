@@ -1,10 +1,16 @@
 # Common Acronyms in Remote Sensing {.unnumbered}
 
+ARVI: Atmospherically Resistant Vegetation Index
+
 AVHRR: Advanced Very High Resolution Radiometer
 
 EVI: Enhanced Vegetation Index
 
+GOES: Geostationary Operational Environmental Satellite
+
 GIS: Geographic Information System
+
+GNDVI (Green Normalized Difference Vegetation Index)
 
 GPS: Global Positioning System
 
@@ -14,7 +20,13 @@ LIDAR: Light Detection and Ranging
 
 MODIS: Moderate Resolution Imaging Spectroradiometer
 
+MSAVI (Modified Soil-Adjusted Vegetation Index)
+
+NDMI: Normalized Difference Moisture Index.
+
 NDVI: Normalized Difference Vegetation Index
+
+NDWI (Normalized Difference Water Index)
 
 PCA: Principal Component Analysis
 
@@ -24,12 +36,11 @@ ROI: Region of Interest
 
 RS: Remote Sensing
 
+SAVI (Soil-Adjusted Vegetation Index)
+
 SNR: Signal to Noise Ratio
 
 ```         
-
-"GOES": "Geostationary Operational Environmental Satellite",    
-
 "NOAA": "National Oceanic and Atmospheric Administration",     
 "EOS": "Earth Observing System",     
 
