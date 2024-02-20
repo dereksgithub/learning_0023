@@ -46,7 +46,7 @@ Aside from the NDVI, here are some other indicators that I have investigated and
 
     -   $ARVI = \frac{(NIR - RED - y * (RED - BLUE))}{(NIR + RED - y*(RED-BLUE))}$
 
-    -   According to ArcGIS: ["ARVI is a vegetation-based index that minimizes the effects of atmospheric scattering caused by rain, fog, dust, smoke, or air pollution."](https://www.arcgis.com/home/item.html?id=56a6db4cdd1c46988a1411d0365fd5f7){style="color:#7294D4;"}
+    -   According to ArcGIS: ["ARVI is a vegetation-based index that minimizes the effects of atmospheric scattering caused by rain, fog, dust, smoke, or air pollution."](https://www.arcgis.com/home/item.html?id=56a6db4cdd1c46988a1411d0365fd5f7){style="color: #FD6467;"}
 
     -   y is a constant to correct for the atmospheric effects caused by aerosol scattering in red channel.
 
@@ -72,7 +72,7 @@ Aside from the NDVI, here are some other indicators that I have investigated and
 
 -   **GNDVI (Green Normalized Difference Vegetation Index)** focuses on chlorophyll content, primarily on the green spectral region for enahnced sensitivity to vegetation density. [@gitelson1996use]
 
-    -   $ GNDVI = \frac{(NIR - Green)}{(NIR + Green)}$
+    -   \$ GNDVI = \frac{(NIR - Green)}{(NIR + Green)}\$
 
     -   Landsat 8-9: $NDMI =\frac{Band5 - Band3}{Band5 + Band3}$
 
