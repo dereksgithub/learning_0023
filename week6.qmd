@@ -1,6 +1,6 @@
-# Week 6 Google Earth Engine {.unnumbered}
+# Week 6 Introduction to Google Earth Engine {.unnumbered}
 
-This is a very exciting week, GEE is something that interested me before selecting this module. But that was mostly working alongside GIS folk in a project, seeing them making satellite maps with GEE was a curious experience back then.
+This is a very exciting week, GEE is something that interested me before selecting this module. But that was mostly working alongside GIS folks on previous projects, seeing them making satellite maps with GEE was a curious experience back then.
 
 Here is a video that I used for learning GEE:
 
@@ -12,4 +12,6 @@ Here is a video that I used for learning GEE:
 
 </p>
 
-## GEE Project
+## GEE Case Study Bristol
+
+For this week's practical, I continued with Bristol.

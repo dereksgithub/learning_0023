@@ -4,7 +4,7 @@ In week 5, we had two sessions but mostly dedicated for group work planning and 
 
 ## Temperature and Urban Heat Island {.unnumbered}
 
-This week's discussion on the temperature and Urban Heat Island is carried on from last week's content.
+This week's discussion on the temperature and Urban Heat Island.
 
 ## Group Assessment Key Points {.unnumbered}
 
@@ -21,5 +21,5 @@ Here are some key takeaways for group assessment references:
     ii. the Sendai Framework for Disaster Risk Reduction 2015-2030
     iii. The New Urban Agenda (NUA)
     iv. The Global Green New Deal (GND)
-3.  Other keypoints that we agreed upon for this project is to develop the work covered in the pitch into Work-packs, perform SWOT analysis, design automated Data Pipelines, and adding a Gantt Chart.
+3.  Other key points are that we agreed upon for this project is to develop the work covered in the pitch into Work-packs, perform SWOT analysis, design automated Data Pipelines, and adding a Gantt Chart.
 4.  The topic and scope is also settle with the help of Andy and our PGTAS! (But the brainstorming is utterly a thrill since everyone has contributed novel ideas to develop!)
