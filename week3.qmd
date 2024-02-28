@@ -40,7 +40,7 @@ Normalized Difference Vegetation Index (NDVI) is a remote sensing index that mea
 
 $NDVI = \frac{(NIR - RED)}{(NIR+RED)}$
 
-Aside from the NDVI, here are some other indicators that I have investigated and sumarized:
+Aside from the NDVI, here are some other indicators that I have investigated and summarized:
 
 -   **ARVI (Atmospherically Resistant Vegetation Index)** is commonly employed to tackle regions of high atmospheric aerosol content. It was originally proposed for remote sensing of EOS MODIS sensor. [@kaufman1992atmospherically] The range for an ARVI is -1 to 1 where green vegetation generally falls between values of 0.20 to 0.80.
 
@@ -72,7 +72,7 @@ Aside from the NDVI, here are some other indicators that I have investigated and
 
 -   **GNDVI (Green Normalized Difference Vegetation Index)** focuses on chlorophyll content, primarily on the green spectral region for enahnced sensitivity to vegetation density. [@gitelson1996use]
 
-    -   \$ GNDVI = \frac{(NIR - Green)}{(NIR + Green)}\$
+    -   $$NDVI = \frac{NIR - Green}{NIR +Green}$$
 
     -   Landsat 8-9: $NDMI =\frac{Band5 - Band3}{Band5 + Band3}$
 
@@ -88,4 +88,4 @@ Aside from the NDVI, here are some other indicators that I have investigated and
 
     -   In Landsat 8-9: $NDWI = \frac{Band4-Band2}{Band4+band2}$
 
-These indicators, are sufficient only for basic analysis demands, to dderive more hidden relations, more modern techniques such as deep learning,[@ma2019deep] and Semi-supervised representation learning [@yan2020semi] can also be employed. As for the technical part for this week's practical, coding part is smooth, however the data collection and alignment do require a high level of dedication to get right at first run.
+These indicators, are sufficient only for basic analysis demands, to derive more hidden relations, more modern techniques such as deep learning,[@ma2019deep] and Semi-supervised representation learning [@yan2020semi] can also be employed. Selecting proper metrics in remote sensing for an urban context is crucial in addressing specific planning or built-environment challenges. Among these indices, ARVI, NDWI, EVI, SAVI, MSAVI, NDMI and NDVI are still relevant in the industry and contemporary urban science. NDVI is widely used for monitoring urban vegetation health and urban green space. [@xue2017significant] NDWI plays a critical role in urban water body and drought monitoring, it is also important for urban fire prevention.[@zhu2017change] As for the technical part for this week's practical, coding part is smooth, however the data collection and alignment do require a high level of dedication to get right at first run.

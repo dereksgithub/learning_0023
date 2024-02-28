@@ -170,6 +170,12 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./week7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 7 Classification with Google Earth Engine</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Summary</span></a>
   </div>
@@ -284,7 +290,7 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
 <p>Normalized Difference Vegetation Index (NDVI) is a remote sensing index that measures the health and density of vegetation on the Earth’s surface. NIR represents the near-infrared light reflected by vegetation, and RED represents the visible red light reflected by vegetation.</p>
 <p><span class="math inline">\(NDVI = \frac{(NIR - RED)}{(NIR+RED)}\)</span></p>
-<p>Aside from the NDVI, here are some other indicators that I have investigated and sumarized:</p>
+<p>Aside from the NDVI, here are some other indicators that I have investigated and summarized:</p>
 <ul>
 <li><p><strong>ARVI (Atmospherically Resistant Vegetation Index)</strong> is commonly employed to tackle regions of high atmospheric aerosol content. It was originally proposed for remote sensing of EOS MODIS sensor. <span class="citation" data-cites="kaufman1992atmospherically">(<a href="references.html#ref-kaufman1992atmospherically" role="doc-biblioref">Kaufman and Tanre 1992</a>)</span> The range for an ARVI is -1 to 1 where green vegetation generally falls between values of 0.20 to 0.80.</p>
 <ul>
@@ -310,7 +316,7 @@ div.csl-indent {
 </ul></li>
 <li><p><strong>GNDVI (Green Normalized Difference Vegetation Index)</strong> focuses on chlorophyll content, primarily on the green spectral region for enahnced sensitivity to vegetation density. <span class="citation" data-cites="gitelson1996use">(<a href="references.html#ref-gitelson1996use" role="doc-biblioref">Gitelson, Kaufman, and Merzlyak 1996</a>)</span></p>
 <ul>
-<li><p>$ GNDVI = $</p></li>
+<li><p><span class="math display">\[NDVI = \frac{NIR - Green}{NIR +Green}\]</span></p></li>
 <li><p>Landsat 8-9: <span class="math inline">\(NDMI =\frac{Band5 - Band3}{Band5 + Band3}\)</span></p></li>
 </ul></li>
 <li><p><strong>EVI (Enhanced Vegetation Index)</strong> was proposed to improve the sensitivity in high biomass regions and improves vegetation monitoring through a de-coupling of the canopy background signal and a reduction in atmospheric influences. <span class="citation" data-cites="huete2002overview">(<a href="references.html#ref-huete2002overview" role="doc-biblioref">Alfredo Huete et al. 2002</a>)</span></p>
@@ -324,7 +330,7 @@ div.csl-indent {
 <li><p>In Landsat 8-9: <span class="math inline">\(NDWI = \frac{Band4-Band2}{Band4+band2}\)</span></p></li>
 </ul></li>
 </ul>
-<p>These indicators, are sufficient only for basic analysis demands, to dderive more hidden relations, more modern techniques such as deep learning,<span class="citation" data-cites="ma2019deep">(<a href="references.html#ref-ma2019deep" role="doc-biblioref">Ma et al. 2019</a>)</span> and Semi-supervised representation learning <span class="citation" data-cites="yan2020semi">(<a href="references.html#ref-yan2020semi" role="doc-biblioref">Yan et al. 2020</a>)</span> can also be employed. As for the technical part for this week’s practical, coding part is smooth, however the data collection and alignment do require a high level of dedication to get right at first run.</p>
+<p>These indicators, are sufficient only for basic analysis demands, to derive more hidden relations, more modern techniques such as deep learning,<span class="citation" data-cites="ma2019deep">(<a href="references.html#ref-ma2019deep" role="doc-biblioref">Ma et al. 2019</a>)</span> and Semi-supervised representation learning <span class="citation" data-cites="yan2020semi">(<a href="references.html#ref-yan2020semi" role="doc-biblioref">Yan et al. 2020</a>)</span> can also be employed. Selecting proper metrics in remote sensing for an urban context is crucial in addressing specific planning or built-environment challenges. Among these indices, ARVI, NDWI, EVI, SAVI, MSAVI, NDMI and NDVI are still relevant in the industry and contemporary urban science. NDVI is widely used for monitoring urban vegetation health and urban green space. <span class="citation" data-cites="xue2017significant">(<a href="references.html#ref-xue2017significant" role="doc-biblioref">Xue, Su, et al. 2017</a>)</span> NDWI plays a critical role in urban water body and drought monitoring, it is also important for urban fire prevention.<span class="citation" data-cites="zhu2017change">(<a href="references.html#ref-zhu2017change" role="doc-biblioref">Zhu 2017</a>)</span> As for the technical part for this week’s practical, coding part is smooth, however the data collection and alignment do require a high level of dedication to get right at first run.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
@@ -352,8 +358,14 @@ Qi, Jiaguo, Abdelghani Chehbouni, Alfredo R Huete, Yann H Kerr, and Soroosh Soro
 <div id="ref-wilson2002detection" class="csl-entry" role="listitem">
 Wilson, Emily Hoffhine, and Steven A Sader. 2002. <span>“Detection of Forest Harvest Type Using Multiple Dates of Landsat TM Imagery.”</span> <em>Remote Sensing of Environment</em> 80 (3): 385–96.
 </div>
+<div id="ref-xue2017significant" class="csl-entry" role="listitem">
+Xue, Jinru, Baofeng Su, et al. 2017. <span>“Significant Remote Sensing Vegetation Indices: A Review of Developments and Applications.”</span> <em>Journal of Sensors</em> 2017.
+</div>
 <div id="ref-yan2020semi" class="csl-entry" role="listitem">
 Yan, Peiyao, Feng He, Yajie Yang, and Fei Hu. 2020. <span>“Semi-Supervised Representation Learning for Remote Sensing Image Classification Based on Generative Adversarial Networks.”</span> <em>IEEE Access</em> 8: 54135–44.
+</div>
+<div id="ref-zhu2017change" class="csl-entry" role="listitem">
+Zhu, Zhe. 2017. <span>“Change Detection Using Landsat Time Series: A Review of Frequencies, Preprocessing, Algorithms, and Applications.”</span> <em>ISPRS Journal of Photogrammetry and Remote Sensing</em> 130: 370–84.
 </div>
 </div>
 </section>

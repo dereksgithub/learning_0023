@@ -1,1 +1,1 @@
-Remote Sensing Repo for Learning Diary
+Remote Sensing Module Learning Diary

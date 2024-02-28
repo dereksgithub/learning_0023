@@ -1,32 +1,34 @@
 # Common Acronyms in Remote Sensing {.unnumbered}
 
-ARVI: Atmospherically Resistant Vegetation Index
+[ARVI: Atmospherically Resistant Vegetation Index](week3.qmd)
 
 AVHRR: Advanced Very High Resolution Radiometer
 
-EVI: Enhanced Vegetation Index
+[EVI: Enhanced Vegetation Index](week3.qmd)
 
 GOES: Geostationary Operational Environmental Satellite
 
 GIS: Geographic Information System
 
-GNDVI (Green Normalized Difference Vegetation Index)
+[GNDVI (Green Normalized Difference Vegetation Index)](week3.qmd)
 
 GPS: Global Positioning System
 
 Landsat: Land Satellite
 
-LIDAR: Light Detection and Ranging
+[LiDAR](https://en.wikipedia.org/wiki/Lidar): Light Detection and Ranging
 
 MODIS: Moderate Resolution Imaging Spectroradiometer
 
-MSAVI (Modified Soil-Adjusted Vegetation Index)
+[MSAVI (Modified Soil-Adjusted Vegetation Index)](week3.qmd)
 
-NDMI: Normalized Difference Moisture Index.
+[NDMI: Normalized Difference Moisture Index.](week3.qmd)
 
-NDVI: Normalized Difference Vegetation Index
+[NDVI: Normalized Difference Vegetation Index](week3.qmd)
 
-NDWI (Normalized Difference Water Index)
+[NDWI (Normalized Difference Water Index)](week3.qmd)
+
+NOAA: [National Oceanic and Atmospheric Administration](https://oceanservice.noaa.gov/about/)
 
 PCA: Principal Component Analysis
 
@@ -36,9 +38,11 @@ ROI: Region of Interest
 
 RS: Remote Sensing
 
-SAVI (Soil-Adjusted Vegetation Index)
+[SAVI (Soil-Adjusted Vegetation Index)](week3.qmd)
 
 SNR: Signal to Noise Ratio
+
+[SVM: Support Vector Machine](https://www.youtube.com/watch?v=efR1C6CvhmE)
 
 ```         
 "NOAA": "National Oceanic and Atmospheric Administration",     
@@ -67,5 +71,5 @@ SNR: Signal to Noise Ratio
 "WFS": "Web Feature Service",     
 "API": "Application Programming Interface",    
 "RGB": "Red, Green, Blue",     "IR": "Infrared",     
-"UV": "Ultraviolet",     "",     "SVM": "Support Vector Machine",     "RF": "Random Forest",     "EO": "Earth Observation"
+"UV": "Ultraviolet",     "",          "RF": "Random Forest",     "EO": "Earth Observation"
 ```

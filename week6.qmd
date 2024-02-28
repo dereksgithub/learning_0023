@@ -1,6 +1,6 @@
 # Week 6 Introduction to Google Earth Engine {.unnumbered}
 
-This is a very exciting week, GEE is something that interested me before selecting this module. But that was mostly working alongside GIS folks on previous projects, seeing them making satellite maps with GEE was a curious experience back then.
+This is a very exciting week that I could not physically attend since I was at the CUSP Data Dive (Datathon), GEE is something that interested me before selecting this module. But that was mostly working alongside GIS folks on previous projects, seeing them making satellite maps with GEE was a curious experience back then.
 
 Here is a video that I used for learning GEE:
 
@@ -14,4 +14,16 @@ Here is a video that I used for learning GEE:
 
 ## GEE Case Study Bristol
 
+Practice how to identify the number of power stations similar to the class demo but to Bristol.
+
+Plot time-series for air quality around Bristol
+
 For this week's practical, I continued with Bristol.
+
+note down some of the classifiers, and describe in your own words.
+
+A couple of paragraphs on each method
+
+## Reflection
+
+Using GEE gives me flashbacks to my days on sites for various projects in Melbourne, using near-maps sitting side-by-side with my engineer colleagues, friendly GIS surveyors, coordinating design changes, promoting digital transformation etc. except for that I'm the one this time, using GEE which is a fun ride by the way.
