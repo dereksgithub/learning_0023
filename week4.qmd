@@ -8,7 +8,7 @@ Consequently, my case study, centred around Melbourne and its adjacent suburbs, 
 
 #### Case Study and Policy Implications for the Greater Melbourne Area
 
-The goal for this short study is to explore the forecasting of bush-fire air pollution to areas that may impact the residents and discuss policy implications. Focusing on Melbourne, with framework that includes remote sensing, intended to be integrated with sustainable future planning inspired the use of remote sensing for monitoring urban growth in Perth, WA. [@maclachlan2017urban]
+The goal for this short study is to explore the forecasting of smoke plume bush-fire to areas that may impact the residents and discuss policy implications. Focusing on Melbourne, with framework that includes remote sensing, intended to be integrated with sustainable future planning inspired the use of remote sensing for monitoring urban growth in Perth, WA. [@maclachlan2017urban]
 
 As for the imagery, Sentinel 5P from Copernicus Program is offering sufficient resolutions. In terms of spatial resolution it covers up to a 5.5km x 3.5km area, Sentinel 5P also offers a daily global coverage, (revisits less than one day) providing enough temporal resolution. As for spectral resolution, Sentinel 5P offers accurate quantification of various atmospheric gases and pollutants including carbon monoxide(CO), nitrogen dioxide (NO2), ozone(O3), formaldehyde(HCHO), sulfur dioxide(SO2), methane(CH4) and aerosols thanks to its extensive spectral coverage which includes UV, VIS and NIR bands.[@sentinel] It also possesses radiometric resolution at satisfactory level which enables the sensors on-board to distinguish different levels of signal intensity. The following is a video summary of the 2019 to 2020 bushfire air pollutant spread in Australia which resulted in low AQI in a great portion of the country's residential areas not to mention destruction of many homes. [@tiernan2020australias]
 
@@ -23,7 +23,7 @@ As for the imagery, Sentinel 5P from Copernicus Program is offering sufficient r
 Utilizing the Sentinel 5P data[@trinder2020], this proposed project aligns with the following UN Sustainable Development Goals:
 
 | Contribution (by Implementing Proposed Research/Development)                                                               |    SDG    | Description                                                                                             |
-|:---------------------------|:-------------:|-----------------------------|
+|:-------------------------------|:------------:|---------------------------|
 | Contribute to the prevention of human respiratory damage caused by smogs from burning forest.                              | UN SDG 3  | Good Health and Well-being, ensure people lives a healthy environment, promote well-being for all ages. |
 | Proper monitoring and timely alerts, contributes to the enhancement of the built environment and overall community safety. | UN SDG 11 | Sustainable, resilient, inclusive and safe cities/communities.                                          |
 | Actively monitoring wild fires and smogs produced can offer insights and guidance for mitigation.                          | UN SDG 13 | Take urgent actions against climate change.                                                             |
@@ -41,29 +41,21 @@ As in many regions of the world, residential AQI can be dramatically affected by
 
 As a vibrant metropolis in the state of Victoria, the local councils and state government around the Greater Melbourne Area, has implemented air quality policies aimed at safeguarding the health and well-being of their residents.
 
-![Proposed Workflow Serving as an Add-on to the Current Government Workflow and Policy Stack ](images/wk4_logic_flow.png){fig-align="center" width="481"}
+![Proposed Workflow Serving as an Add-on to the Current Government Workflow and Policy Stack](images/wk4_logic_flow.png){fig-align="center" width="481"}
 
 -   **Environment Protection Amendment Act 2018**: This act introduces a general environmental duty that requires proactive risk management to prevent harm to public health and the environment, including air quality impacts.
 
 -   **EPA Victoria’s AirWatch**: A platform that offers real-time air quality information to the public, including an AQI that categorizes air quality levels and provides health advisories, enabling residents to make informed decisions about outdoor activities.
 
-Proposed Mitigations,
-
-Set up high-feqy sentinel points, forecasting POIs for early air quality alerts prior to polluted air moving near the city area.
-
-set up stations for storing filtering devices/resporitory devices for smokes, and relocation planning for emergency evacuation in case the air gets too smoky.
-
-For emergency planning, techniques oncludes, ABM methods, and identifying routes via satellite images.
-
 **Proposed Mitigation:**
 
-In light of this, our proposal aims to integrate cutting-edge remote sensing technology into Melbourne’s current air quality management workflow, offering a multi-faceted approach to mitigate air pollution risks:
+In light of this,this proposal aims to integrate state-of-art remote sensing technology into Melbourne’s current air quality management workflow, offering a multifaceted approach to mitigate air pollution risks:
 
-1.  **Establishment of High-Frequency Sentinel Points**: By setting up strategically positioned sentinel points equipped with remote sensing capabilities, we propose to advance the forecasting of Points of Interest (POIs) for early air quality alerts. This system will enable the detection of potential air quality deteriorations before polluted air approaches the urban vicinity, allowing for proactive measures to be taken.
+1.  **Establishment of High-Frequency Sentinel Points**: By setting up strategically positioned sentinel points equipped with remote sensing capabilities, we propose to advance the forecasting of Points of Interest (POIs) for early air quality alerts. This system will enable the detection of potential air quality deterioration before polluted air approaches the residential vicinity, allowing for proactive measures to be taken.
 
-2.  **Deployment of Air Filtration and Respiratory Device Stations**: Recognizing the immediate health impacts of poor air quality, we plan to establish stations across key urban and suburban locations for the distribution of air filtering and respiratory devices. These stations will ensure that citizens have timely access to necessary protective equipment against smoke and pollutants.
+2.  **Deployment of Air Filtration and Respiratory Device Stations**: Recognizing the immediate health impacts of poor air quality, we plan to establish stations across key urban and suburban locations for the distribution of air filtering and respiratory devices. These stations will ensure that citizens have timely access to necessary protective equipment against smoke and pollutants. Ideally, the station can be established inside local hospitals or clinics.
 
-3.  **Enhanced Emergency Evacuation Planning**: Our approach incorporates the use of Agent-Based Modeling (ABM) methods alongside satellite imagery analysis to refine emergency evacuation planning. By identifying optimal evacuation routes and safe zones in advance, our system will facilitate efficient relocation strategies during smoky conditions, ensuring public safety and minimizing chaos.
+3.  **Enhanced Emergency Evacuation Planning**: Agent-Based Modeling (ABM) methods alongside satellite imagery analysis will be employed to refine emergency evacuation planning. By identifying optimal evacuation routes and safe zones in advance, the updated workflow will facilitate efficient relocation strategies during smoky conditions, ensuring public safety and minimizing chaos.
 
 **Implementation and Emergency Planning Techniques**:
 
@@ -71,13 +63,13 @@ Our methodology leverages state-of-the-art remote sensing technology, including 
 
 **Conclusion**:
 
-Our proposal represents a significant leap forward in Melbourne’s air quality management efforts, promising to deliver a more resilient, responsive, and health-focused approach. By integrating advanced remote sensing technology into the city's existing workflow, we aim not only to protect the well-being of Melbourne’s citizens but also to set a new standard for urban air quality management worldwide. We are committed to working closely with Melbourne and Victoria's policymakers to realize this vision, ensuring a cleaner, safer, and healthier future for all residents.
+By integrating advanced remote sensing technology into the city's existing workflow, we aim not only to protect the well-being of Melbourne’s citizens but also to set a new standard for urban air quality management worldwide.
 
 ## Reflection
 
-Week 4 practical serves as a taster of the group assessment.
+The exploration of policy and global agenda, combined with the review of current literature, made this week's class and practical for serves as a taster of the group assessment. I have also combed through the literature and policy base briefly, to further analyze the interplay between remote sensing and air quality. Aside from the potential of forecasting emergency air pollution caused by wildfires or other incidents, recent literature has also indicated the transformative potential of remote sensing in air quality monitoring.[@sokhi2022advances] Other researchers has highlighted the application of remote sensing for timely data on aerosol pollutants. [@gupta2006satellite] therfore, the integration of remote sensing air quality monitoring, could also contribute to the approximate verification and robust back-up for ground air quality data collection. [@bechle2013remote] To generalize the impact of urban air quality monitoring with remote sensing, researchers also suggested that remote sensing can be incorporated in the long-term exposure assessment of air pollutants [@van2015use] and be utilized to discover hidden air pollution patterns. [@verma2023urban] The implications of such researches are profound for policy-making, it can even contribute to a more data-driven paradigm shift as the data-driven planning. By leveraging remote sensing data, policymakers can benefit from timely and accurate information on the hazardous smoke plumes, their potential movement patterns and impact on overall urban air quality.
 
-Good exposure to policy and global agenda alignment with remote sensing/RS data analysis.
+In summary, the exploration of air quality monitoring, policy interventions, and remote sensing, opens up a new realm of environmental protection and policy implementation. It exemplifies the innovation synergy between technology and policy by introducing remote sensing data analysis to both local and global environmental strategies.
 
 ## Concept Illustration Video
 
@@ -92,7 +84,3 @@ As a rather off-track side-quest, I also generated this with text-prompt on [Sta
 </p>
 
 It is not a geographically accurate depiction as the forest distribution is clearly off, but as a measure for quickly formatting initial illustrations the current development is beyond my expectation.
-
-One more meme:
-
-![Me using week 6-7 knowledge for parts of week 4 learning diary ([credit](https://tenor.com/view/my-goals-are-beyond-your-understanding-the-flash-the-reverse-flash-what-do-you-want-with-the-tachyonic-particles-gif-16637160))](images/off_topic_meme.gif){fig-align="center"}

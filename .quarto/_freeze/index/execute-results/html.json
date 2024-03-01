@@ -2,9 +2,7 @@
   "hash": "090c4a9e15f83aa57135c20d69e83d78",
   "result": {
     "markdown": "# Preface {.unnumbered}\n\nA few disclaimers:\n\nSpecial thanks:\n\nTo learn more about Quarto books visit <https://quarto.org/docs/books>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nprint(\"hello this is Week 1\")\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] \"hello this is Week 1\"\n```\n:::\n:::\n",
-    "supporting": [
-      "index_files"
-    ],
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

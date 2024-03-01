@@ -169,13 +169,31 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 7 Classification with Google Earth Engine</span></a>
+ <span class="menu-text">Week 7 Classification</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 8 Classification with Google Earth Engine</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 9 SAR</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 10 Group Presentation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Summary</span></a>
+ <span class="menu-text">CASA0023 Term Recap</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -232,7 +250,7 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="wildfire-monitoring-for-air-quality-with-remote-sensing">Wildfire Monitoring for Air Quality with Remote Sensing</h2>
 <section id="case-study-and-policy-implications-for-the-greater-melbourne-area" class="level4">
 <h4 class="anchored" data-anchor-id="case-study-and-policy-implications-for-the-greater-melbourne-area">Case Study and Policy Implications for the Greater Melbourne Area</h4>
-<p>The goal for this short study is to explore the forecasting of bush-fire air pollution to areas that may impact the residents and discuss policy implications. Focusing on Melbourne, with framework that includes remote sensing, intended to be integrated with sustainable future planning inspired the use of remote sensing for monitoring urban growth in Perth, WA. <span class="citation" data-cites="maclachlan2017urban">(<a href="references.html#ref-maclachlan2017urban" role="doc-biblioref">MacLachlan et al. 2017</a>)</span></p>
+<p>The goal for this short study is to explore the forecasting of smoke plume bush-fire to areas that may impact the residents and discuss policy implications. Focusing on Melbourne, with framework that includes remote sensing, intended to be integrated with sustainable future planning inspired the use of remote sensing for monitoring urban growth in Perth, WA. <span class="citation" data-cites="maclachlan2017urban">(<a href="references.html#ref-maclachlan2017urban" role="doc-biblioref">MacLachlan et al. 2017</a>)</span></p>
 <p>As for the imagery, Sentinel 5P from Copernicus Program is offering sufficient resolutions. In terms of spatial resolution it covers up to a 5.5km x 3.5km area, Sentinel 5P also offers a daily global coverage, (revisits less than one day) providing enough temporal resolution. As for spectral resolution, Sentinel 5P offers accurate quantification of various atmospheric gases and pollutants including carbon monoxide(CO), nitrogen dioxide (NO2), ozone(O3), formaldehyde(HCHO), sulfur dioxide(SO2), methane(CH4) and aerosols thanks to its extensive spectral coverage which includes UV, VIS and NIR bands.<span class="citation" data-cites="sentinel">(<a href="references.html#ref-sentinel" role="doc-biblioref">Victoria 2019</a>)</span> It also possesses radiometric resolution at satisfactory level which enables the sensors on-board to distinguish different levels of signal intensity. The following is a video summary of the 2019 to 2020 bushfire air pollutant spread in Australia which resulted in low AQI in a great portion of the country’s residential areas not to mention destruction of many homes. <span class="citation" data-cites="tiernan2020australias">(<a href="references.html#ref-tiernan2020australias" role="doc-biblioref">Tiernan and O’Mallon 2020</a>)</span></p>
 <p align="center">
 <iframe width="530" height="300" src="https://www.youtube.com/embed/CqNhaan26t8?si=M27xHFCWYwcrPdx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
@@ -241,9 +259,9 @@ div.csl-indent {
 <p>Utilizing the Sentinel 5P data<span class="citation" data-cites="trinder2020">(<a href="references.html#ref-trinder2020" role="doc-biblioref">Trinder and Liu 2020</a>)</span>, this proposed project aligns with the following UN Sustainable Development Goals:</p>
 <table class="table">
 <colgroup>
-<col style="width: 38%">
-<col style="width: 20%">
-<col style="width: 40%">
+<col style="width: 43%">
+<col style="width: 19%">
+<col style="width: 36%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -297,15 +315,27 @@ div.csl-indent {
 <figcaption class="figure-caption">Proposed Workflow Serving as an Add-on to the Current Government Workflow and Policy Stack</figcaption>
 </figure>
 </div>
-<p>Proposed Mitigations,</p>
-<p>Set up high-feqy sentinel points, forecasting POIs for early air quality alerts prior to polluted air moving near the city area.</p>
-<p>set up stations for storing filtering devices/resporitory devices for smokes, and relocation planning for emergency evacuation in case the air gets too smoky.</p>
-<p>For emergency planning, techniques oncludes, ABM methods, and identifying routes via satellite images.</p>
+<ul>
+<li><p><strong>Environment Protection Amendment Act 2018</strong>: This act introduces a general environmental duty that requires proactive risk management to prevent harm to public health and the environment, including air quality impacts.</p></li>
+<li><p><strong>EPA Victoria’s AirWatch</strong>: A platform that offers real-time air quality information to the public, including an AQI that categorizes air quality levels and provides health advisories, enabling residents to make informed decisions about outdoor activities.</p></li>
+</ul>
+<p><strong>Proposed Mitigation:</strong></p>
+<p>In light of this,this proposal aims to integrate state-of-art remote sensing technology into Melbourne’s current air quality management workflow, offering a multifaceted approach to mitigate air pollution risks:</p>
+<ol type="1">
+<li><p><strong>Establishment of High-Frequency Sentinel Points</strong>: By setting up strategically positioned sentinel points equipped with remote sensing capabilities, we propose to advance the forecasting of Points of Interest (POIs) for early air quality alerts. This system will enable the detection of potential air quality deterioration before polluted air approaches the residential vicinity, allowing for proactive measures to be taken.</p></li>
+<li><p><strong>Deployment of Air Filtration and Respiratory Device Stations</strong>: Recognizing the immediate health impacts of poor air quality, we plan to establish stations across key urban and suburban locations for the distribution of air filtering and respiratory devices. These stations will ensure that citizens have timely access to necessary protective equipment against smoke and pollutants. Ideally, the station can be established inside local hospitals or clinics.</p></li>
+<li><p><strong>Enhanced Emergency Evacuation Planning</strong>: Agent-Based Modeling (ABM) methods alongside satellite imagery analysis will be employed to refine emergency evacuation planning. By identifying optimal evacuation routes and safe zones in advance, the updated workflow will facilitate efficient relocation strategies during smoky conditions, ensuring public safety and minimizing chaos.</p></li>
+</ol>
+<p><strong>Implementation and Emergency Planning Techniques</strong>:</p>
+<p>Our methodology leverages state-of-the-art remote sensing technology, including the analysis of satellite data from platforms such as Sentinel-5P, to offer unparalleled insights into air quality dynamics. The integration of ABM methods will further enhance our predictive capabilities, allowing for the simulation of various scenarios and the formulation of robust emergency response strategies.</p>
+<p><strong>Conclusion</strong>:</p>
+<p>By integrating advanced remote sensing technology into the city’s existing workflow, we aim not only to protect the well-being of Melbourne’s citizens but also to set a new standard for urban air quality management worldwide.</p>
 </section>
 </section>
 <section id="reflection" class="level2">
 <h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
-<p>Week 4 practical is a</p>
+<p>The exploration of policy and global agenda, combined with the review of current literature, made this week’s class and practical for serves as a taster of the group assessment. I have also combed through the literature and policy base briefly, to further analyze the interplay between remote sensing and air quality. Aside from the potential of forecasting emergency air pollution caused by wildfires or other incidents, recent literature has also indicated the transformative potential of remote sensing in air quality monitoring.<span class="citation" data-cites="sokhi2022advances">(<a href="references.html#ref-sokhi2022advances" role="doc-biblioref">Sokhi et al. 2022</a>)</span> Other researchers has highlighted the application of remote sensing for timely data on aerosol pollutants. <span class="citation" data-cites="gupta2006satellite">(<a href="references.html#ref-gupta2006satellite" role="doc-biblioref">Gupta et al. 2006</a>)</span> therfore, the integration of remote sensing air quality monitoring, could also contribute to the approximate verification and robust back-up for ground air quality data collection. <span class="citation" data-cites="bechle2013remote">(<a href="references.html#ref-bechle2013remote" role="doc-biblioref">Bechle, Millet, and Marshall 2013</a>)</span> To generalize the impact of urban air quality monitoring with remote sensing, researchers also suggested that remote sensing can be incorporated in the long-term exposure assessment of air pollutants <span class="citation" data-cites="van2015use">(<a href="references.html#ref-van2015use" role="doc-biblioref">Van Donkelaar et al. 2015</a>)</span> and be utilized to discover hidden air pollution patterns. <span class="citation" data-cites="verma2023urban">(<a href="references.html#ref-verma2023urban" role="doc-biblioref">Verma et al. 2023</a>)</span> The implications of such researches are profound for policy-making, it can even contribute to a more data-driven paradigm shift as the data-driven planning. By leveraging remote sensing data, policymakers can benefit from timely and accurate information on the hazardous smoke plumes, their potential movement patterns and impact on overall urban air quality.</p>
+<p>In summary, the exploration of air quality monitoring, policy interventions, and remote sensing, opens up a new realm of environmental protection and policy implementation. It exemplifies the innovation synergy between technology and policy by introducing remote sensing data analysis to both local and global environmental strategies.</p>
 </section>
 <section id="concept-illustration-video" class="level2">
 <h2 class="anchored" data-anchor-id="concept-illustration-video">Concept Illustration Video</h2>
@@ -315,16 +345,15 @@ div.csl-indent {
 </iframe>
 </p>
 <p>It is not a geographically accurate depiction as the forest distribution is clearly off, but as a measure for quickly formatting initial illustrations the current development is beyond my expectation.</p>
-<p>One more meme:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/off_topic_meme.gif" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Me using week 6-7 knowledge for parts of week 4 learning diary (<a href="https://tenor.com/view/my-goals-are-beyond-your-understanding-the-flash-the-reverse-flash-what-do-you-want-with-the-tachyonic-particles-gif-16637160">credit</a>)</figcaption>
-</figure>
-</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-bechle2013remote" class="csl-entry" role="listitem">
+Bechle, Matthew J, Dylan B Millet, and Julian D Marshall. 2013. <span>“Remote Sensing of Exposure to NO2: Satellite Versus Ground-Based Measurement in a Large Urban Area.”</span> <em>Atmospheric Environment</em> 69: 345–53.
+</div>
+<div id="ref-gupta2006satellite" class="csl-entry" role="listitem">
+Gupta, Pawan, Sundar A Christopher, Jun Wang, Robert Gehrig, YC Lee, and Naresh Kumar. 2006. <span>“Satellite Remote Sensing of Particulate Matter and Air Quality Assessment over Global Cities.”</span> <em>Atmospheric Environment</em> 40 (30): 5880–92.
+</div>
 <div id="ref-kochanski2021integration" class="csl-entry" role="listitem">
 Kochanski, Adam K, Farren Herron-Thorpe, Derek V Mallia, Jan Mandel, and Joseph K Vaughan. 2021. <span>“Integration of a Coupled Fire-Atmosphere Model into a Regional Air Quality Forecasting System for Wildfire Events.”</span> <em>Frontiers in Forests and Global Change</em> 4: 728726.
 </div>
@@ -334,11 +363,20 @@ MacLachlan, Andrew, Eloise Biggs, Gareth Roberts, and Bryan Boruff. 2017. <span>
 <div id="ref-milne1986use" class="csl-entry" role="listitem">
 Milne, Anthony Kinnaird. 1986. <span>“The Use of Remote Sensing in Mapping and Monitoring Vegetational Change Associated with Bushfire Events in Eastern Australia.”</span> <em>Geocarto International</em> 1 (1): 25–32.
 </div>
+<div id="ref-sokhi2022advances" class="csl-entry" role="listitem">
+Sokhi, Ranjeet S, Nicolas Moussiopoulos, Alexander Baklanov, John Bartzis, Isabelle Coll, Sandro Finardi, Rainer Friedrich, et al. 2022. <span>“Advances in Air Quality Research–Current and Emerging Challenges.”</span> <em>Atmospheric Chemistry and Physics</em> 22 (7): 4615–4703.
+</div>
 <div id="ref-tiernan2020australias" class="csl-entry" role="listitem">
 Tiernan, Finbar, and Eamonn O’Mallon. 2020. <span>“Australia’s 2019–20 Bushfire Season.”</span> <em>The Canberra Times</em>, January. <a href="https://www.canberratimes.com.au/story/6600958/australias-2019-20-bushfire-season/">https://www.canberratimes.com.au/story/6600958/australias-2019-20-bushfire-season/</a>.
 </div>
 <div id="ref-trinder2020" class="csl-entry" role="listitem">
 Trinder, John, and Qingxiang Liu. 2020. <span>“Assessing Environmental Impacts of Urban Growth Using Remote Sensing.”</span> <em>Geo-Spatial Information Science</em> 23 (1): 20–39. <a href="https://doi.org/10.1080/10095020.2019.1710438">https://doi.org/10.1080/10095020.2019.1710438</a>.
+</div>
+<div id="ref-van2015use" class="csl-entry" role="listitem">
+Van Donkelaar, Aaron, Randall V Martin, Michael Brauer, and Brian L Boys. 2015. <span>“Use of Satellite Observations for Long-Term Exposure Assessment of Global Concentrations of Fine Particulate Matter.”</span> <em>Environmental Health Perspectives</em> 123 (2): 135–43.
+</div>
+<div id="ref-verma2023urban" class="csl-entry" role="listitem">
+Verma, Sunita, Tanu Gangwar, Janhavi Singh, Divya Prakash, and Swagata Payra. 2023. <span>“Urban Air Quality Monitoring and Modelling Using Ground Monitoring, Remote Sensing, and GIS.”</span> In <em>Geospatial Analytics for Environmental Pollution Modeling: Analysis, Control and Management</em>, 213–47. Springer.
 </div>
 <div id="ref-sentinel" class="csl-entry" role="listitem">
 Victoria, Environmental Protection Authority. 2019. <span>“EPA AirWatc.”</span> <a href="https://www.epa.vic.gov.au/for-community/airwatch">https://www.epa.vic.gov.au/for-community/airwatch</a>.
