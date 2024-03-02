@@ -3,26 +3,30 @@ project:
   output-dir: docs
 
 book:
-  title: "CASA 0023 Remote Sensing Learning Diary"
-  author: "Mengyu Ding"
+  title: "CASA0023 Remote Sensing \n Learning Diary"
+  author: "[Mengyu Ding](https://github.com/dereksgithub)"
   date: "2024-02-01"
   chapters:
     - index.qmd
     - intro.qmd
-    - week1.qmd
-    - week2.qmd
-    - week3.qmd
-    - week4.qmd
-    - week5.qmd
-    - week6.qmd
-    - week7.qmd
-    - week8.qmd
-    - week9.qmd
+    - part: "I. Intro to Remote Sensing"
+      chapters: 
+        - week1.qmd
+        - week2.qmd
+        - week3.qmd
+        - week4.qmd
+        - week5.qmd
+    - part: "II. Remote Sensing with GEE"
+      chapters:
+      - week6.qmd
+      - week7.qmd
+      - week8.qmd
+      - week9.qmd
     - week10.qmd
     - summary.qmd
     - rs_acronym.qmd
     - references.qmd
-
+  repo-url: https://github.com/dereksgithub/learning_0023
 bibliography: references.bib
 
 format:
