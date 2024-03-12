@@ -1,29 +1,119 @@
 # Week 6 Introduction to Google Earth Engine {.unnumbered}
 
-This is a very exciting week that I could not physically attend since I was at the CUSP Data Dive (Datathon), GEE is something that interested me before selecting this module. But that was mostly working alongside GIS folks on previous projects, seeing them making satellite maps with GEE was a curious experience back then.
+This is a very exciting week that I could not physically attend since I was at the CUSP Data Dive (Datathon), GEE is something that interested me before selecting this module.
 
-Here is a video that I used for learning GEE:
+## Javascript and GEE
 
-<p align="center">
+Javascript is the main language used to
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Tas0c4e_E0M?si=4eGMSoAuKDTMLE3L&amp;start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+tbh kind like Java, this helps in terms of me getting myself familiar with the code.
+
+## GEE Case Study Bristol
+
+### Air Quality
+
+First, I gathered air quality data over Bristol. But the resolution from Sentinel 5P was not ideal, thus I zoomed out in order to find places with high NO2 levels, in the end, even London is included.
+
+![NO2 Level Over Bristol to London from Sentinel 5P](images/wk06_NO2.png){width="1092"}
+
+### NDVI and NDWI
+
+### Putting Everything Together
+
+I also packed these layers with in [this app](https://ee-mengyu-derek-ding.projects.earthengine.app/view/brsitol-ndvindwiarvisavi-lookup) for Bristol:
+
+<p align="left">
+
+<iframe title="vimeo-player" width="780" height="600" src="https://ee-mengyu-derek-ding.projects.earthengine.app/view/brsitol-ndvindwiarvisavi-lookup" title="GEE App Bristol Look-up" frameborder="0">
 
 </iframe>
 
 </p>
 
-## GEE Case Study Bristol
-
-Practice how to identify the number of power stations similar to the class demo but to Bristol.
-
 Plot time-series for air quality around Bristol
 
 For this week's practical, I continued with Bristol.
 
-note down some of the classifiers, and describe in your own words.
+This is what I used to add legend, I have hence modified it and made it into a dedicated
 
-A couple of paragraphs on each method
+``` js
+// set position of panel for ndvi:
+var legend = ui.Panel({
+style: {
+position: 'bottom-left',
+padding: '8px 15px'
+}
+});
+
+// Create legend title
+var legendTitle = ui.Label({
+value: 'NDVI',
+style: {
+fontWeight: 'bold',
+fontSize: '18px',
+margin: '0 0 4px 0',
+padding: '0'
+}
+});
+
+// Add the title to the panel
+legend.add(legendTitle);
+
+// create vizualization parameters
+//var viz = {min:0, max:3500, palette:['ffffff','b7f0ae','21f600','0000FF','FDFF92','FF2700','d600ff']};
+
+// create the legend image
+var lon = ee.Image.pixelLonLat().select('latitude');
+var gradient = lon.multiply((ndviVis.max-ndviVis.min)/100.0).add(ndviVis.min);
+var legendImage = gradient.visualize(ndviVis);
+
+// create text on top of legend
+var panel = ui.Panel({
+widgets: [
+ui.Label(ndviVis['max'])
+],
+});
+ 
+legend.add(panel);
+
+// create thumbnail from the image
+var thumbnail = ui.Thumbnail({
+image: legendImage,
+params: {bbox:'0,0,10,100', dimensions:'10x200'},
+style: {padding: '1px', position: 'bottom-center'}
+});
+ 
+// add the thumbnail to the legend
+legend.add(thumbnail);
+ 
+// create text on top of legend
+var panel = ui.Panel({
+widgets: [
+ui.Label(ndviVis['min'])
+],
+});
+ 
+legend.add(panel);
+ 
+Map.add(legend);
+```
+
+Derived from: [Open Geo Blog](https://mygeoblog.com/2016/12/09/add-a-legend-to-to-your-gee-map/).
+
+I used created the following colour code gradients for the four metrics from this [website](https://www.color-hex.com/).
+
+``` js
+// NDVI visualization parameters
+var ndviVis = {
+  min: -1, // Adjust the minimum NDVI value as needed
+  max: 1,  // Adjust the maximum NDVI value as needed
+  //palette: ['ffffff', 'e6fdec', 'cefcda',  'b5fbc7', '9dfab5', '85f9a2', '6cf890', '54f77d', '3bf66a', '23f558', '0bf446']
+  palette: ['ffffff','e5f5e9','ccecd4','b3e2bf','9ad9aa','81d095','68c67f','4fbd6a','36b355','1daa40','04a12b']
+};
+```
+
+A couple of paragraphs on each classification method.
 
 ## Reflection
 
-Using GEE gives me flashbacks to my days on sites for various projects in Melbourne, using near-maps sitting side-by-side with my engineer colleagues, friendly GIS surveyors, coordinating design changes, promoting digital transformation etc. except for that I'm the one this time, using GEE which is a fun ride by the way.
+Employing Google Earth Engine (GEE) certainly rekindles memories of my extensive collaborative efforts on diverse projects in Melbourne. During those projects, I relied on Nearmaps to corrdinate with the design team and worked closely alongside engineers and GIS specialists. Together, we organised design modifications and championed the digital transformation of urban planning processes. Unlike those days when my role was more supervisory and collaborative, I now find myself directly engaged with GEE, utilizing its powerful remote sensing capabilities for urban analysis and environmental applications.

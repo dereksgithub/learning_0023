@@ -16,6 +16,8 @@ The values of the estimated minimum digital number (DN) across the image for Ban
 
 ![Corrected Bristol Area for Landsat 8 (Or a large area that includes Bristol)](images/000010.png){fig-align="center" width="648"}
 
+### Merging Images
+
 In the second part of the practical, I downloaded Landsat 8 and 9, L2, with cloud cover 0 to 5% taken at Nov/25/2023 and Sep/05/2023 respectively.
 
 ![NDVI at different levels](images/ndvi_allplots.png){fig-align="center" width="593"}
@@ -30,11 +32,13 @@ The first 3 components contain 86.6% of variances.
 
 ![PCA Result Plots](images/wk3_1st_pca_plot.png){fig-align="center" width="648"}
 
+### GLCM
+
 Using glcm to perform texture analysis for Landsat images. Homogeneity measures the closeness of the distribution of elements in the GLCM to the GLCM diagonal, indicating areas where pixel values are similar to their neighbors, while reflecting uniform textures within the image. Second moment, or energy, quantifies texture uniformity an indicator where higher values denote areas with more consistent or smooth textures. Correlation assesses how a pixel's value is predictably related to its neighbors, with high values indicating a linear or predictable relationship in gray-level values across the texture. For GLCM, Mean refers to the average intensity or gray level within the analyzed window, offering insights into the overall brightness or reflectance of the area being studied.
 
 ![GLCM 4 Methods](images/glcm.png){fig-align="center" width="648"}
 
-## Reflection
+## Summary of Indices
 
 Normalized Difference Vegetation Index (NDVI) is a remote sensing index that measures the health and density of vegetation on the Earth's surface. NIR represents the near-infrared light reflected by vegetation, and RED represents the visible red light reflected by vegetation.
 
@@ -70,7 +74,7 @@ Aside from the NDVI, here are some other indicators that I have investigated and
 
     -   In Landsat 8-9: $SAVI - \frac{2*Band5 + 1 - \sqrt{(Band5+1)^2 -8*(Band5-Band4)}}{2}$
 
--   **GNDVI (Green Normalized Difference Vegetation Index)** focuses on chlorophyll content, primarily on the green spectral region for enahnced sensitivity to vegetation density. [@gitelson1996use]
+-   **GNDVI (Green Normalized Difference Vegetation Index)** focuses on chlorophyll content, primarily on the green spectral region for enhanced sensitivity to vegetation density. [@gitelson1996use]
 
     -   $$NDVI = \frac{NIR - Green}{NIR +Green}$$
 
@@ -88,4 +92,8 @@ Aside from the NDVI, here are some other indicators that I have investigated and
 
     -   In Landsat 8-9: $NDWI = \frac{Band4-Band2}{Band4+band2}$
 
-These indicators, are sufficient only for basic analysis demands, to derive more hidden relations, more modern techniques such as deep learning,[@ma2019deep] and Semi-supervised representation learning [@yan2020semi] can also be employed. Selecting proper metrics in remote sensing for an urban context is crucial in addressing specific planning or built-environment challenges. Among these indices, ARVI, NDWI, EVI, SAVI, MSAVI, NDMI and NDVI are still relevant in the industry and contemporary urban science. NDVI is widely used for monitoring urban vegetation health and urban green space. [@xue2017significant] NDWI plays a critical role in urban water body and drought monitoring, it is also important for urban fire prevention.[@zhu2017change] As for the technical part for this week's practical, coding part is smooth, however the data collection and alignment do require a high level of dedication to get right at first run.
+These indicators, are sufficient only for basic analysis demands, to derive more hidden relations, more modern techniques such as deep learning,[@ma2019deep] and Semi-supervised representation learning [@yan2020semi] can also be employed.
+
+## Reflection
+
+Integrating the most appropriate remote sensing metrics for urban analytics is pivotal effective city planning or addressing other built-environment challenges. Among these measures, NDVI as is widely used for monitoring urban vegetation and urban green space,[@xue2017significant] whereas NDWI plays a critical role in urban water body and drought monitoring, it is also important for urban fire prevention.[@zhu2017change] Other metrics, such as ARVI, EVI, SAVI, MSAVI, and NDMI are still relevant in the industry and contemporary urban science, but recent studies call for both enhancement of the indices and nuanced applications. As suggested in many publications, such correction methods can be further refined to optimized the data contamination brought by atmospheric or other factors. @zhou2021optimal proposed the use of HANTS model (Harmonic Analysis of Time Series) to further optimize the parameter settings for NDVI reconstruction at a global scale and over longer period of time. Such methods are unique and well-rooted under today's hype of LLM or "trying DL/complex machine learning frameworks on all problems". Thus, investigations on further optimising the traditional correction methods with explainable models future research remains relevant and important.

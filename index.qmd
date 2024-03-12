@@ -1,6 +1,6 @@
 # Overview {.unnumbered}
 
-This is the diary for CASA0023 Remotely Sensing Cities and Environments.
+This is the learning diary for CASA0023 Remotely Sensing Cities and Environments.
 
 ## Table of Content
 
@@ -12,8 +12,8 @@ This is the diary for CASA0023 Remotely Sensing Cities and Environments.
     -   [Week 4 Remote Sensing and Policy Implications](week4.qmd)
     -   [Week 5 More on Temperature and Group Work Discussion](week5.qmd)
 -   Part II. Remote Sensing with GEE
-    -   Week 6
-    -   Week 7
+    -   [Week 6 Introduction to Google Earth Engine](week6.qmd)
+    -   [Week 7 Classification with GEE Part 1](week7.qmd)
     -   [Week 8 Classification with GEE Part 2](week8.qmd)
     -   [Week 9 Synthetic Aperture Radar](week9.qmd)
 -   [Week 10 Group Presentation Week](week10.qmd)

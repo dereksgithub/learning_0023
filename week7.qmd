@@ -1,3 +1,27 @@
-# Week 7 Classification {.unnumbered}
+# Week 7 Classification with Google Earth Engine I {.unnumbered}
 
-Find studies that use GEE with classification
+For this week's diary, find studies that use GEE with classification
+
+Existing study using classification GEE, critique/pros/cons
+
+note down some of the classifiers, and describe in your own words.
+
+Summarize how I would like to use for other research
+
+Your own case not the focus,
+
+theory extension / literature
+
+RF – Boosting — CNN
+
+1.     Add more Critiques to the literature you reviewed, extend the current research.
+
+2.     Structure the contents better, give a clear architecture on the right sides of the webpage.
+
+## Classification Methods I
+
+In the context of remote sensing, there are several classification methods, ranging from logistic regression to
+
+## Classification in a Remote Sensing Context
+
+Current

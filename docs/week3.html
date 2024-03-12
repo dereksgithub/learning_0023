@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CASA 0023 Remote Sensing Learning Diary - Week 3 Atmosphere Corrections</title>
+<title>CASA0023 Remote Sensing Learning Diary - Week 3 Atmosphere Corrections</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -110,7 +110,10 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">CASA 0023 Remote Sensing Learning Diary</a> 
+      <a href="./">CASA0023 Remote Sensing Learning Diary</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/dereksgithub/learning_0023" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -191,19 +194,19 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 7 Classification</span></a>
+ <span class="menu-text">Week 7 Classification with Google Earth Engine I</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 8 Classification with Google Earth Engine Part 2</span></a>
+ <span class="menu-text">Week 8 Classification with Google Earth Engine II</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week9.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 9 SAR</span></a>
+ <span class="menu-text">Week 9 Synthetic Aperture Radar</span></a>
   </div>
 </li>
       </ul>
@@ -211,7 +214,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 10 Group Presentation Week</span></a>
+ <span class="menu-text">Week 10 Group Presentations</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -242,7 +245,12 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#case-study-of-bristol---continued" id="toc-case-study-of-bristol---continued" class="nav-link active" data-scroll-target="#case-study-of-bristol---continued">Case Study of Bristol - Continued</a></li>
+  <li><a href="#case-study-of-bristol---continued" id="toc-case-study-of-bristol---continued" class="nav-link active" data-scroll-target="#case-study-of-bristol---continued">Case Study of Bristol - Continued</a>
+  <ul class="collapse">
+  <li><a href="#merging-images" id="toc-merging-images" class="nav-link" data-scroll-target="#merging-images">Merging Images</a></li>
+  <li><a href="#glcm" id="toc-glcm" class="nav-link" data-scroll-target="#glcm">GLCM</a></li>
+  </ul></li>
+  <li><a href="#summary-of-indices" id="toc-summary-of-indices" class="nav-link" data-scroll-target="#summary-of-indices">Summary of Indices</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
   </ul>
 </nav>
@@ -291,6 +299,8 @@ div.csl-indent {
 <figcaption class="figure-caption">Corrected Bristol Area for Landsat 8 (Or a large area that includes Bristol)</figcaption>
 </figure>
 </div>
+<section id="merging-images" class="level3">
+<h3 class="anchored" data-anchor-id="merging-images">Merging Images</h3>
 <p>In the second part of the practical, I downloaded Landsat 8 and 9, L2, with cloud cover 0 to 5% taken at Nov/25/2023 and Sep/05/2023 respectively.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -318,6 +328,9 @@ div.csl-indent {
 <figcaption class="figure-caption">PCA Result Plots</figcaption>
 </figure>
 </div>
+</section>
+<section id="glcm" class="level3">
+<h3 class="anchored" data-anchor-id="glcm">GLCM</h3>
 <p>Using glcm to perform texture analysis for Landsat images. Homogeneity measures the closeness of the distribution of elements in the GLCM to the GLCM diagonal, indicating areas where pixel values are similar to their neighbors, while reflecting uniform textures within the image. Second moment, or energy, quantifies texture uniformity an indicator where higher values denote areas with more consistent or smooth textures. Correlation assesses how a pixel’s value is predictably related to its neighbors, with high values indicating a linear or predictable relationship in gray-level values across the texture. For GLCM, Mean refers to the average intensity or gray level within the analyzed window, offering insights into the overall brightness or reflectance of the area being studied.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -326,8 +339,9 @@ div.csl-indent {
 </figure>
 </div>
 </section>
-<section id="reflection" class="level2">
-<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+</section>
+<section id="summary-of-indices" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-indices">Summary of Indices</h2>
 <p>Normalized Difference Vegetation Index (NDVI) is a remote sensing index that measures the health and density of vegetation on the Earth’s surface. NIR represents the near-infrared light reflected by vegetation, and RED represents the visible red light reflected by vegetation.</p>
 <p><span class="math inline">\(NDVI = \frac{(NIR - RED)}{(NIR+RED)}\)</span></p>
 <p>Aside from the NDVI, here are some other indicators that I have investigated and summarized:</p>
@@ -354,7 +368,7 @@ div.csl-indent {
 <li><p><span class="math inline">\(MSAVI = \frac{2*NIR + 1 - \sqrt{(2*NIR+1)-8*(NIR-RED)}}{2}\)</span></p></li>
 <li><p>In Landsat 8-9: <span class="math inline">\(SAVI - \frac{2*Band5 + 1 - \sqrt{(Band5+1)^2 -8*(Band5-Band4)}}{2}\)</span></p></li>
 </ul></li>
-<li><p><strong>GNDVI (Green Normalized Difference Vegetation Index)</strong> focuses on chlorophyll content, primarily on the green spectral region for enahnced sensitivity to vegetation density. <span class="citation" data-cites="gitelson1996use">(<a href="references.html#ref-gitelson1996use" role="doc-biblioref">Gitelson, Kaufman, and Merzlyak 1996</a>)</span></p>
+<li><p><strong>GNDVI (Green Normalized Difference Vegetation Index)</strong> focuses on chlorophyll content, primarily on the green spectral region for enhanced sensitivity to vegetation density. <span class="citation" data-cites="gitelson1996use">(<a href="references.html#ref-gitelson1996use" role="doc-biblioref">Gitelson, Kaufman, and Merzlyak 1996</a>)</span></p>
 <ul>
 <li><p><span class="math display">\[NDVI = \frac{NIR - Green}{NIR +Green}\]</span></p></li>
 <li><p>Landsat 8-9: <span class="math inline">\(NDMI =\frac{Band5 - Band3}{Band5 + Band3}\)</span></p></li>
@@ -370,7 +384,11 @@ div.csl-indent {
 <li><p>In Landsat 8-9: <span class="math inline">\(NDWI = \frac{Band4-Band2}{Band4+band2}\)</span></p></li>
 </ul></li>
 </ul>
-<p>These indicators, are sufficient only for basic analysis demands, to derive more hidden relations, more modern techniques such as deep learning,<span class="citation" data-cites="ma2019deep">(<a href="references.html#ref-ma2019deep" role="doc-biblioref">Ma et al. 2019</a>)</span> and Semi-supervised representation learning <span class="citation" data-cites="yan2020semi">(<a href="references.html#ref-yan2020semi" role="doc-biblioref">Yan et al. 2020</a>)</span> can also be employed. Selecting proper metrics in remote sensing for an urban context is crucial in addressing specific planning or built-environment challenges. Among these indices, ARVI, NDWI, EVI, SAVI, MSAVI, NDMI and NDVI are still relevant in the industry and contemporary urban science. NDVI is widely used for monitoring urban vegetation health and urban green space. <span class="citation" data-cites="xue2017significant">(<a href="references.html#ref-xue2017significant" role="doc-biblioref">Xue, Su, et al. 2017</a>)</span> NDWI plays a critical role in urban water body and drought monitoring, it is also important for urban fire prevention.<span class="citation" data-cites="zhu2017change">(<a href="references.html#ref-zhu2017change" role="doc-biblioref">Zhu 2017</a>)</span> As for the technical part for this week’s practical, coding part is smooth, however the data collection and alignment do require a high level of dedication to get right at first run.</p>
+<p>These indicators, are sufficient only for basic analysis demands, to derive more hidden relations, more modern techniques such as deep learning,<span class="citation" data-cites="ma2019deep">(<a href="references.html#ref-ma2019deep" role="doc-biblioref">Ma et al. 2019</a>)</span> and Semi-supervised representation learning <span class="citation" data-cites="yan2020semi">(<a href="references.html#ref-yan2020semi" role="doc-biblioref">Yan et al. 2020</a>)</span> can also be employed.</p>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>Integrating the most appropriate remote sensing metrics for urban analytics is pivotal effective city planning or addressing other built-environment challenges. Among these measures, NDVI as is widely used for monitoring urban vegetation and urban green space,<span class="citation" data-cites="xue2017significant">(<a href="references.html#ref-xue2017significant" role="doc-biblioref">Xue, Su, et al. 2017</a>)</span> whereas NDWI plays a critical role in urban water body and drought monitoring, it is also important for urban fire prevention.<span class="citation" data-cites="zhu2017change">(<a href="references.html#ref-zhu2017change" role="doc-biblioref">Zhu 2017</a>)</span> Other metrics, such as ARVI, EVI, SAVI, MSAVI, and NDMI are still relevant in the industry and contemporary urban science, but recent studies call for both enhancement of the indices and nuanced applications. As suggested in many publications, such correction methods can be further refined to optimized the data contamination brought by atmospheric or other factors. <span class="citation" data-cites="zhou2021optimal">Zhou et al. (<a href="references.html#ref-zhou2021optimal" role="doc-biblioref">2021</a>)</span> proposed the use of HANTS model (Harmonic Analysis of Time Series) to further optimize the parameter settings for NDVI reconstruction at a global scale and over longer period of time. Such methods are unique and well-rooted under today’s hype of LLM or “trying DL/complex machine learning frameworks on all problems”. Thus, investigations on further optimising the traditional correction methods with explainable models future research remains relevant and important.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
@@ -403,6 +421,9 @@ Xue, Jinru, Baofeng Su, et al. 2017. <span>“Significant Remote Sensing Vegetat
 </div>
 <div id="ref-yan2020semi" class="csl-entry" role="listitem">
 Yan, Peiyao, Feng He, Yajie Yang, and Fei Hu. 2020. <span>“Semi-Supervised Representation Learning for Remote Sensing Image Classification Based on Generative Adversarial Networks.”</span> <em>IEEE Access</em> 8: 54135–44.
+</div>
+<div id="ref-zhou2021optimal" class="csl-entry" role="listitem">
+Zhou, Jie, Li Jia, Massimo Menenti, and Xuan Liu. 2021. <span>“Optimal Estimate of Global Biome—Specific Parameter Settings to Reconstruct NDVI Time Series with the Harmonic ANalysis of Time Series (HANTS) Method.”</span> <em>Remote Sensing</em> 13 (21): 4251.
 </div>
 <div id="ref-zhu2017change" class="csl-entry" role="listitem">
 Zhu, Zhe. 2017. <span>“Change Detection Using Landsat Time Series: A Review of Frequencies, Preprocessing, Algorithms, and Applications.”</span> <em>ISPRS Journal of Photogrammetry and Remote Sensing</em> 130: 370–84.

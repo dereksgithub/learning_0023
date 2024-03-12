@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CASA 0023 Remote Sensing Learning Diary - Week 7 Classification</title>
+<title>CASA0023 Remote Sensing Learning Diary - Week 7 Classification with Google Earth Engine I</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week6.html">II. Remote Sensing with GEE</a></li><li class="breadcrumb-item"><a href="./week7.html">Week 7 Classification</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week6.html">II. Remote Sensing with GEE</a></li><li class="breadcrumb-item"><a href="./week7.html">Week 7 Classification with Google Earth Engine I</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -89,7 +89,10 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">CASA 0023 Remote Sensing Learning Diary</a> 
+      <a href="./">CASA0023 Remote Sensing Learning Diary</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/dereksgithub/learning_0023" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -102,13 +105,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text">Overview</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
+ <span class="menu-text">Personal Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -170,19 +173,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week7.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Week 7 Classification</span></a>
+ <span class="menu-text">Week 7 Classification with Google Earth Engine I</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 8 Classification with Google Earth Engine</span></a>
+ <span class="menu-text">Week 8 Classification with Google Earth Engine II</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week9.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 9 SAR</span></a>
+ <span class="menu-text">Week 9 Synthetic Aperture Radar</span></a>
   </div>
 </li>
       </ul>
@@ -190,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 10 Group Presentation Week</span></a>
+ <span class="menu-text">Week 10 Group Presentations</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -217,14 +220,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#classification-methods-i" id="toc-classification-methods-i" class="nav-link active" data-scroll-target="#classification-methods-i">Classification Methods I</a></li>
+  <li><a href="#classification-in-a-remote-sensing-context" id="toc-classification-in-a-remote-sensing-context" class="nav-link" data-scroll-target="#classification-in-a-remote-sensing-context">Classification in a Remote Sensing Context</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 7 Classification</h1>
+<h1 class="title">Week 7 Classification with Google Earth Engine I</h1>
 </div>
 
 
@@ -239,9 +249,25 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Find studies that use GEE with classification</p>
+<p>For this week’s diary, find studies that use GEE with classification</p>
+<p>Existing study using classification GEE, critique/pros/cons</p>
+<p>note down some of the classifiers, and describe in your own words.</p>
+<p>Summarize how I would like to use for other research</p>
+<p>Your own case not the focus,</p>
+<p>theory extension / literature</p>
+<p>RF – Boosting — CNN</p>
+<p>1.&nbsp;&nbsp;&nbsp;&nbsp; Add more Critiques to the literature you reviewed, extend the current research.</p>
+<p>2.&nbsp;&nbsp;&nbsp;&nbsp; Structure the contents better, give a clear architecture on the right sides of the webpage.</p>
+<section id="classification-methods-i" class="level2">
+<h2 class="anchored" data-anchor-id="classification-methods-i">Classification Methods I</h2>
+<p>In the context of remote sensing, there are several classification methods, ranging from logistic regression to</p>
+</section>
+<section id="classification-in-a-remote-sensing-context" class="level2">
+<h2 class="anchored" data-anchor-id="classification-in-a-remote-sensing-context">Classification in a Remote Sensing Context</h2>
+<p>Current</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -485,7 +511,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./week8.html" class="pagination-link">
-        <span class="nav-page-text">Week 8 Classification with Google Earth Engine</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Week 8 Classification with Google Earth Engine II</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

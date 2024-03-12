@@ -1,1 +1,21 @@
-# Week 9 SAR {.unnumbered}
+# Week 9 Synthetic Aperture Radar {.unnumbered}
+
+This week we cover the Synthetic Aperture Radar data.
+
+SAR can collect data using different polarization.
+
+## Introduction to SAR
+
+### Optical vs. Radar Remote Sensing
+
+Pros and Cons
+
+Penetrating cloud cover
+
+getting the SAR collections in GEE:
+
+embed js code:
+
+## Aperture
+
+Longer Apertures = Finer Resolution

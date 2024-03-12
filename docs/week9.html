@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CASA0023 Remote Sensing Learning Diary - Week 9 SAR</title>
+<title>CASA0023 Remote Sensing Learning Diary - Week 9 Synthetic Aperture Radar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week6.html">II. Remote Sensing with GEE</a></li><li class="breadcrumb-item"><a href="./week9.html">Week 9 SAR</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week6.html">II. Remote Sensing with GEE</a></li><li class="breadcrumb-item"><a href="./week9.html">Week 9 Synthetic Aperture Radar</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -173,19 +173,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 7 Classification</span></a>
+ <span class="menu-text">Week 7 Classification with Google Earth Engine I</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 8 Classification with Google Earth Engine Part 2</span></a>
+ <span class="menu-text">Week 8 Classification with Google Earth Engine II</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week9.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Week 9 SAR</span></a>
+ <span class="menu-text">Week 9 Synthetic Aperture Radar</span></a>
   </div>
 </li>
       </ul>
@@ -193,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 10 Group Presentation Week</span></a>
+ <span class="menu-text">Week 10 Group Presentations</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -220,14 +220,24 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction-to-sar" id="toc-introduction-to-sar" class="nav-link active" data-scroll-target="#introduction-to-sar">Introduction to SAR</a>
+  <ul class="collapse">
+  <li><a href="#optical-vs.-radar-remote-sensing" id="toc-optical-vs.-radar-remote-sensing" class="nav-link" data-scroll-target="#optical-vs.-radar-remote-sensing">Optical vs.&nbsp;Radar Remote Sensing</a></li>
+  </ul></li>
+  <li><a href="#aperture" id="toc-aperture" class="nav-link" data-scroll-target="#aperture">Aperture</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 9 SAR</h1>
+<h1 class="title">Week 9 Synthetic Aperture Radar</h1>
 </div>
 
 
@@ -242,8 +252,24 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>This week we cover the Synthetic Aperture Radar data.</p>
+<p>SAR can collect data using different polarization.</p>
+<section id="introduction-to-sar" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-sar">Introduction to SAR</h2>
+<section id="optical-vs.-radar-remote-sensing" class="level3">
+<h3 class="anchored" data-anchor-id="optical-vs.-radar-remote-sensing">Optical vs.&nbsp;Radar Remote Sensing</h3>
+<p>Pros and Cons</p>
+<p>Penetrating cloud cover</p>
+<p>getting the SAR collections in GEE:</p>
+<p>embed js code:</p>
+</section>
+</section>
+<section id="aperture" class="level2">
+<h2 class="anchored" data-anchor-id="aperture">Aperture</h2>
+<p>Longer Apertures = Finer Resolution</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -482,12 +508,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./week8.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week 8 Classification with Google Earth Engine Part 2</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week 8 Classification with Google Earth Engine II</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./week10.html" class="pagination-link">
-        <span class="nav-page-text">Week 10 Group Presentation Week</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Week 10 Group Presentations</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

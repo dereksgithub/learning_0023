@@ -6,7 +6,7 @@ Consequently, my case study, centred around Melbourne and its adjacent suburbs, 
 
 ## Wildfire Monitoring for Air Quality with Remote Sensing
 
-#### Case Study and Policy Implications for the Greater Melbourne Area
+### Case Study and Policy Implications for the Greater Melbourne Area
 
 The goal for this short study is to explore the forecasting of smoke plume bush-fire to areas that may impact the residents and discuss policy implications. Focusing on Melbourne, with framework that includes remote sensing, intended to be integrated with sustainable future planning inspired the use of remote sensing for monitoring urban growth in Perth, WA. [@maclachlan2017urban]
 
@@ -39,6 +39,8 @@ As in many regions of the world, residential AQI can be dramatically affected by
 
 ![Sentinel 5P image Overlay with Map around (well, again, "around" and covering VIC and NSW) Melbourne (Time window set to December 01, 2019 to February 06, 2020)](images/senti5p_melb_2019_12_01_to_2020_02_06.png){fig-align="center" width="665"}
 
+### Current Policy Stack and Wofkflow
+
 As a vibrant metropolis in the state of Victoria, the local councils and state government around the Greater Melbourne Area, has implemented air quality policies aimed at safeguarding the health and well-being of their residents.
 
 ![Proposed Workflow Serving as an Add-on to the Current Government Workflow and Policy Stack](images/wk4_logic_flow.png){fig-align="center" width="481"}
@@ -47,7 +49,7 @@ As a vibrant metropolis in the state of Victoria, the local councils and state g
 
 -   **EPA Victoria’s AirWatch**: A platform that offers real-time air quality information to the public, including an AQI that categorizes air quality levels and provides health advisories, enabling residents to make informed decisions about outdoor activities.
 
-**Proposed Mitigation:**
+### Proposed Mitigation
 
 In light of this,this proposal aims to integrate state-of-art remote sensing technology into Melbourne’s current air quality management workflow, offering a multifaceted approach to mitigate air pollution risks:
 
@@ -57,17 +59,21 @@ In light of this,this proposal aims to integrate state-of-art remote sensing tec
 
 3.  **Enhanced Emergency Evacuation Planning**: Agent-Based Modeling (ABM) methods alongside satellite imagery analysis will be employed to refine emergency evacuation planning. By identifying optimal evacuation routes and safe zones in advance, the updated workflow will facilitate efficient relocation strategies during smoky conditions, ensuring public safety and minimizing chaos.
 
-**Implementation and Emergency Planning Techniques**:
+### Implementation and Emergency Planning Techniques
 
 Our methodology leverages state-of-the-art remote sensing technology, including the analysis of satellite data from platforms such as Sentinel-5P, to offer unparalleled insights into air quality dynamics. The integration of ABM methods will further enhance our predictive capabilities, allowing for the simulation of various scenarios and the formulation of robust emergency response strategies.
 
-**Conclusion**:
+### Conclusion
 
 By integrating advanced remote sensing technology into the city's existing workflow, we aim not only to protect the well-being of Melbourne’s citizens but also to set a new standard for urban air quality management worldwide.
 
 ## Reflection
 
-The exploration of policy and global agenda, combined with the review of current literature, made this week's class and practical for serves as a taster of the group assessment. I have also combed through the literature and policy base briefly, to further analyze the interplay between remote sensing and air quality. Aside from the potential of forecasting emergency air pollution caused by wildfires or other incidents, recent literature has also indicated the transformative potential of remote sensing in air quality monitoring.[@sokhi2022advances] Other researchers has highlighted the application of remote sensing for timely data on aerosol pollutants. [@gupta2006satellite] therfore, the integration of remote sensing air quality monitoring, could also contribute to the approximate verification and robust back-up for ground air quality data collection. [@bechle2013remote] To generalize the impact of urban air quality monitoring with remote sensing, researchers also suggested that remote sensing can be incorporated in the long-term exposure assessment of air pollutants [@van2015use] and be utilized to discover hidden air pollution patterns. [@verma2023urban] The implications of such researches are profound for policy-making, it can even contribute to a more data-driven paradigm shift as the data-driven planning. By leveraging remote sensing data, policymakers can benefit from timely and accurate information on the hazardous smoke plumes, their potential movement patterns and impact on overall urban air quality.
+The exploration of policy and global agenda, combined with the review of current literature, made this week's class and practical a proper warm-up for the group assessment. I have also combed through the literature and policy base briefly, to further analyze the interplay between remote sensing, policy and air quality.
+
+Early in the 2000s, studies have proposed the potentials of incorporating remote sesing into the air quality policy frameworks. [@veefkind2007applicability] Aside from the potential of forecasting emergency air pollution caused by wildfires or other incidents, recent literature has also indicated the transformative potential of remote sensing in air quality monitoring.[@sokhi2022advances] Other researchers has highlighted the application of remote sensing for timely data on aerosol pollutants. [@gupta2006satellite] therefore, the integration of remote sensing air quality monitoring, could also contribute to the approximate verification and robust back-up for ground air quality data collection. [@bechle2013remote] To generalize the impact of urban air quality monitoring with remote sensing, researchers also suggested that remote sensing can be incorporated in the long-term exposure assessment of air pollutants [@van2015use] and be utilized to discover hidden air pollution patterns. [@verma2023urban] Although the current policy frameworks around the world are including satellite images into air quality monitoring, the spatial and temporal resolution of such observation data could be further improved, offering policy makers and environmental agencies more detailed and timely knowledge on the air quality. Potential research directions could explore finer pollution detection,[@huang2022rapid] establishing near real-time or real time data acquisitions,[@geng2021tracking] compatibility or fusion with other key environmental metrics monitoring systems. [@prados2010access] and a more hybrid approached in terms of acquiring air quality data such as combining the satellite observations with UAV images. [@budde2017smartaqnet]
+
+The implications of such research are profound for policy-making, it can even contribute to a more data-driven paradigm shift as the data-driven planning. By leveraging remote sensing data, policymakers can benefit from timely and accurate information on the hazardous smoke plumes, their potential movement patterns and impact on overall urban air quality. From the test use of Sentinel 5P data shown above, we can conclude that the resolution overall is inadequate for predicting the movement of the pollutant clusters in the air. In addition, the remote sensing detection and forecasting, ought to be a value-addition or redundant measure to existing air quality measurement and monitoring frameworks and policy instruments. It is also obvious that integrating remote sensing data with real-time sensor data or other air quality monitoring data can pose technique challenges.
 
 In summary, the exploration of air quality monitoring, policy interventions, and remote sensing, opens up a new realm of environmental protection and policy implementation. It exemplifies the innovation synergy between technology and policy by introducing remote sensing data analysis to both local and global environmental strategies.
 

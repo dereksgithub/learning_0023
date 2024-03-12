@@ -1,1 +1,3 @@
-# Week 8 Classification with Google Earth Engine Part 2 {.unnumbered}
+# Week 8 Classification with Google Earth Engine II {.unnumbered}
+
+asdasd
