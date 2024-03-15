@@ -42,7 +42,7 @@ Using glcm to perform texture analysis for Landsat images. Homogeneity measures 
 
 Normalized Difference Vegetation Index (NDVI) is a remote sensing index that measures the health and density of vegetation on the Earth's surface. NIR represents the near-infrared light reflected by vegetation, and RED represents the visible red light reflected by vegetation.
 
-$NDVI = \frac{(NIR - RED)}{(NIR+RED)}$
+-   $NDVI = \frac{(NIR - RED)}{(NIR+RED)}$
 
 Aside from the NDVI, here are some other indicators that I have investigated and summarized:
 

@@ -2,25 +2,45 @@
 
 This is a very exciting week that I could not physically attend since I was at the CUSP Data Dive (Datathon), GEE is something that interested me before selecting this module.
 
-## Javascript and GEE
+## JavaScript and GEE Basics
 
-Javascript is the main language used to
+Google Earth Engine is a cloud platform developed by Google for scientific data analysis. [@reis2020primer] GEE can handle large datasets in a relatively faster than many other traditional commercial software, its mature integration with JavaScript also enables new users to master the tool suite with a shallower learning curve.[@cardille2022cloud] JavaScript is the language used in GEE code editor, it is an essential tool for front-end development, enabling developers to implement complex and interactive websites. JavaScript also interacts with HTML and CSS to style and build the user interface.
 
-tbh kind like Java, this helps in terms of me getting myself familiar with the code.
+Here is a basic block to code a function:
+
+``` js
+function sayHi(name) {
+    alert("Hi," + name + "!");
+}
+
+sayHi(" guys, "); // Pops up "Hi, guys, !"
+```
 
 ## GEE Case Study Bristol
 
-### Air Quality
-
-First, I gathered air quality data over Bristol. But the resolution from Sentinel 5P was not ideal, thus I zoomed out in order to find places with high NO2 levels, in the end, even London is included.
+First, I gathered air quality data over Bristol. But the resolution from Sentinel 5P was not ideal, thus I zoomed out in order to find places with high NO2 levels, in the end, even London is included. At this resolution, it is obvious that we will need more image processing and better resolution to have fine-grained data on urban air quality
 
 ![NO2 Level Over Bristol to London from Sentinel 5P](images/wk06_NO2.png){width="1092"}
 
-### NDVI and NDWI
+knitr::opts_chunk\$set(fig.pos = "H", out.extra = "") library(cowplot) ggdraw() + draw_image('img/wk6_arvi.png', width = 0.5) + draw_image('img/wk6_savi.png', width = 0.5, x = 0.5)
+
+``` R
+{r echo=FALSE, composites, fig.cap="After a pleasant walk in Timisoara (left) and a bubble tea loving cat (right)", fig.align='center', results='asis',fig.height=3, fig.width=6} 
+
+knitr::opts_chunk$set(fig.pos = "H", out.extra = "") 
+
+library(cowplot) 
+
+ggdraw() + draw_image('img/wk6_arvi.png', width = 0.5) + draw_image('img/wk6_savi.png', width = 0.5, x = 0.5)
+```
+
+### Air Quality, SAVI, ARVI, NDVI and NDWI
+
+In this introductory study of GEE, I have examined the NO2 from Sentinel 5P and calculated NDVI, NDWI, SAVI and ARVI for Bristol. Time from the data used are Sentinel 2 and Sentinel 5P (for NO2) from 2021-Jan-01 to 2023-Dec-30, I made a date slider for the user to drag to select which data from a 30-day window. Rarely, the selection won't be valid, that is because the filter that I coded for the cloud is very low 5, and the Sentinel 2 images tend to be more cloudy for Bristol, please refresh the webpage and try another month. Most of the time it is working, due to the confined time-frame, I will be optimising this app and its UI in the future. For now, NO2 is not bounded, as the Sentinel 5P data is low-resolution compared to Sentinel 2, thus NDVI, NDWI, SAVI and ARVI are bounded within the Bristol image, where as NO2 layer is not.
 
 ### Putting Everything Together
 
-I also packed these layers with in [this app](https://ee-mengyu-derek-ding.projects.earthengine.app/view/brsitol-ndvindwiarvisavi-lookup) for Bristol:
+Here is the [link to the lookup app](https://ee-mengyu-derek-ding.projects.earthengine.app/view/brsitol-ndvindwiarvisavi-lookup) for Bristol, it is also embedded as follows:
 
 <p align="left">
 
@@ -30,90 +50,26 @@ I also packed these layers with in [this app](https://ee-mengyu-derek-ding.proje
 
 </p>
 
-Plot time-series for air quality around Bristol
+For the legend in the GEE app, have modified and derived the code from: [Open Geo Blog](https://mygeoblog.com/2016/12/09/add-a-legend-to-to-your-gee-map/). The colour code gradients for the four metrics are gathered from this [website](https://www.color-hex.com/).
 
-For this week's practical, I continued with Bristol.
+<https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC09_C02_T1_L2#description>
 
-This is what I used to add legend, I have hence modified it and made it into a dedicated
+For the rest of the practical, I downloaded the [Bristol City Boundary](https://opendata.bristol.gov.uk/datasets/bcc::bristol-boundary/explore) shape file, uploaded to the assets and clipped out images with only Bristol.
 
-``` js
-// set position of panel for ndvi:
-var legend = ui.Panel({
-style: {
-position: 'bottom-left',
-padding: '8px 15px'
-}
-});
+## PCA
 
-// Create legend title
-var legendTitle = ui.Label({
-value: 'NDVI',
-style: {
-fontWeight: 'bold',
-fontSize: '18px',
-margin: '0 0 4px 0',
-padding: '0'
-}
-});
+PCA runs faster compared in R, but the code is more complex.
 
-// Add the title to the panel
-legend.add(legendTitle);
+With the
 
-// create vizualization parameters
-//var viz = {min:0, max:3500, palette:['ffffff','b7f0ae','21f600','0000FF','FDFF92','FF2700','d600ff']};
-
-// create the legend image
-var lon = ee.Image.pixelLonLat().select('latitude');
-var gradient = lon.multiply((ndviVis.max-ndviVis.min)/100.0).add(ndviVis.min);
-var legendImage = gradient.visualize(ndviVis);
-
-// create text on top of legend
-var panel = ui.Panel({
-widgets: [
-ui.Label(ndviVis['max'])
-],
-});
- 
-legend.add(panel);
-
-// create thumbnail from the image
-var thumbnail = ui.Thumbnail({
-image: legendImage,
-params: {bbox:'0,0,10,100', dimensions:'10x200'},
-style: {padding: '1px', position: 'bottom-center'}
-});
- 
-// add the thumbnail to the legend
-legend.add(thumbnail);
- 
-// create text on top of legend
-var panel = ui.Panel({
-widgets: [
-ui.Label(ndviVis['min'])
-],
-});
- 
-legend.add(panel);
- 
-Map.add(legend);
-```
-
-Derived from: [Open Geo Blog](https://mygeoblog.com/2016/12/09/add-a-legend-to-to-your-gee-map/).
-
-I used created the following colour code gradients for the four metrics from this [website](https://www.color-hex.com/).
-
-``` js
-// NDVI visualization parameters
-var ndviVis = {
-  min: -1, // Adjust the minimum NDVI value as needed
-  max: 1,  // Adjust the maximum NDVI value as needed
-  //palette: ['ffffff', 'e6fdec', 'cefcda',  'b5fbc7', '9dfab5', '85f9a2', '6cf890', '54f77d', '3bf66a', '23f558', '0bf446']
-  palette: ['ffffff','e5f5e9','ccecd4','b3e2bf','9ad9aa','81d095','68c67f','4fbd6a','36b355','1daa40','04a12b']
-};
-```
-
-A couple of paragraphs on each classification method.
+I have put everything in an GEE app:
 
 ## Reflection
 
-Employing Google Earth Engine (GEE) certainly rekindles memories of my extensive collaborative efforts on diverse projects in Melbourne. During those projects, I relied on Nearmaps to corrdinate with the design team and worked closely alongside engineers and GIS specialists. Together, we organised design modifications and championed the digital transformation of urban planning processes. Unlike those days when my role was more supervisory and collaborative, I now find myself directly engaged with GEE, utilizing its powerful remote sensing capabilities for urban analysis and environmental applications.
+Employing Google Earth Engine (GEE) certainly rekindles memories of my extensive collaborative efforts on diverse projects in Melbourne. During those projects, I relied on NearMaps to coordinate with the design team and worked closely alongside engineers and GIS specialists. Together, we organised design modifications and participated the digital transformation of the construction processes. Unlike those days when my role was more supervisory and collaborative, I now find myself directly engaged with GEE, utilizing its powerful remote sensing capabilities for urban analysis and environmental applications.
+
+The current literature of using GEE is as indicated by Ollie's graph.
+
+GEE enables the
+
+and many new applications and publications [@amani2020google]

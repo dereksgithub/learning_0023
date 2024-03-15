@@ -1,3 +1,37 @@
-# CASA0023 Term Recap {.unnumbered}
+# Remote Sensing Term Recap {.unnumbered}
 
 In summary, .
+
+## Additional GEE Materials
+
+[Clipping Polygons](https://www.youtube.com/watch?v=E2MyYxkV7oY) in GEE
+
+## Add Index, for which Dataset Recommended for what
+
+In [GEE data catalog](https://developers.google.com/earth-engine/datasets)
+
+e.g Sentinel 5P for air quality etc.
+
+dynamic world
+
+Sentinel
+
+L1
+
+L2
+
+...
+
+Available online:
+
+L1
+
+L2
+
+USGS
+
+## Future Works
+
+Python + GEE, Web embeding for GEE.
+
+Visualization of my research with GEE.

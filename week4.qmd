@@ -23,7 +23,7 @@ As for the imagery, Sentinel 5P from Copernicus Program is offering sufficient r
 Utilizing the Sentinel 5P data[@trinder2020], this proposed project aligns with the following UN Sustainable Development Goals:
 
 | Contribution (by Implementing Proposed Research/Development)                                                               |    SDG    | Description                                                                                             |
-|:-------------------------------|:------------:|---------------------------|
+|:---------------------------------------------------------------------------------------------------------------------------|:---------:|---------------------------------------------------------------------------------------------------------|
 | Contribute to the prevention of human respiratory damage caused by smogs from burning forest.                              | UN SDG 3  | Good Health and Well-being, ensure people lives a healthy environment, promote well-being for all ages. |
 | Proper monitoring and timely alerts, contributes to the enhancement of the built environment and overall community safety. | UN SDG 11 | Sustainable, resilient, inclusive and safe cities/communities.                                          |
 | Actively monitoring wild fires and smogs produced can offer insights and guidance for mitigation.                          | UN SDG 13 | Take urgent actions against climate change.                                                             |

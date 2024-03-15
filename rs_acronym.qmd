@@ -1,75 +1,75 @@
 # Common Acronyms in Remote Sensing {.unnumbered}
 
-[ARVI: Atmospherically Resistant Vegetation Index](week3.qmd)
+AOI: Area of Interest
 
-AVHRR: Advanced Very High Resolution Radiometer
+ARVI: [Atmospherically Resistant Vegetation Index](week3.qmd)
 
-[EVI: Enhanced Vegetation Index](week3.qmd)
+AVHRR: [Advanced Very High Resolution Radiometer](https://en.wikipedia.org/wiki/Advanced_very-high-resolution_radiometer)
 
-GOES: Geostationary Operational Environmental Satellite
+Azimuth:
 
-GIS: Geographic Information System
+CART:
 
-[GNDVI (Green Normalized Difference Vegetation Index)](week3.qmd)
+DEM: [Digital Elevation Model](https://www.usgs.gov/faqs/what-digital-elevation-model-dem)
 
-GPS: Global Positioning System
+DSM: Digital Surface Model
 
-Landsat: Land Satellite
+DTM: Digital Terrain Model
 
-[LiDAR](https://en.wikipedia.org/wiki/Lidar): Light Detection and Ranging
+EO: Earth Observation
+
+EOS: [Earth Observing System](https://eospso.nasa.gov/content/nasas-earth-observing-system-project-science-office)
+
+ESA: [European Space Agency](https://www.esa.int/)
+
+EVI: [Enhanced Vegetation Index](week3.qmd)
+
+GIS: [Geographic Information System](https://www.usgs.gov/faqs/what-geographic-information-system-gis)
+
+GAUL:
+
+GLCM:
+
+GNDVI: [Green Normalized Difference Vegetation Index](week3.qmd)
+
+GOES: [Geostationary Operational Environmental Satellite](https://science.nasa.gov/mission/goes/)
+
+IFOV: Instantaneous Field of View
+
+LandSat: [Land Satellite](https://en.wikipedia.org/wiki/Landsat_program), L-8, L-9
+
+LiDAR: [Light Detection and Ranging](https://en.wikipedia.org/wiki/Lidar)
+
+LULC:
 
 MODIS: Moderate Resolution Imaging Spectroradiometer
 
-[MSAVI (Modified Soil-Adjusted Vegetation Index)](week3.qmd)
+MSAVI: [Modified Soil-Adjusted Vegetation Index](week3.qmd)
 
-[NDMI: Normalized Difference Moisture Index.](week3.qmd)
+NDMI: [Normalized Difference Moisture Index.](week3.qmd)
 
-[NDVI: Normalized Difference Vegetation Index](week3.qmd)
+NDVI: [Normalized Difference Vegetation Index](week3.qmd)
 
-[NDWI (Normalized Difference Water Index)](week3.qmd)
+NDWI: [Normalized Difference Water Index](week3.qmd)
 
 NOAA: [National Oceanic and Atmospheric Administration](https://oceanservice.noaa.gov/about/)
 
-PCA: Principal Component Analysis
+PCA: Principal Component Analysis, a statistical technique used to reduce data dimensionality, prioritising significant features by transforming correlated bands into uncorrelated components.
 
 POI: Point of Interest
+
+RF: Random Forest
 
 ROI: Region of Interest
 
 RS: Remote Sensing
 
-[SAVI (Soil-Adjusted Vegetation Index)](week3.qmd)
+SAVI: [Soil-Adjusted Vegetation Index](week3.qmd)
+
+SNAP: Sentinel Application Platform, a software platform used for processing and analyzing satellite data, mostly European Space Agency's Sentinel series Earth Observation data.
 
 SNR: Signal to Noise Ratio
 
-[SVM: Support Vector Machine](https://www.youtube.com/watch?v=efR1C6CvhmE)
+SVM: [Support Vector Machine](https://www.youtube.com/watch?v=efR1C6CvhmE)
 
-```         
-"NOAA": "National Oceanic and Atmospheric Administration",     
-"EOS": "Earth Observing System",     
-
-"DEM": "Digital Elevation Model",     
-
-"DSM": "Digital Surface Model",     
-
-"DTM": "Digital Terrain Model",     
-"VIIRS": "Visible Infrared Imaging Radiometer Suite",     
-
-"UAV": "Unmanned Aerial Vehicle",     
-
-"INSAR": "Interferometric Synthetic Aperture Radar",     
-
-"ASTER": "Advanced Spaceborne Thermal Emission and Reflection Radiometer",     
-
-"TM": "Thematic Mapper",     
-
-"ETM+": "Enhanced Thematic Mapper Plus",     "OLI": "Operational Land Imager",     "TIRS": "Thermal Infrared Sensor",     "SWIR": "Shortwave Infrared",     "MWIR": "Mid-Wave Infrared",     "LWIR": "Long-Wave Infrared",     "PAN": "Panchromatic",     "MSI": "Multispectral Imaging",     "HSI": "Hyperspectral Imaging",     "RADAR": "Radio Detection and Ranging",     "GNSS": "Global Navigation Satellite System",     "VHR": "Very High Resolution",     "FOV": "Field of View",     "AOI": "Area of Interest",          "GCP": "Ground Control Point",     "RMSE": "Root Mean Square Error",    ,     
-
-
-
-"WMS": "Web Map Service",    
-"WFS": "Web Feature Service",     
-"API": "Application Programming Interface",    
-"RGB": "Red, Green, Blue",     "IR": "Infrared",     
-"UV": "Ultraviolet",     "",          "RF": "Random Forest",     "EO": "Earth Observation"
-```
+UAV: Unmanned Aerial Vehicle

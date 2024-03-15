@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -89,9 +89,15 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">CASA0023 Remote Sensing Learning Diary</a> 
-        <div class="sidebar-tools-main">
+      <a href="./">CASA0023 Learning Diary Mengyu</a> 
+        <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/dereksgithub/learning_0023" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
     </div>
       </div>
@@ -116,13 +122,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
  <span class="menu-text">I. Intro to Remote Sensing</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week1.html" class="sidebar-item-text sidebar-link">
@@ -157,13 +163,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
  <span class="menu-text">II. Remote Sensing with GEE</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week6.html" class="sidebar-item-text sidebar-link">
@@ -242,55 +248,43 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><a href="./week3.html">ARVI: Atmospherically Resistant Vegetation Index</a></p>
-<p>AVHRR: Advanced Very High Resolution Radiometer</p>
-<p><a href="./week3.html">EVI: Enhanced Vegetation Index</a></p>
-<p>GOES: Geostationary Operational Environmental Satellite</p>
-<p>GIS: Geographic Information System</p>
-<p><a href="./week3.html">GNDVI (Green Normalized Difference Vegetation Index)</a></p>
-<p>GPS: Global Positioning System</p>
-<p>Landsat: Land Satellite</p>
-<p><a href="https://en.wikipedia.org/wiki/Lidar">LiDAR</a>: Light Detection and Ranging</p>
+<p>AOI: Area of Interest</p>
+<p>ARVI: <a href="./week3.html">Atmospherically Resistant Vegetation Index</a></p>
+<p>AVHRR: <a href="https://en.wikipedia.org/wiki/Advanced_very-high-resolution_radiometer">Advanced Very High Resolution Radiometer</a></p>
+<p>Azimuth:</p>
+<p>CART:</p>
+<p>DEM: <a href="https://www.usgs.gov/faqs/what-digital-elevation-model-dem">Digital Elevation Model</a></p>
+<p>DSM: Digital Surface Model</p>
+<p>DTM: Digital Terrain Model</p>
+<p>EO: Earth Observation</p>
+<p>EOS: <a href="https://eospso.nasa.gov/content/nasas-earth-observing-system-project-science-office">Earth Observing System</a></p>
+<p>ESA: <a href="https://www.esa.int/">European Space Agency</a></p>
+<p>EVI: <a href="./week3.html">Enhanced Vegetation Index</a></p>
+<p>GIS: <a href="https://www.usgs.gov/faqs/what-geographic-information-system-gis">Geographic Information System</a></p>
+<p>GAUL:</p>
+<p>GLCM:</p>
+<p>GNDVI: <a href="./week3.html">Green Normalized Difference Vegetation Index</a></p>
+<p>GOES: <a href="https://science.nasa.gov/mission/goes/">Geostationary Operational Environmental Satellite</a></p>
+<p>IFOV: Instantaneous Field of View</p>
+<p>LandSat: <a href="https://en.wikipedia.org/wiki/Landsat_program">Land Satellite</a>, L-8, L-9</p>
+<p>LiDAR: <a href="https://en.wikipedia.org/wiki/Lidar">Light Detection and Ranging</a></p>
+<p>LULC:</p>
 <p>MODIS: Moderate Resolution Imaging Spectroradiometer</p>
-<p><a href="./week3.html">MSAVI (Modified Soil-Adjusted Vegetation Index)</a></p>
-<p><a href="./week3.html">NDMI: Normalized Difference Moisture Index.</a></p>
-<p><a href="./week3.html">NDVI: Normalized Difference Vegetation Index</a></p>
-<p><a href="./week3.html">NDWI (Normalized Difference Water Index)</a></p>
+<p>MSAVI: <a href="./week3.html">Modified Soil-Adjusted Vegetation Index</a></p>
+<p>NDMI: <a href="./week3.html">Normalized Difference Moisture Index.</a></p>
+<p>NDVI: <a href="./week3.html">Normalized Difference Vegetation Index</a></p>
+<p>NDWI: <a href="./week3.html">Normalized Difference Water Index</a></p>
 <p>NOAA: <a href="https://oceanservice.noaa.gov/about/">National Oceanic and Atmospheric Administration</a></p>
-<p>PCA: Principal Component Analysis</p>
+<p>PCA: Principal Component Analysis, a statistical technique used to reduce data dimensionality, prioritising significant features by transforming correlated bands into uncorrelated components.</p>
 <p>POI: Point of Interest</p>
+<p>RF: Random Forest</p>
 <p>ROI: Region of Interest</p>
 <p>RS: Remote Sensing</p>
-<p><a href="./week3.html">SAVI (Soil-Adjusted Vegetation Index)</a></p>
+<p>SAVI: <a href="./week3.html">Soil-Adjusted Vegetation Index</a></p>
+<p>SNAP: Sentinel Application Platform, a software platform used for processing and analyzing satellite data, mostly European Space Agency’s Sentinel series Earth Observation data.</p>
 <p>SNR: Signal to Noise Ratio</p>
-<p><a href="https://www.youtube.com/watch?v=efR1C6CvhmE">SVM: Support Vector Machine</a></p>
-<pre><code>"NOAA": "National Oceanic and Atmospheric Administration",     
-"EOS": "Earth Observing System",     
-
-"DEM": "Digital Elevation Model",     
-
-"DSM": "Digital Surface Model",     
-
-"DTM": "Digital Terrain Model",     
-"VIIRS": "Visible Infrared Imaging Radiometer Suite",     
-
-"UAV": "Unmanned Aerial Vehicle",     
-
-"INSAR": "Interferometric Synthetic Aperture Radar",     
-
-"ASTER": "Advanced Spaceborne Thermal Emission and Reflection Radiometer",     
-
-"TM": "Thematic Mapper",     
-
-"ETM+": "Enhanced Thematic Mapper Plus",     "OLI": "Operational Land Imager",     "TIRS": "Thermal Infrared Sensor",     "SWIR": "Shortwave Infrared",     "MWIR": "Mid-Wave Infrared",     "LWIR": "Long-Wave Infrared",     "PAN": "Panchromatic",     "MSI": "Multispectral Imaging",     "HSI": "Hyperspectral Imaging",     "RADAR": "Radio Detection and Ranging",     "GNSS": "Global Navigation Satellite System",     "VHR": "Very High Resolution",     "FOV": "Field of View",     "AOI": "Area of Interest",          "GCP": "Ground Control Point",     "RMSE": "Root Mean Square Error",    ,     
-
-
-
-"WMS": "Web Map Service",    
-"WFS": "Web Feature Service",     
-"API": "Application Programming Interface",    
-"RGB": "Red, Green, Blue",     "IR": "Infrared",     
-"UV": "Ultraviolet",     "",          "RF": "Random Forest",     "EO": "Earth Observation"</code></pre>
+<p>SVM: <a href="https://www.youtube.com/watch?v=efR1C6CvhmE">Support Vector Machine</a></p>
+<p>UAV: Unmanned Aerial Vehicle</p>
 
 
 
@@ -315,6 +309,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'alternate';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -544,4 +653,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dereksgithub/learning_0023/edit/main/rs_acronym.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/dereksgithub/learning_0023/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>

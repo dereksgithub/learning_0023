@@ -9,10 +9,31 @@ Remote sensing is part of GIS but it involves more than just GIS.
 ## Remote Sensing Overview
 
 -   Active vs Passive sensors
+
     -   Active: Emits EM waves or other energy from its own sensors (radar, LiDar etc.) to measure and capture the landscapes/features of the area of interest.
     -   Passive: Detects and captures the natural energy signals radiated by of the area of interest.
--   Data in Remote Sensing: Mainly raster data.
+
+-   Data in Remote Sensing:
+
+    There are many types of data in remote sensing, we can broadly categorise them into the following:
+
+    -   Spectral Data
+    -   Spatial Data
+    -   Temporal Data
+    -   Radiometric Data
+    -   Resolution Data
+    -   Multispectral Data
+    -   Hyperspectral Data
+    -   Thermal Data
+    -   LiDar Data
+    -   Radar Data
+    -   Optical Data
+    -   DEM Data
+    -   Gravity and Magnetic Field Data
+    -   Metadata
+
 -   Four resolutions: Remotely sensed data and applications will vary based on the four resolutions
+
     -   Spatial: Refers to the size of one pixel on the ground (e.g. 20cm or 30m) Higher Spatial resolution means finer details.
     -   Spectral: Describes the number and width of spectral bands the sensor records data in.
     -   Temporal: The frequency with which a sensor revisits the same location.

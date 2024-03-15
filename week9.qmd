@@ -6,6 +6,8 @@ SAR can collect data using different polarization.
 
 ## Introduction to SAR
 
+### What is
+
 ### Optical vs. Radar Remote Sensing
 
 Pros and Cons

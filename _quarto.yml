@@ -6,6 +6,10 @@ book:
   title: "CASA0023 Remote Sensing \n Learning Diary"
   author: "[Mengyu Ding](https://github.com/dereksgithub)"
   date: "2024-02-01"
+  sidebar: 
+    title: "CASA0023 Learning Diary Mengyu"
+    style: floating
+    collapse-level: 1
   chapters:
     - index.qmd
     - intro.qmd
@@ -27,11 +31,23 @@ book:
     - rs_acronym.qmd
     - references.qmd
   repo-url: https://github.com/dereksgithub/learning_0023
+  repo-actions: [edit, issue]
+  favicon: images/favicon.png
+  reader-mode: true
+  
+  
 bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme:
+      dark: darkly
+      light: cosmo
+    linkcolor: "#5785C1"
+    code-copy: true
+    code-overflow: wrap
+    highlight-style: monokai.theme
+    
   pdf:
     documentclass: scrreprt
 

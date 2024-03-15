@@ -12,6 +12,8 @@ Your own case not the focus,
 
 theory extension / literature
 
+A couple of paragraphs on each classification method.
+
 RF – Boosting — CNN
 
 1.     Add more Critiques to the literature you reviewed, extend the current research.
