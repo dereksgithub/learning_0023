@@ -23,7 +23,7 @@ As for the imagery, Sentinel 5P from Copernicus Program is offering sufficient r
 Utilizing the Sentinel 5P data[@trinder2020], this proposed project aligns with the following UN Sustainable Development Goals:
 
 | Contribution (by Implementing Proposed Research/Development)                                                               |    SDG    | Description                                                                                             |
-|:---------------------------------------------------------------------------------------------------------------------------|:---------:|---------------------------------------------------------------------------------------------------------|
+|:-------------------------------|:------------:|---------------------------|
 | Contribute to the prevention of human respiratory damage caused by smogs from burning forest.                              | UN SDG 3  | Good Health and Well-being, ensure people lives a healthy environment, promote well-being for all ages. |
 | Proper monitoring and timely alerts, contributes to the enhancement of the built environment and overall community safety. | UN SDG 11 | Sustainable, resilient, inclusive and safe cities/communities.                                          |
 | Actively monitoring wild fires and smogs produced can offer insights and guidance for mitigation.                          | UN SDG 13 | Take urgent actions against climate change.                                                             |
@@ -33,17 +33,17 @@ NASA’s Fire Information for Resource Management System (FIRMS) can also be int
 
 By extracting values from the daily Sentinel 5p data, we can monitor the wildfire and combine the ground weather/air quality monitoring data, to determine how the polluted air will impact the densely populated area (mapping the air monitoring data over the building footprint [in Australia](https://github.com/microsoft/AustraliaBuildingFootprints)) thus, provide intervention implications for distributing devices and masks. In the literature, similar was workflow proposed for monitoring wild fires in the US. [@kochanski2021integration]
 
-![Sentinel 5P, Feb 01 to Feb 06, 2020, NO2 level Around Melbourne](images/senti5p_no2_melb.png){fig-align="center" width="665"}
+![Sentinel 5P, Feb 01 to Feb 06, 2020, NO2 level Around Melbourne](images/wk4/senti5p_no2_melb.png){fig-align="center" width="665"}
 
 As in many regions of the world, residential AQI can be dramatically affected by wildfires, therefore, it is crucial to have a integrated pipeline for the monitoring of harmful aerosol spike which is also incorporated into the policy stack and is dedicated with ample resources.
 
-![Sentinel 5P image Overlay with Map around (well, again, "around" and covering VIC and NSW) Melbourne (Time window set to December 01, 2019 to February 06, 2020)](images/senti5p_melb_2019_12_01_to_2020_02_06.png){fig-align="center" width="665"}
+![Sentinel 5P image Overlay with Map around (well, again, "around" and covering VIC and NSW) Melbourne (Time window set to December 01, 2019 to February 06, 2020)](images/wk4/senti5p_melb_2019_12_01_to_2020_02_06.png){fig-align="center" width="665"}
 
 ### Current Policy Stack and Wofkflow
 
 As a vibrant metropolis in the state of Victoria, the local councils and state government around the Greater Melbourne Area, has implemented air quality policies aimed at safeguarding the health and well-being of their residents.
 
-![Proposed Workflow Serving as an Add-on to the Current Government Workflow and Policy Stack](images/wk4_logic_flow.png){fig-align="center" width="481"}
+![Proposed Workflow Serving as an Add-on to the Current Government Workflow and Policy Stack](images/wk4/wk4_logic_flow.png){fig-align="center" width="481"}
 
 -   **Environment Protection Amendment Act 2018**: This act introduces a general environmental duty that requires proactive risk management to prevent harm to public health and the environment, including air quality impacts.
 

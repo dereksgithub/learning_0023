@@ -20,19 +20,7 @@ sayHi(" guys, "); // Pops up "Hi, guys, !"
 
 First, I gathered air quality data over Bristol. But the resolution from Sentinel 5P was not ideal, thus I zoomed out in order to find places with high NO2 levels, in the end, even London is included. At this resolution, it is obvious that we will need more image processing and better resolution to have fine-grained data on urban air quality
 
-![NO2 Level Over Bristol to London from Sentinel 5P](images/wk06_NO2.png){width="1092"}
-
-knitr::opts_chunk\$set(fig.pos = "H", out.extra = "") library(cowplot) ggdraw() + draw_image('img/wk6_arvi.png', width = 0.5) + draw_image('img/wk6_savi.png', width = 0.5, x = 0.5)
-
-``` R
-{r echo=FALSE, composites, fig.cap="After a pleasant walk in Timisoara (left) and a bubble tea loving cat (right)", fig.align='center', results='asis',fig.height=3, fig.width=6} 
-
-knitr::opts_chunk$set(fig.pos = "H", out.extra = "") 
-
-library(cowplot) 
-
-ggdraw() + draw_image('img/wk6_arvi.png', width = 0.5) + draw_image('img/wk6_savi.png', width = 0.5, x = 0.5)
-```
+![NO2 Level Over Bristol to London from Sentinel 5P](images/wk6/wk06_NO2.png)
 
 ### Air Quality, SAVI, ARVI, NDVI and NDWI
 
@@ -44,7 +32,7 @@ Here is the [link to the lookup app](https://ee-mengyu-derek-ding.projects.earth
 
 <p align="left">
 
-<iframe title="vimeo-player" width="780" height="600" src="https://ee-mengyu-derek-ding.projects.earthengine.app/view/brsitol-ndvindwiarvisavi-lookup" title="GEE App Bristol Look-up" frameborder="0">
+<iframe title="vimeo-player" width="680" height="600" src="https://ee-mengyu-derek-ding.projects.earthengine.app/view/brsitol-ndvindwiarvisavi-lookup" title="GEE App Bristol Look-up" frameborder="0">
 
 </iframe>
 
@@ -54,15 +42,41 @@ For the legend in the GEE app, have modified and derived the code from: [Open Ge
 
 <https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC09_C02_T1_L2#description>
 
-For the rest of the practical, I downloaded the [Bristol City Boundary](https://opendata.bristol.gov.uk/datasets/bcc::bristol-boundary/explore) shape file, uploaded to the assets and clipped out images with only Bristol.
+For the rest of the practical, I downloaded the [Bristol City Boundary](https://opendata.bristol.gov.uk/datasets/bcc::bristol-boundary/explore) shape file, uploaded to the assets and clipped out images with only Bristol. Currently clipping code only works with my code editor, not the published app.
+
+<div class="image-container" style="display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(2,1fr); gap:5px;">
+
+<img src="images/wk6/wk6_ndvi.png" height = 310 width= 340px alt="NDVI for Bristol">
+
+<img src="images/wk6/wk6_ndwi.png" height = 310 width= 340px alt="NDWI for Bristol">
+
+<img src="images/wk6/wk6_savi.png" height = 310 width= 340px alt="SAVI for Bristol">
+
+<img src="images/wk6/wk6_arvi.png" height = 310 width= 340px alt="ARVI for Bristol"></div><p align="center" class="grid-caption">NDVI, NDWI, SAVI and ARVI bounded by the Bristol Boundary</p>
 
 ## PCA
 
-PCA runs faster compared in R, but the code is more complex.
+PCA runs faster compared to R, but the JS code is more complex.
 
 With the
 
 I have put everything in an GEE app:
+
+<div class="image-container" style="display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(3,1fr); gap:5px;">
+
+<div class="image-item"><img src="images/wk6/bristolbound.png" height = 310 width= 340px alt="NDVI for Bristol"><p align="center" class="caption">Bristol Boundary</p></div>
+
+<div class="image-item"><img src="images/wk6/bristolclip.png" height = 310 width= 340px alt="SAVI for Bristol"><p align="center" class="caption">Bristol Clip</p></div>
+
+<div class="image-item"><img src="images/wk6/glcm.png" height = 310 width= 340px alt="NDWI for Bristol"><p align="center" class="caption">GLCM</p></div>
+
+<div class="image-item"><img src="images/wk6/PC1_and_PC2.png" height = 310 width= 340px alt="ARVI for Bristol"><p align="center" class="caption">P1 and P2</p></div>
+
+<div class="image-item"><img src="images/wk6/PC1.png" height = 230 width= 340px alt="ARVI for Bristol"><p align="center" class="caption">PC1</p></div>
+
+<div class="image-item"><img src="images/wk6/PC2.png" height = 230 width= 340px alt="ARVI for Bristol"><p align="center" class="caption">PC2</p></div>
+
+</div>
 
 ## Reflection
 

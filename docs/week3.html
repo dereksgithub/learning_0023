@@ -51,17 +51,16 @@ div.csl-indent {
 <meta name="quarto:offset" content="./">
 <link href="./week4.html" rel="next">
 <link href="./week2.html" rel="prev">
+<link href="./images/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -228,7 +227,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">CASA0023 Term Recap</span></a>
+ <span class="menu-text">Remote Sensing Term Recap</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -289,21 +288,21 @@ div.csl-indent {
 <p>This week’s topic is on correction, the author carried on with the Bristol study as the Bristol area happens to have overlap of Landsat 8 and 9. (Landsat 8 C1L1 for the first part of the practical time of capture is Jan19 to Jan29, 2024)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2024-02-17 173551.png" class="img-fluid figure-img" width="600"></p>
+<p><img src="images/wk3/Screenshot 2024-02-17 173551.png" class="img-fluid figure-img" width="599"></p>
 <figcaption class="figure-caption">Selecting the Landsat 8 and 9 Data with Overlap at Bristol for the second part of practical</figcaption>
 </figure>
 </div>
 <p>Landsat 8 image corrected (Dark Object Subtraction method) with adjusted reflectance values that account for atmospheric effects, leading to a more accurate image.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/wk3_01_band_2to4.png" class="img-fluid figure-img" width="647"></p>
+<p><img src="images/wk3/wk3_01_band_2to4.png" class="img-fluid figure-img" width="647"></p>
 <figcaption class="figure-caption">DN Results</figcaption>
 </figure>
 </div>
 <p>The values of the estimated minimum digital number (DN) across the image for Band 2, 3, and 4 that are considered to be affected by haze are 19, 12, and 8. Among the three, band 2 shows the most atmospheric scattering effects while band 4 shows the least around the red part of the spectrum.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/000010.png" class="img-fluid figure-img" width="648"></p>
+<p><img src="images/wk3/000010.png" class="img-fluid figure-img" width="648"></p>
 <figcaption class="figure-caption">Corrected Bristol Area for Landsat 8 (Or a large area that includes Bristol)</figcaption>
 </figure>
 </div>
@@ -312,27 +311,27 @@ div.csl-indent {
 <p>In the second part of the practical, I downloaded Landsat 8 and 9, L2, with cloud cover 0 to 5% taken at Nov/25/2023 and Sep/05/2023 respectively.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ndvi_allplots.png" class="img-fluid figure-img" width="593"></p>
+<p><img src="images/wk3/ndvi_allplots.png" class="img-fluid figure-img" width="594"></p>
 <figcaption class="figure-caption">NDVI at different levels</figcaption>
 </figure>
 </div>
 <p>After the NDVI plots, I clipped the shapefile of the Bristol surrounding area. (Again, it is acually a large area that includes Bristol and multiple other cities/towns)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2024-02-17 181559.png" class="img-fluid figure-img" width="461"></p>
+<p><img src="images/wk3/Screenshot 2024-02-17 181559.png" class="img-fluid figure-img" width="461"></p>
 <figcaption class="figure-caption">QGis Clipping</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/wk3_pca_importance.png" class="img-fluid figure-img"></p>
+<p><img src="images/wk3/wk3_pca_importance.png" class="img-fluid figure-img"></p>
 <figcaption class="figure-caption">PCA Result Summary</figcaption>
 </figure>
 </div>
 <p>The first 3 components contain 86.6% of variances.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/wk3_1st_pca_plot.png" class="img-fluid figure-img" width="648"></p>
+<p><img src="images/wk3/wk3_1st_pca_plot.png" class="img-fluid figure-img" width="648"></p>
 <figcaption class="figure-caption">PCA Result Plots</figcaption>
 </figure>
 </div>
@@ -342,7 +341,7 @@ div.csl-indent {
 <p>Using glcm to perform texture analysis for Landsat images. Homogeneity measures the closeness of the distribution of elements in the GLCM to the GLCM diagonal, indicating areas where pixel values are similar to their neighbors, while reflecting uniform textures within the image. Second moment, or energy, quantifies texture uniformity an indicator where higher values denote areas with more consistent or smooth textures. Correlation assesses how a pixel’s value is predictably related to its neighbors, with high values indicating a linear or predictable relationship in gray-level values across the texture. For GLCM, Mean refers to the average intensity or gray level within the analyzed window, offering insights into the overall brightness or reflectance of the area being studied.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/glcm.png" class="img-fluid figure-img" width="648"></p>
+<p><img src="images/wk3/glcm.png" class="img-fluid figure-img" width="648"></p>
 <figcaption class="figure-caption">GLCM 4 Methods</figcaption>
 </figure>
 </div>
@@ -551,7 +550,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  let localAlternateSentinel = 'alternate';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 

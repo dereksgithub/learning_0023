@@ -17,20 +17,19 @@ Remote sensing is part of GIS but it involves more than just GIS.
 
     There are many types of data in remote sensing, we can broadly categorise them into the following:
 
-    -   Spectral Data
-    -   Spatial Data
-    -   Temporal Data
-    -   Radiometric Data
-    -   Resolution Data
-    -   Multispectral Data
-    -   Hyperspectral Data
-    -   Thermal Data
-    -   LiDar Data
-    -   Radar Data
-    -   Optical Data
-    -   DEM Data
-    -   Gravity and Magnetic Field Data
-    -   Metadata
+    -   Spectral Data:
+    -   Spatial Data:
+    -   Temporal Data:
+    -   Radiometric Data:
+    -   Resolution Data:
+    -   Multispectral Data:
+    -   Hyperspectral Data:
+    -   Thermal Data:
+    -   LiDar Data: utilise laser to collect point-cloud data thus capturing three-dimensional information about the Earth's surface.
+    -   Radar Data:
+    -   Optical Data:
+    -   Gravity and Magnetic Field Data: offering insights into the gravitational and magnetic conditions of the Earth.
+    -   Metadata: information that describes a dataset, usually covering dataset's content, time of collection, quality, publisher, and other characteristics.
 
 -   Four resolutions: Remotely sensed data and applications will vary based on the four resolutions
 
@@ -45,23 +44,23 @@ For this practical, I picked Bristol as its distinct urban and suburb area split
 
 First, I performed a scatter analysis for the greater Bristol area that I have picked for the analysis, this includes a large portion of suburb land, which indicates high biomass in the analysis.
 
-![Scatter Plot Analysis](images/scatterplot.png){fig-align="center" width="792"}
+![Scatter Plot Analysis](images/wk1/scatterplot.png){fig-align="center" width="793"}
 
-![Histogram Analysis](images/histogram.png){fig-align="center" width="736"}
+![Histogram Analysis](images/wk1/histogram.png){fig-align="center" width="736"}
 
-![Sentinel 2 Image](images/sent2.png){fig-align="center" width="735"}
+![Sentinel 2 Image](images/wk1/sent2.png){fig-align="center" width="735"}
 
-![Sentinel and Landsat Side-by-side](images/Screenshot%202024-01-29%20190738.png){fig-align="center" width="734"}
+![Sentinel and Landsat Side-by-side](images/wk1/Screenshot%202024-01-29%20190738.png){fig-align="center" width="734"}
 
 Later on, I performed the down sampling for Sentinel-2A images to align its resolution with Landsat images.
 
-![Down-sampling of Sentinel-2A Images](images/resampling.png){fig-align="center" width="495"}
+![Down-sampling of Sentinel-2A Images](images/wk1/resampling.png){fig-align="center" width="495"}
 
 ## Results
 
 After down-sampling Sentinel images and cross-analyzing it with LandSat of the POI, downtown area of Bristol, the result is recorded below, indicating high urban.
 
-![Week 1 Result](images/Screenshot%202024-01-29%20202650.png){fig-align="center" width="647"}
+![Week 1 Result](images/wk1/Screenshot%202024-01-29%20202650.png){fig-align="center" width="647"}
 
 ## Reflections
 

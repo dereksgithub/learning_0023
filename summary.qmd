@@ -4,34 +4,20 @@ In summary, .
 
 ## Additional GEE Materials
 
-[Clipping Polygons](https://www.youtube.com/watch?v=E2MyYxkV7oY) in GEE
+-   [Clipping Polygons](https://www.youtube.com/watch?v=E2MyYxkV7oY) in GEE
 
-## Add Index, for which Dataset Recommended for what
+-    [GEE data catalog](https://developers.google.com/earth-engine/datasets)
 
-In [GEE data catalog](https://developers.google.com/earth-engine/datasets)
+-   
 
-e.g Sentinel 5P for air quality etc.
+## HTML, CSS and Quarto
 
-dynamic world
+Here are a list of resources that I have used and adapted for this Quarto book:
 
-Sentinel
+-   [Embedding multiple images](https://www.shecodes.io/athena/1837-how-to-put-2-images-on-one-line-with-css)
 
-L1
-
-L2
-
-...
-
-Available online:
-
-L1
-
-L2
-
-USGS
+-   [Embedding videos](https://quarto.org/docs/authoring/videos.html)
 
 ## Future Works
 
-Python + GEE, Web embeding for GEE.
-
-Visualization of my research with GEE.
+The trend now seems to be building application with Python + GEE, therefore, I am planning to use the Python / GEE tool suite for parts of the visualization work with thesis work. Hopefully it will be interactive and with a touch of satellite images showing the road networks for the transport in a city.

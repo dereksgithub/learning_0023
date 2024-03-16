@@ -10,11 +10,9 @@ Azimuth:
 
 CART:
 
-DEM: [Digital Elevation Model](https://www.usgs.gov/faqs/what-digital-elevation-model-dem)
+:
 
-DSM: Digital Surface Model
-
-DTM: Digital Terrain Model
+DEM/DSM/DTM: [Digital Elevation Model](https://www.usgs.gov/faqs/what-digital-elevation-model-dem) / Digital Surface Model / Digital Terrain Model. This [article](https://geodetics.com/dem-dsm-dtm-digital-elevation-models/) and explains well the differences between DEM, DTM and DSM.
 
 EO: Earth Observation
 
@@ -40,7 +38,7 @@ LandSat: [Land Satellite](https://en.wikipedia.org/wiki/Landsat_program), L-8, L
 
 LiDAR: [Light Detection and Ranging](https://en.wikipedia.org/wiki/Lidar)
 
-LULC:
+LULC: Land Use and Land Cover
 
 MODIS: Moderate Resolution Imaging Spectroradiometer
 

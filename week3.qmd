@@ -6,37 +6,37 @@ This week we covered the corrections and enhancements for satellite imagery. It 
 
 This week's topic is on correction, the author carried on with the Bristol study as the Bristol area happens to have overlap of Landsat 8 and 9. (Landsat 8 C1L1 for the first part of the practical time of capture is Jan19 to Jan29, 2024)
 
-![Selecting the Landsat 8 and 9 Data with Overlap at Bristol for the second part of practical](images/Screenshot%202024-02-17%20173551.png){fig-align="center" width="600"}
+![Selecting the Landsat 8 and 9 Data with Overlap at Bristol for the second part of practical](images/wk3/Screenshot%202024-02-17%20173551.png){fig-align="center" width="599"}
 
 Landsat 8 image corrected (Dark Object Subtraction method) with adjusted reflectance values that account for atmospheric effects, leading to a more accurate image.
 
-![DN Results](images/wk3_01_band_2to4.png){fig-align="center" width="647"}
+![DN Results](images/wk3/wk3_01_band_2to4.png){fig-align="center" width="647"}
 
 The values of the estimated minimum digital number (DN) across the image for Band 2, 3, and 4 that are considered to be affected by haze are 19, 12, and 8. Among the three, band 2 shows the most atmospheric scattering effects while band 4 shows the least around the red part of the spectrum.
 
-![Corrected Bristol Area for Landsat 8 (Or a large area that includes Bristol)](images/000010.png){fig-align="center" width="648"}
+![Corrected Bristol Area for Landsat 8 (Or a large area that includes Bristol)](images/wk3/000010.png){fig-align="center" width="648"}
 
 ### Merging Images
 
 In the second part of the practical, I downloaded Landsat 8 and 9, L2, with cloud cover 0 to 5% taken at Nov/25/2023 and Sep/05/2023 respectively.
 
-![NDVI at different levels](images/ndvi_allplots.png){fig-align="center" width="593"}
+![NDVI at different levels](images/wk3/ndvi_allplots.png){fig-align="center" width="594"}
 
 After the NDVI plots, I clipped the shapefile of the Bristol surrounding area. (Again, it is acually a large area that includes Bristol and multiple other cities/towns)
 
-![QGis Clipping](images/Screenshot%202024-02-17%20181559.png){fig-align="center" width="461"}
+![QGis Clipping](images/wk3/Screenshot%202024-02-17%20181559.png){fig-align="center" width="461"}
 
-![PCA Result Summary](images/wk3_pca_importance.png){fig-align="center"}
+![PCA Result Summary](images/wk3/wk3_pca_importance.png){fig-align="center"}
 
 The first 3 components contain 86.6% of variances.
 
-![PCA Result Plots](images/wk3_1st_pca_plot.png){fig-align="center" width="648"}
+![PCA Result Plots](images/wk3/wk3_1st_pca_plot.png){fig-align="center" width="648"}
 
 ### GLCM
 
 Using glcm to perform texture analysis for Landsat images. Homogeneity measures the closeness of the distribution of elements in the GLCM to the GLCM diagonal, indicating areas where pixel values are similar to their neighbors, while reflecting uniform textures within the image. Second moment, or energy, quantifies texture uniformity an indicator where higher values denote areas with more consistent or smooth textures. Correlation assesses how a pixel's value is predictably related to its neighbors, with high values indicating a linear or predictable relationship in gray-level values across the texture. For GLCM, Mean refers to the average intensity or gray level within the analyzed window, offering insights into the overall brightness or reflectance of the area being studied.
 
-![GLCM 4 Methods](images/glcm.png){fig-align="center" width="648"}
+![GLCM 4 Methods](images/wk3/glcm.png){fig-align="center" width="648"}
 
 ## Summary of Indices
 
