@@ -231,7 +231,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./rs_acronym.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Common Acronyms in Remote Sensing</span></a>
+ <span class="menu-text">Acronyms and Key Concepts in Remote Sensing</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -280,8 +280,7 @@ div.csl-indent {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>For the first week, we are introduced to the concept of remote sensing and how to download data and images collected by satellites and perform basic analysis with SNAP and R.</p>
-<p>Remote sensing is part of GIS but it involves more than just GIS.</p>
+<p>For the first week, we are introduced to the concept of remote sensing and how to download data and images collected by satellites and perform basic analysis with SNAP and R. Remote sensing is part of GIS but it involves more than just GIS.</p>
 </section>
 <section id="remote-sensing-overview" class="level2">
 <h2 class="anchored" data-anchor-id="remote-sensing-overview">Remote Sensing Overview</h2>
@@ -291,20 +290,21 @@ div.csl-indent {
 <li>Active: Emits EM waves or other energy from its own sensors (radar, LiDar etc.) to measure and capture the landscapes/features of the area of interest.</li>
 <li>Passive: Detects and captures the natural energy signals radiated by of the area of interest.</li>
 </ul></li>
+<li><p>A key concept in remote sensingis the electromagnetic waves and their interaction with the atmosphere and the Earth’s surface. I have also revisited the concept of <a href="https://www.encyclopedie-environnement.org/en/zoom/diffusion-reflection-refraction-and-diffraction-of-light/">diffusion, reflection, refraction and diffraction.</a> Understanding such interactions is pivotal for interpreting satellite imagery and other remote sensing data. Thus, correction of atmospheric interference accurately is one of the most important directions of work for remote sensing.</p></li>
 <li><p>Data in Remote Sensing:</p>
 <p>There are many types of data in remote sensing, we can broadly categorise them into the following:</p>
 <ul>
-<li>Spectral Data:</li>
-<li>Spatial Data:</li>
-<li>Temporal Data:</li>
-<li>Radiometric Data:</li>
-<li>Resolution Data:</li>
-<li>Multispectral Data:</li>
-<li>Hyperspectral Data:</li>
-<li>Thermal Data:</li>
-<li>LiDar Data: utilise laser to collect point-cloud data thus capturing three-dimensional information about the Earth’s surface.</li>
-<li>Radar Data:</li>
-<li>Optical Data:</li>
+<li>Spectral Data: Measure of light reflectance or emission across the electromagnetic spectrum (different wavelength).</li>
+<li>Spatial Data: Location information, size, shape or other features of the Earth’s surface.</li>
+<li>Temporal Data: “<a href="https://desktop.arcgis.com/en/arcmap/latest/map/time/what-is-temporal-data.htm">Simply data that represents a state in time</a>.” i.e.&nbsp;the remote sensing data with time stamps.</li>
+<li>Radiometric Data: The intensity of radiation captured by sensors, indicating the percentage of the sensed wavelength is being emitted or reflected.</li>
+<li>Resolution Data: Describing the raw data’s spatial, spectral, temporal, and radiometric resolution.</li>
+<li>Multispectral Data: It means the data that contains two or more sets of EM frequencies.</li>
+<li>Hyperspectral Data: Data from all available bands on spectrum.</li>
+<li>Thermal Data: Data collected from thermal remote sensing, usually collected from a sensor’s thermal band.</li>
+<li>LiDar Data: Utilise laser to collect point-cloud data thus capturing three-dimensional information about the Earth’s surface.</li>
+<li>Radar Data: Data collected from sampling back-scattered electromagnetic waves.</li>
+<li>Optical Data: Data from the visible, near infrared and short-wave-infrared bands on the EM spectrum.</li>
 <li>Gravity and Magnetic Field Data: offering insights into the gravitational and magnetic conditions of the Earth.</li>
 <li>Metadata: information that describes a dataset, usually covering dataset’s content, time of collection, quality, publisher, and other characteristics.</li>
 </ul></li>
@@ -312,8 +312,8 @@ div.csl-indent {
 <ul>
 <li>Spatial: Refers to the size of one pixel on the ground (e.g.&nbsp;20cm or 30m) Higher Spatial resolution means finer details.</li>
 <li>Spectral: Describes the number and width of spectral bands the sensor records data in.</li>
-<li>Temporal: The frequency with which a sensor revisits the same location.</li>
-<li>Radiometric: identify differences in light or reflectance, in practice this is the range of possible values for example, an 8-bit sensor has values between 0 and 255 (256 possibilities), captures much fewer energy levels than an 11-bit sensor has values between 0 and 2047 (2048 possibilities), in this sense, the 11-bit sensors captures finer-grained data.</li>
+<li>Temporal: The frequency with which a sensor revisits the same location. A chart of temporal resolution <a href="https://link.springer.com/article/10.1007/s10712-021-09637-5/figures/4">for Visible/NIR Satellites</a>. <span class="citation" data-cites="sutlieff2021using">(<a href="references.html#ref-sutlieff2021using" role="doc-biblioref">Sutlieff, Berthoud, and Stinchcombe 2021</a>)</span></li>
+<li>Radiometric: identify differences in light or reflectance, in practice this is the range of possible values, for example, an 8-bit sensor has values between 0 and 255 (256 possibilities), captures much fewer energy levels than an 11-bit sensor has values between 0 and 2047 (2048 possibilities), in this sense, the 11-bit sensors captures finer-grained data.</li>
 </ul></li>
 </ul>
 </section>
@@ -378,6 +378,9 @@ Navalgund, Ranganath R, V Jayaraman, and PS Roy. 2007. <span>“Remote Sensing A
 </div>
 <div id="ref-sabri2022editorial" class="csl-entry" role="listitem">
 Sabri, S, A Rajabifard, Y Chen, N Chen, and H Sheng. 2022. <span>“Editorial: Geospatial Understanding of Sustainable Urban Analytics Using Remote Sensing. Remote Sens. 2022, 14, 2748.”</span> s Note: MDPI stays neutral with regard to jurisdictional claims in published&nbsp;….
+</div>
+<div id="ref-sutlieff2021using" class="csl-entry" role="listitem">
+Sutlieff, Gary, Lucy Berthoud, and Mark Stinchcombe. 2021. <span>“Using Satellite Data for CBRN (Chemical, Biological, Radiological, and Nuclear) Threat Detection, Monitoring, and Modelling.”</span> <em>Surveys in Geophysics</em> 42: 727–55.
 </div>
 <div id="ref-wang2024deep" class="csl-entry" role="listitem">
 Wang, Qingyi, Shenhao Wang, Yunhan Zheng, Hongzhou Lin, Xiaohu Zhang, Jinhua Zhao, and Joan Walker. 2024. <span>“Deep Hybrid Model with Satellite Imagery: How to Combine Demand Modeling and Computer Vision for Travel Behavior Analysis?”</span> <em>Transportation Research Part B: Methodological</em> 179: 102869.

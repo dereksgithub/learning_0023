@@ -1,4 +1,4 @@
-# Common Acronyms in Remote Sensing {.unnumbered}
+# Acronyms and Key Concepts in Remote Sensing {.unnumbered}
 
 AOI: Area of Interest
 
@@ -6,11 +6,9 @@ ARVI: [Atmospherically Resistant Vegetation Index](week3.qmd)
 
 AVHRR: [Advanced Very High Resolution Radiometer](https://en.wikipedia.org/wiki/Advanced_very-high-resolution_radiometer)
 
-Azimuth:
+Azimuth: This is the [angle between a reference direction and the line between the observer/sensor and a specific point of interest on the ground](https://support.esri.com/en-us/gis-dictionary/azimuth).
 
 CART:
-
-:
 
 DEM/DSM/DTM: [Digital Elevation Model](https://www.usgs.gov/faqs/what-digital-elevation-model-dem) / Digital Surface Model / Digital Terrain Model. This [article](https://geodetics.com/dem-dsm-dtm-digital-elevation-models/) and explains well the differences between DEM, DTM and DSM.
 
@@ -24,17 +22,19 @@ EVI: [Enhanced Vegetation Index](week3.qmd)
 
 GIS: [Geographic Information System](https://www.usgs.gov/faqs/what-geographic-information-system-gis)
 
-GAUL:
+GAUL: Global Administrative Unit Layer:
 
-GLCM:
+GLCM: Gray-Level Co-occurrence Matrix. [This lecture note](https://web.pdx.edu/~jduh/courses/Archive/geog481w07/Students/Hayes_GreyScaleCoOccurrenceMatrix.pdf) is really helpful in understanding the details of GLCM.
 
 GNDVI: [Green Normalized Difference Vegetation Index](week3.qmd)
 
 GOES: [Geostationary Operational Environmental Satellite](https://science.nasa.gov/mission/goes/)
 
-IFOV: Instantaneous Field of View
+GSO: Geosynchronous Orbit, this is an orbit where, from the observer's (directly on the ground below the point of the object in orbit) reference frame, the object in orbit is stationary. [More detailed explanation is found here.](https://science.nasa.gov/learn/basics-of-space-flight/chapter5-1/)
 
-LandSat: [Land Satellite](https://en.wikipedia.org/wiki/Landsat_program), L-8, L-9
+IFOV: Instantaneous Field of View. Refers to the area on the ground, that a sensor in orbit can see and measure whenever it is ordered to.
+
+LandSat: [Land Satellite](https://en.wikipedia.org/wiki/Landsat_program), more details on deciding which Landsat collection to import [see here](https://calekochenour.github.io/remote-sensing-textbook/01-catalog/chapter01-landsat.html).
 
 LiDAR: [Light Detection and Ranging](https://en.wikipedia.org/wiki/Lidar)
 
@@ -60,13 +60,9 @@ RF: Random Forest
 
 ROI: Region of Interest
 
-RS: Remote Sensing
-
 SAVI: [Soil-Adjusted Vegetation Index](week3.qmd)
 
-SNAP: Sentinel Application Platform, a software platform used for processing and analyzing satellite data, mostly European Space Agency's Sentinel series Earth Observation data.
-
-SNR: Signal to Noise Ratio
+SNAP: [Sentinel Application Platform](https://step.esa.int/main/toolboxes/snap/), a software platform used for processing and analyzing satellite data, mostly European Space Agency's Sentinel series Earth Observation data.
 
 SVM: [Support Vector Machine](https://www.youtube.com/watch?v=efR1C6CvhmE)
 

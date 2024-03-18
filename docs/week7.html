@@ -212,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./rs_acronym.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Common Acronyms in Remote Sensing</span></a>
+ <span class="menu-text">Acronyms and Key Concepts in Remote Sensing</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -231,8 +231,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#classification-methods-i" id="toc-classification-methods-i" class="nav-link active" data-scroll-target="#classification-methods-i">Classification Methods I</a></li>
-  <li><a href="#classification-in-a-remote-sensing-context" id="toc-classification-in-a-remote-sensing-context" class="nav-link" data-scroll-target="#classification-in-a-remote-sensing-context">Classification in a Remote Sensing Context</a></li>
+  <li><a href="#classification-methods-in-remote-sensing" id="toc-classification-methods-in-remote-sensing" class="nav-link active" data-scroll-target="#classification-methods-in-remote-sensing">Classification Methods in Remote Sensing</a></li>
+  <li><a href="#practical-results-analysis" id="toc-practical-results-analysis" class="nav-link" data-scroll-target="#practical-results-analysis">Practical Results Analysis</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dereksgithub/learning_0023/edit/main/week7.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/dereksgithub/learning_0023/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -266,12 +267,48 @@ ul.task-list li input[type="checkbox"] {
 <p>RF – Boosting — CNN</p>
 <p>1.&nbsp;&nbsp;&nbsp;&nbsp; Add more Critiques to the literature you reviewed, extend the current research.</p>
 <p>2.&nbsp;&nbsp;&nbsp;&nbsp; Structure the contents better, give a clear architecture on the right sides of the webpage.</p>
-<section id="classification-methods-i" class="level2">
-<h2 class="anchored" data-anchor-id="classification-methods-i">Classification Methods I</h2>
+<section id="classification-methods-in-remote-sensing" class="level2">
+<h2 class="anchored" data-anchor-id="classification-methods-in-remote-sensing">Classification Methods in Remote Sensing</h2>
 <p>In the context of remote sensing, there are several classification methods, ranging from logistic regression to</p>
 </section>
-<section id="classification-in-a-remote-sensing-context" class="level2">
-<h2 class="anchored" data-anchor-id="classification-in-a-remote-sensing-context">Classification in a Remote Sensing Context</h2>
+<section id="practical-results-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="practical-results-analysis">Practical Results Analysis</h2>
+<p>Pixel wise, 70/30 split,</p>
+<p>how is it splitted?</p>
+<div class="image-container" style="display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(2,1fr); gap:5px;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wk7/bristol_clip.png" width="340" height="290" class="figure-img"></p>
+<figcaption class="figure-caption">Greater Bristol Clip Median</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wk7/comparison.png" width="340" height="290" class="figure-img"></p>
+<figcaption class="figure-caption">Comparison of Satellite Layer from GEE and Classification Result</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wk7/basic_classifier.png" width="340" height="290" class="figure-img"></p>
+<figcaption class="figure-caption">First Classification</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wk7/pixel_wise_classifier.png" width="340" height="290" class="figure-img"></p>
+<figcaption class="figure-caption">Pixel-wise Classification</figcaption>
+</figure>
+</div>
+</div>
+<p>Overall results in GEE App:</p>
+<p align="left">
+</p><p><iframe title="gee_app_02" width="680" height="700" src="https://ee-mengyu-derek-ding.projects.earthengine.app/view/bristolclassifierv1" frameborder="0"></p>
+</iframe>
+</p>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
 <p>Current</p>
 
 

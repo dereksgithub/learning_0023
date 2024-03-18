@@ -2,9 +2,7 @@
 
 ## Overview
 
-For the first week, we are introduced to the concept of remote sensing and how to download data and images collected by satellites and perform basic analysis with SNAP and R.
-
-Remote sensing is part of GIS but it involves more than just GIS.
+For the first week, we are introduced to the concept of remote sensing and how to download data and images collected by satellites and perform basic analysis with SNAP and R. Remote sensing is part of GIS but it involves more than just GIS.
 
 ## Remote Sensing Overview
 
@@ -13,21 +11,23 @@ Remote sensing is part of GIS but it involves more than just GIS.
     -   Active: Emits EM waves or other energy from its own sensors (radar, LiDar etc.) to measure and capture the landscapes/features of the area of interest.
     -   Passive: Detects and captures the natural energy signals radiated by of the area of interest.
 
+-   A key concept in remote sensingis the electromagnetic waves and their interaction with the atmosphere and the Earth's surface. I have also revisited the concept of [diffusion, reflection, refraction and diffraction.](https://www.encyclopedie-environnement.org/en/zoom/diffusion-reflection-refraction-and-diffraction-of-light/) Understanding such interactions is pivotal for interpreting satellite imagery and other remote sensing data. Thus, correction of atmospheric interference accurately is one of the most important directions of work for remote sensing.
+
 -   Data in Remote Sensing:
 
     There are many types of data in remote sensing, we can broadly categorise them into the following:
 
-    -   Spectral Data:
-    -   Spatial Data:
-    -   Temporal Data:
-    -   Radiometric Data:
-    -   Resolution Data:
-    -   Multispectral Data:
-    -   Hyperspectral Data:
-    -   Thermal Data:
-    -   LiDar Data: utilise laser to collect point-cloud data thus capturing three-dimensional information about the Earth's surface.
-    -   Radar Data:
-    -   Optical Data:
+    -   Spectral Data: Measure of light reflectance or emission across the electromagnetic spectrum (different wavelength).
+    -   Spatial Data: Location information, size, shape or other features of the Earth's surface.
+    -   Temporal Data: "[Simply data that represents a state in time](https://desktop.arcgis.com/en/arcmap/latest/map/time/what-is-temporal-data.htm)." i.e. the remote sensing data with time stamps.
+    -   Radiometric Data: The intensity of radiation captured by sensors, indicating the percentage of the sensed wavelength is being emitted or reflected.
+    -   Resolution Data: Describing the raw data's spatial, spectral, temporal, and radiometric resolution.
+    -   Multispectral Data: It means the data that contains two or more sets of EM frequencies.
+    -   Hyperspectral Data: Data from all available bands on spectrum.
+    -   Thermal Data: Data collected from thermal remote sensing, usually collected from a sensor's thermal band.
+    -   LiDar Data: Utilise laser to collect point-cloud data thus capturing three-dimensional information about the Earth's surface.
+    -   Radar Data: Data collected from sampling back-scattered electromagnetic waves.
+    -   Optical Data: Data from the visible, near infrared and short-wave-infrared bands on the EM spectrum.
     -   Gravity and Magnetic Field Data: offering insights into the gravitational and magnetic conditions of the Earth.
     -   Metadata: information that describes a dataset, usually covering dataset's content, time of collection, quality, publisher, and other characteristics.
 
@@ -35,8 +35,8 @@ Remote sensing is part of GIS but it involves more than just GIS.
 
     -   Spatial: Refers to the size of one pixel on the ground (e.g. 20cm or 30m) Higher Spatial resolution means finer details.
     -   Spectral: Describes the number and width of spectral bands the sensor records data in.
-    -   Temporal: The frequency with which a sensor revisits the same location.
-    -   Radiometric: identify differences in light or reflectance, in practice this is the range of possible values for example, an 8-bit sensor has values between 0 and 255 (256 possibilities), captures much fewer energy levels than an 11-bit sensor has values between 0 and 2047 (2048 possibilities), in this sense, the 11-bit sensors captures finer-grained data.
+    -   Temporal: The frequency with which a sensor revisits the same location. A chart of temporal resolution [for Visible/NIR Satellites](https://link.springer.com/article/10.1007/s10712-021-09637-5/figures/4). [@sutlieff2021using]
+    -   Radiometric: identify differences in light or reflectance, in practice this is the range of possible values, for example, an 8-bit sensor has values between 0 and 255 (256 possibilities), captures much fewer energy levels than an 11-bit sensor has values between 0 and 2047 (2048 possibilities), in this sense, the 11-bit sensors captures finer-grained data.
 
 ## Case Study of Bristol
 

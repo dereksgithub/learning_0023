@@ -233,7 +233,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./rs_acronym.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Common Acronyms in Remote Sensing</span></a>
+ <span class="menu-text">Acronyms and Key Concepts in Remote Sensing</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -257,8 +257,8 @@ div.csl-indent {
   <li><a href="#merging-images" id="toc-merging-images" class="nav-link" data-scroll-target="#merging-images">Merging Images</a></li>
   <li><a href="#glcm" id="toc-glcm" class="nav-link" data-scroll-target="#glcm">GLCM</a></li>
   </ul></li>
-  <li><a href="#summary-of-indices" id="toc-summary-of-indices" class="nav-link" data-scroll-target="#summary-of-indices">Summary of Indices</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  <li><a href="#summary-of-correction-indices" id="toc-summary-of-correction-indices" class="nav-link" data-scroll-target="#summary-of-correction-indices">Summary of Correction Indices</a></li>
+  <li><a href="#reflection-and-literature-review" id="toc-reflection-and-literature-review" class="nav-link" data-scroll-target="#reflection-and-literature-review">Reflection and Literature Review</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dereksgithub/learning_0023/edit/main/week3.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/dereksgithub/learning_0023/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -328,7 +328,7 @@ div.csl-indent {
 <figcaption class="figure-caption">PCA Result Summary</figcaption>
 </figure>
 </div>
-<p>The first 3 components contain 86.6% of variances.</p>
+<p>After performing dimensioality reduction with PCA, the first 3 components contain 86.6% of variances. To analyse the source data collected here, the dimension can be reduced to PC1 to PC4 only, as they, in total, explains 95.098% of variance. Compared to the smaller study area tailored towards the urban areas of Bristol in <a href="./week6.html">week 6</a>, this result is certainly less . This is because the area is largely grass and forest, not building-dense, Bristol city areas.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/wk3/wk3_1st_pca_plot.png" class="img-fluid figure-img" width="648"></p>
@@ -338,7 +338,8 @@ div.csl-indent {
 </section>
 <section id="glcm" class="level3">
 <h3 class="anchored" data-anchor-id="glcm">GLCM</h3>
-<p>Using glcm to perform texture analysis for Landsat images. Homogeneity measures the closeness of the distribution of elements in the GLCM to the GLCM diagonal, indicating areas where pixel values are similar to their neighbors, while reflecting uniform textures within the image. Second moment, or energy, quantifies texture uniformity an indicator where higher values denote areas with more consistent or smooth textures. Correlation assesses how a pixel’s value is predictably related to its neighbors, with high values indicating a linear or predictable relationship in gray-level values across the texture. For GLCM, Mean refers to the average intensity or gray level within the analyzed window, offering insights into the overall brightness or reflectance of the area being studied.</p>
+<p>Using GLCM (Grey-Level C0-occurrence Matrix) to perform texture analysis for Landsat images. Homogeneity measures the closeness of the distribution of elements in the GLCM to the GLCM diagonal, indicating areas where pixel values are similar to their neighbors, while reflecting uniform textures within the image. Second moment, or energy, quantifies texture uniformity an indicator where higher values denote areas with more consistent or smooth textures.</p>
+<p>Correlation assesses how a pixel’s value is predictably related to its neighbors, with high values indicating a linear or predictable relationship in gray-level values across the texture. For GLCM, Mean refers to the average intensity or gray level within the analyzed window, offering insights into the overall brightness or reflectance of the area being studied. GLCM’s applications are covered <a href="./week6.html">here</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/wk3/glcm.png" class="img-fluid figure-img" width="648"></p>
@@ -347,8 +348,9 @@ div.csl-indent {
 </div>
 </section>
 </section>
-<section id="summary-of-indices" class="level2">
-<h2 class="anchored" data-anchor-id="summary-of-indices">Summary of Indices</h2>
+<section id="summary-of-correction-indices" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-correction-indices">Summary of Correction Indices</h2>
+<p>The area of correction methods or ratio enhancement in remote sensing is rich and growing, I have summarised some key methods below:</p>
 <p>Normalized Difference Vegetation Index (NDVI) is a remote sensing index that measures the health and density of vegetation on the Earth’s surface. NIR represents the near-infrared light reflected by vegetation, and RED represents the visible red light reflected by vegetation.</p>
 <ul>
 <li><span class="math inline">\(NDVI = \frac{(NIR - RED)}{(NIR+RED)}\)</span></li>
@@ -395,8 +397,8 @@ div.csl-indent {
 </ul>
 <p>These indicators, are sufficient only for basic analysis demands, to derive more hidden relations, more modern techniques such as deep learning,<span class="citation" data-cites="ma2019deep">(<a href="references.html#ref-ma2019deep" role="doc-biblioref">Ma et al. 2019</a>)</span> and Semi-supervised representation learning <span class="citation" data-cites="yan2020semi">(<a href="references.html#ref-yan2020semi" role="doc-biblioref">Yan et al. 2020</a>)</span> can also be employed.</p>
 </section>
-<section id="reflection" class="level2">
-<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<section id="reflection-and-literature-review" class="level2">
+<h2 class="anchored" data-anchor-id="reflection-and-literature-review">Reflection and Literature Review</h2>
 <p>Integrating the most appropriate remote sensing metrics for urban analytics is pivotal effective city planning or addressing other built-environment challenges. Among these measures, NDVI as is widely used for monitoring urban vegetation and urban green space,<span class="citation" data-cites="xue2017significant">(<a href="references.html#ref-xue2017significant" role="doc-biblioref">Xue, Su, et al. 2017</a>)</span> whereas NDWI plays a critical role in urban water body and drought monitoring, it is also important for urban fire prevention.<span class="citation" data-cites="zhu2017change">(<a href="references.html#ref-zhu2017change" role="doc-biblioref">Zhu 2017</a>)</span> Other metrics, such as ARVI, EVI, SAVI, MSAVI, and NDMI are still relevant in the industry and contemporary urban science, but recent studies call for both enhancement of the indices and nuanced applications. As suggested in many publications, such correction methods can be further refined to optimized the data contamination brought by atmospheric or other factors. <span class="citation" data-cites="zhou2021optimal">Zhou et al. (<a href="references.html#ref-zhou2021optimal" role="doc-biblioref">2021</a>)</span> proposed the use of HANTS model (Harmonic Analysis of Time Series) to further optimize the parameter settings for NDVI reconstruction at a global scale and over longer period of time. Such methods are unique and well-rooted under today’s hype of LLM or “trying DL/complex machine learning frameworks on all problems”. Thus, investigations on further optimising the traditional correction methods with explainable models future research remains relevant and important.</p>
 
 

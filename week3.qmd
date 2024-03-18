@@ -28,17 +28,21 @@ After the NDVI plots, I clipped the shapefile of the Bristol surrounding area. (
 
 ![PCA Result Summary](images/wk3/wk3_pca_importance.png){fig-align="center"}
 
-The first 3 components contain 86.6% of variances.
+After performing dimensioality reduction with PCA, the first 3 components contain 86.6% of variances. To analyse the source data collected here, the dimension can be reduced to PC1 to PC4 only, as they, in total, explains 95.098% of variance. Compared to the smaller study area tailored towards the urban areas of Bristol in [week 6](week6.qmd), this result is certainly less . This is because the area is largely grass and forest, not building-dense, Bristol city areas.
 
 ![PCA Result Plots](images/wk3/wk3_1st_pca_plot.png){fig-align="center" width="648"}
 
 ### GLCM
 
-Using glcm to perform texture analysis for Landsat images. Homogeneity measures the closeness of the distribution of elements in the GLCM to the GLCM diagonal, indicating areas where pixel values are similar to their neighbors, while reflecting uniform textures within the image. Second moment, or energy, quantifies texture uniformity an indicator where higher values denote areas with more consistent or smooth textures. Correlation assesses how a pixel's value is predictably related to its neighbors, with high values indicating a linear or predictable relationship in gray-level values across the texture. For GLCM, Mean refers to the average intensity or gray level within the analyzed window, offering insights into the overall brightness or reflectance of the area being studied.
+Using GLCM (Grey-Level C0-occurrence Matrix) to perform texture analysis for Landsat images. Homogeneity measures the closeness of the distribution of elements in the GLCM to the GLCM diagonal, indicating areas where pixel values are similar to their neighbors, while reflecting uniform textures within the image. Second moment, or energy, quantifies texture uniformity an indicator where higher values denote areas with more consistent or smooth textures.
+
+Correlation assesses how a pixel's value is predictably related to its neighbors, with high values indicating a linear or predictable relationship in gray-level values across the texture. For GLCM, Mean refers to the average intensity or gray level within the analyzed window, offering insights into the overall brightness or reflectance of the area being studied. GLCM's applications are covered [here](week6.qmd).
 
 ![GLCM 4 Methods](images/wk3/glcm.png){fig-align="center" width="648"}
 
-## Summary of Indices
+## Summary of Correction Indices
+
+The area of correction methods or ratio enhancement in remote sensing is rich and growing, I have summarised some key methods below:
 
 Normalized Difference Vegetation Index (NDVI) is a remote sensing index that measures the health and density of vegetation on the Earth's surface. NIR represents the near-infrared light reflected by vegetation, and RED represents the visible red light reflected by vegetation.
 
@@ -94,6 +98,6 @@ Aside from the NDVI, here are some other indicators that I have investigated and
 
 These indicators, are sufficient only for basic analysis demands, to derive more hidden relations, more modern techniques such as deep learning,[@ma2019deep] and Semi-supervised representation learning [@yan2020semi] can also be employed.
 
-## Reflection
+## Reflection and Literature Review
 
 Integrating the most appropriate remote sensing metrics for urban analytics is pivotal effective city planning or addressing other built-environment challenges. Among these measures, NDVI as is widely used for monitoring urban vegetation and urban green space,[@xue2017significant] whereas NDWI plays a critical role in urban water body and drought monitoring, it is also important for urban fire prevention.[@zhu2017change] Other metrics, such as ARVI, EVI, SAVI, MSAVI, and NDMI are still relevant in the industry and contemporary urban science, but recent studies call for both enhancement of the indices and nuanced applications. As suggested in many publications, such correction methods can be further refined to optimized the data contamination brought by atmospheric or other factors. @zhou2021optimal proposed the use of HANTS model (Harmonic Analysis of Time Series) to further optimize the parameter settings for NDVI reconstruction at a global scale and over longer period of time. Such methods are unique and well-rooted under today's hype of LLM or "trying DL/complex machine learning frameworks on all problems". Thus, investigations on further optimising the traditional correction methods with explainable models future research remains relevant and important.

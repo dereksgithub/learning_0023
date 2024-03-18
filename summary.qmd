@@ -2,13 +2,21 @@
 
 In summary, .
 
-## Additional GEE Materials
+## RS Theory and ML Learning
 
--   [Clipping Polygons](https://www.youtube.com/watch?v=E2MyYxkV7oY) in GEE
-
--    [GEE data catalog](https://developers.google.com/earth-engine/datasets)
+-   [PCA](https://grantkim94.medium.com/cracking-principal-components-analysis-pca-part-1-1372736ebac7) explained by [Hyeon Gu Kim](https://grantkim94.medium.com/)
 
 -   
+
+## Additional GEE Materials
+
+-   [Clipping Polygons](https://www.youtube.com/watch?v=E2MyYxkV7oY) in GEE by Youtuber [Fech](https://www.youtube.com/@fech1285)
+
+-   [GEE data catalog](https://developers.google.com/earth-engine/datasets)
+
+-   [GEE community catalog](https://gee-community-catalog.org/)
+
+-   [GEE Map](https://book.geemap.org/) by Professor. [Qiusheng Wu](https://dot.cards/giswqs)
 
 ## HTML, CSS and Quarto
 

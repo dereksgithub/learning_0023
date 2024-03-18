@@ -20,10 +20,36 @@ RF – Boosting — CNN
 
 2.     Structure the contents better, give a clear architecture on the right sides of the webpage.
 
-## Classification Methods I
+## Classification Methods in Remote Sensing
 
 In the context of remote sensing, there are several classification methods, ranging from logistic regression to
 
-## Classification in a Remote Sensing Context
+## Practical Results Analysis
+
+Pixel wise, 70/30 split,
+
+how is it splitted?
+
+::: {.image-container style="display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(2,1fr); gap:5px;"}
+![Greater Bristol Clip Median](images/wk7/bristol_clip.png){width="340" height="290"}
+
+![Comparison of Satellite Layer from GEE and Classification Result](images/wk7/comparison.png){width="340" height="290"}
+
+![First Classification](images/wk7/basic_classifier.png){width="340" height="290"}
+
+![Pixel-wise Classification](images/wk7/pixel_wise_classifier.png){width="340" height="290"}
+:::
+
+Overall results in GEE App:
+
+<p align="left">
+
+`<iframe title="gee_app_02" width="680" height="700" src="`{=html}https://ee-mengyu-derek-ding.projects.earthengine.app/view/bristolclassifierv1`" title="GEE App Bristol Look-up" frameborder="0">`{=html}
+
+</iframe>
+
+</p>
+
+## Reflection
 
 Current

@@ -2,4 +2,6 @@
 
 asdasd
 
-London Outdoor Gym Identification
+1.     Add more Critiques to the literature you reviewed, extend the current research.
+
+2.     Structure the contents better, give a clear architecture on the right sides of the webpage.

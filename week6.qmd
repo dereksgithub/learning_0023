@@ -1,10 +1,10 @@
 # Week 6 Introduction to Google Earth Engine {.unnumbered}
 
-This is a very exciting week that I could not physically attend since I was at the CUSP Data Dive (Datathon), GEE is something that interested me before selecting this module.
+This is a very exciting week that I could not physically attend since I was at the CUSP Data Dive (Datathon), GEE is something that interested me before selecting this module. This week we are introduced to the basic concepts of GEE and JavaScript.
 
 ## JavaScript and GEE Basics
 
-Google Earth Engine is a cloud platform developed by Google for scientific data analysis. [@reis2020primer] GEE can handle large datasets in a relatively faster than many other traditional commercial software, its mature integration with JavaScript also enables new users to master the tool suite with a shallower learning curve.[@cardille2022cloud] JavaScript is the language used in GEE code editor, it is an essential tool for front-end development, enabling developers to implement complex and interactive websites. JavaScript also interacts with HTML and CSS to style and build the user interface.
+Google Earth Engine is a cloud platform developed by Google for scientific data analysis. [@reis2020primer] GEE can handle large datasets in a relatively faster than many other traditional commercial software, its mature integration with JavaScript also enables new users to master the tool suite with a shallower learning curve.[@cardille2022cloud] JavaScript is the language used in GEE code editor, it is an essential tool for front-end development, enabling developers to implement complex and interactive websites. JavaScript also interacts with HTML and CSS to style and build the user interface. I have also summarised some useful introduction materials for learning GEE [here in the term summary](summary.qmd).
 
 Here is a basic block to code a function:
 
@@ -32,58 +32,127 @@ Here is the [link to the lookup app](https://ee-mengyu-derek-ding.projects.earth
 
 <p align="left">
 
-<iframe title="vimeo-player" width="680" height="600" src="https://ee-mengyu-derek-ding.projects.earthengine.app/view/brsitol-ndvindwiarvisavi-lookup" title="GEE App Bristol Look-up" frameborder="0">
+<iframe title="gee_app_01" width="680" height="700" src="https://ee-mengyu-derek-ding.projects.earthengine.app/view/brsitol-ndvindwiarvisavi-lookup" title="GEE App Bristol Look-up" frameborder="0">
 
 </iframe>
 
 </p>
 
-For the legend in the GEE app, have modified and derived the code from: [Open Geo Blog](https://mygeoblog.com/2016/12/09/add-a-legend-to-to-your-gee-map/). The colour code gradients for the four metrics are gathered from this [website](https://www.color-hex.com/).
+For the legend in this GEE app, I have modified and derived the code from: [Open Geo Blog](https://mygeoblog.com/2016/12/09/add-a-legend-to-to-your-gee-map/). The colour code gradients for the four metrics are gathered from this [website](https://www.color-hex.com/). The boundary for the app is Greater Bristol (or the Global Administrative Unit (GAUL) Layer Level 2 that contains Bristol) which is larger than the shapefile used to clip for the city boundary in the week 6 practical or the following screenshots.
 
-<https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC09_C02_T1_L2#description>
+For week 6, the author downloaded the [Bristol City Boundary](https://opendata.bristol.gov.uk/datasets/bcc::bristol-boundary/explore) shape file, uploaded to the assets and clipped out images with only Bristol. This is smaller compared to the GAUL level 2 boundary used in the GEE app.
 
-For the rest of the practical, I downloaded the [Bristol City Boundary](https://opendata.bristol.gov.uk/datasets/bcc::bristol-boundary/explore) shape file, uploaded to the assets and clipped out images with only Bristol. Currently clipping code only works with my code editor, not the published app.
+::: {.image-container style="display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(2,1fr); gap:5px;"}
+<img src="images/wk6/wk6_ndvi.png" alt="NDVI for Bristol" height="310" width="340px"/>
 
-<div class="image-container" style="display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(2,1fr); gap:5px;">
+<img src="images/wk6/wk6_ndwi.png" alt="NDWI for Bristol" height="310" width="340px"/>
 
-<img src="images/wk6/wk6_ndvi.png" height = 310 width= 340px alt="NDVI for Bristol">
+<img src="images/wk6/wk6_savi.png" alt="SAVI for Bristol" height="310" width="340px"/>
 
-<img src="images/wk6/wk6_ndwi.png" height = 310 width= 340px alt="NDWI for Bristol">
+<img src="images/wk6/wk6_arvi.png" alt="ARVI for Bristol" height="310" width="340px"/>
+:::
 
-<img src="images/wk6/wk6_savi.png" height = 310 width= 340px alt="SAVI for Bristol">
+<p align="center" class="grid-caption">
 
-<img src="images/wk6/wk6_arvi.png" height = 310 width= 340px alt="ARVI for Bristol"></div><p align="center" class="grid-caption">NDVI, NDWI, SAVI and ARVI bounded by the Bristol Boundary</p>
+NDVI, NDWI, SAVI and ARVI bounded by the Bristol Boundary
 
-## PCA
+</p>
 
-PCA runs faster compared to R, but the JS code is more complex.
+## Principle Component Analysis
 
-With the
+GEE can run PCA for satellite data, but the browser froze for a few minutes before the results are ready.
 
-I have put everything in an GEE app:
+::: {.image-container style="display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(3,1fr); gap:5px;"}
+::: image-item
+<img src="images/wk6/bristolbound.png" alt="NDVI for Bristol" height="310" width="340px"/>
 
-<div class="image-container" style="display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(3,1fr); gap:5px;">
+<p align="center" class="caption">
 
-<div class="image-item"><img src="images/wk6/bristolbound.png" height = 310 width= 340px alt="NDVI for Bristol"><p align="center" class="caption">Bristol Boundary</p></div>
+Bristol Boundary
 
-<div class="image-item"><img src="images/wk6/bristolclip.png" height = 310 width= 340px alt="SAVI for Bristol"><p align="center" class="caption">Bristol Clip</p></div>
+</p>
+:::
 
-<div class="image-item"><img src="images/wk6/glcm.png" height = 310 width= 340px alt="NDWI for Bristol"><p align="center" class="caption">GLCM</p></div>
+::: image-item
+<img src="images/wk6/bristolclip.png" alt="SAVI for Bristol" height="310" width="340px"/>
 
-<div class="image-item"><img src="images/wk6/PC1_and_PC2.png" height = 310 width= 340px alt="ARVI for Bristol"><p align="center" class="caption">P1 and P2</p></div>
+<p align="center" class="caption">
 
-<div class="image-item"><img src="images/wk6/PC1.png" height = 230 width= 340px alt="ARVI for Bristol"><p align="center" class="caption">PC1</p></div>
+Bristol Clip
 
-<div class="image-item"><img src="images/wk6/PC2.png" height = 230 width= 340px alt="ARVI for Bristol"><p align="center" class="caption">PC2</p></div>
+</p>
+:::
 
-</div>
+::: image-item
+<img src="images/wk6/glcm.png" alt="NDWI for Bristol" height="310" width="340px"/>
 
-## Reflection
+<p align="center" class="caption">
 
-Employing Google Earth Engine (GEE) certainly rekindles memories of my extensive collaborative efforts on diverse projects in Melbourne. During those projects, I relied on NearMaps to coordinate with the design team and worked closely alongside engineers and GIS specialists. Together, we organised design modifications and participated the digital transformation of the construction processes. Unlike those days when my role was more supervisory and collaborative, I now find myself directly engaged with GEE, utilizing its powerful remote sensing capabilities for urban analysis and environmental applications.
+GLCM
 
-The current literature of using GEE is as indicated by Ollie's graph.
+</p>
+:::
 
-GEE enables the
+::: image-item
+<img src="images/wk6/PC1_and_PC2.png" alt="ARVI for Bristol" height="310" width="340px"/>
 
-and many new applications and publications [@amani2020google]
+<p align="center" class="caption">
+
+P1 and P2
+
+</p>
+:::
+
+::: image-item
+<img src="images/wk6/PC1.png" alt="ARVI for Bristol" height="230" width="340px"/>
+
+<p align="center" class="caption">
+
+PC1
+
+</p>
+:::
+
+::: image-item
+<img src="images/wk6/PC2.png" alt="ARVI for Bristol" height="230" width="340px"/>
+
+<p align="center" class="caption">
+
+PC2
+
+</p>
+:::
+:::
+
+PC1 explains 77.17% of the variance in the dataset. With my visual assessment of the GLCM and PCA results, it is obvious PC1 and PC2 captures high NDWI and highly building dense areas repectively, whereas GLCM captures high-reflectance areas, it performs well on flat rooftops, making it suitable for identifying buildings.[@christaki2022building] Such results are essential as the input of more complex models, such as classification models with dimensionalities reduced to PC1, PC2 and PC3 (together they explain 95.88% of variances). However, PC4 to PC6, or the other PCs on condition that they are still meaningful and not rounded to 0, can provide crucial insights to anomalies and noises.
+
+| PC         | Percentage Variance Explained |
+|------------|-------------------------------|
+| PC1        | 77.17                         |
+| PC2        | 11.40                         |
+| PC3        | 7.31                          |
+| PC4        | 2.41                          |
+| PC5        | 1.58                          |
+| PC6        | 0.11                          |
+| PC7        | 0.03                          |
+| PC8 - PC20 | 0.00                          |
+
+: PCA Variance Results
+
+## Reflection and Literature Review
+
+Employing Google Earth Engine (GEE) certainly rekindles memories of my extensive collaborative efforts on diverse projects in Melbourne. During those projects, I relied on Nearmap to coordinate with the design team and worked closely alongside engineers and GIS specialists. Together, we organised design modifications and participated the digital transformation of the construction processes. Unlike those days when my role was more supervisory and collaborative, I now find myself directly engaged with GEE, utilizing its powerful remote sensing capabilities for urban analysis and environmental applications.
+
+<div class="image-container" style="display: grid; grid-template-columns: repeat(2,1fr); gap:5px;">
+
+<img src="images/wk6/1-s2.0-S0034425717302900-gr2.jpg" alt="NDVI for Bristol" height="290" width="340px"/>
+
+<img src="images/wk6/12145_2023_1035_Fig6_HTML.png" alt="NDWI for Bristol" height="290" width="340px"/>
+
+`</div><p align="center" class="grid-caption"> System architecture of GEE (left)`{=html} [@gorelick2017google] `and Annual number of articles published by the top ten journals`{=html} [@pham2023trends]
+
+</p>
+
+The [system architecture](https://www.sciencedirect.com/science/article/pii/S0034425717302900?via%3Dihub) of GEE is well designed to offer services at a large sacle. In addition, there is also a [increasing trend](https://link.springer.com/article/10.1007/s12145-023-01035-2#Fig6) for the authors to publish using GEE in the current literature.[@pham2023trends] In the context of remote sensing, GEE are employed in a diverse range of new applications and publications.[@amani2020google] Therefore, using GEE for urban spatial analysis and research is certainly a good choice. During the practical, I dived into the GLCM (Grey-Level Co-occurrence Matrix) and its applications in identifying potentials buildings in remote sensing datasets, this enabled me to have a wider range of methodology design for both my future research and the group assessment. There are many unique publications regarding GLCM, in the aspects of the theoretical construct of GLCM methods, Lan et al. @lan2018study proposed a method to optimse the multi-scale parameters for the GLCM texture window. On the application side, researchers developed methods that combine the GLCM with SNIC (Simple Non-Iterative Clustering) to process the data for classification input in LULC (Land Use and Land Cover) research. [@tassi2020object] Other researchers have extended the GLCM methods to process multi-layered data and combined the modified GLCM with SVM (Support Vector Machine) to analyse collapsed buildings.[@moya20193d] These new developments highlight the innovative usage and adaptation of GLCM for remote sensing research, however, it also indicates that such numeric methods should be handled with caution as its limitations may hinder the analysis accuracy if proper fine-tuning are not performed.
+
+Overall, researching with GEE on urban topics is promising as the platform itself is robust and powerful for large datasets, in addition, the GEE community is open and vibrant, there are many resources and people for turn to for collaboration and assistance.
