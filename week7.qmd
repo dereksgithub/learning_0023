@@ -130,6 +130,8 @@ This suggest a high testing accuracy, but it may also indicate over-fitting for 
 
 The current development in the literature of remote sensing image classification, CNN and other supervised learning approaches, although have gained much attention in the past 10 years, may be limited. Large amount of labelled cat images is hard to acquire, not to mention the satellite images covering years of daily images over vast lands, thus small amount of labelled data paradigm will be promising. [@alosaimi2023self] The challenge, however, still lies in the fact that massive amount of data cannot be sole relied on unsupervised clustering methods, on top of that, iterative clustering methods lacks explanability too. Therefore, researcher checking out the usage of SSL do find out that
 
+<https://pubmed.ncbi.nlm.nih.gov/36624136/#full-view-affiliation-1>
+
 ## Reflection
 
 For this week's practical, I picked the water polygon from the sea near Bristol, on further remark, I realised that the model probably did not capture Bristol's rivers, due to the fact that I have selected sea water as sample class for water. Such a result may also stem from the fact that the Bristol river in the image was not significant, thus, such algorithms for now could improve performance for a finer resolution satellite image collection.

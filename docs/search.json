@@ -172,7 +172,7 @@
     "href": "week7.html#outlook-of-ssl-in-remote-sensing",
     "title": "Week 7 Classification with Google Earth Engine I",
     "section": "Outlook of SSL in Remote Sensing",
-    "text": "Outlook of SSL in Remote Sensing\nThe current development in the literature of remote sensing image classification, CNN and other supervised learning approaches, although have gained much attention in the past 10 years, may be limited. Large amount of labelled cat images is hard to acquire, not to mention the satellite images covering years of daily images over vast lands, thus small amount of labelled data paradigm will be promising. (Alosaimi et al. 2023) The challenge, however, still lies in the fact that massive amount of data cannot be sole relied on unsupervised clustering methods, on top of that, iterative clustering methods lacks explanability too. Therefore, researcher checking out the usage of SSL do find out that"
+    "text": "Outlook of SSL in Remote Sensing\nThe current development in the literature of remote sensing image classification, CNN and other supervised learning approaches, although have gained much attention in the past 10 years, may be limited. Large amount of labelled cat images is hard to acquire, not to mention the satellite images covering years of daily images over vast lands, thus small amount of labelled data paradigm will be promising. (Alosaimi et al. 2023) The challenge, however, still lies in the fact that massive amount of data cannot be sole relied on unsupervised clustering methods, on top of that, iterative clustering methods lacks explanability too. Therefore, researcher checking out the usage of SSL do find out that\nhttps://pubmed.ncbi.nlm.nih.gov/36624136/#full-view-affiliation-1"
   },
   {
     "objectID": "week7.html#reflection",
@@ -200,7 +200,7 @@
     "href": "week10.html",
     "title": "Week 10 Group Presentations",
     "section": "",
-    "text": "This week we had two intense sessions packed with interesting remote sensing pitch-style presentations. The following is a Google Earth Engine App that I have made for viewing parts of the intended raw data for our pitch. The app may take a while to load as the Google Open Buildings dataset is large.\n\n\n\n\nOur team’s nameis developed from Roman Goddess of Flowers and Olympian Goddess of the harvest and agriculture. The slides are here.\nWe are honored to be invited to ask question for TeamXYZ and their pitch on an Air Pollution management solution-suite designed for Mumbai. We asked about their future plans and the reply was solid and informative, their overall design and open approach to stakeholder engagement plans are quite impressive.\n\n\n\nMe Presenting Our Methodology Design"
+    "text": "This week we had two intense sessions packed with interesting remote sensing pitch-style presentations. The following is a Google Earth Engine App that I have made for viewing parts of the intended raw data for our pitch. The app may take a while to load as the Google Open Buildings dataset is large.\n\n\n\n\nOur team’s name is developed from Roman Goddess of Flowers and Olympian Goddess of the harvest and agriculture. The slides are here.\nWe are honored to be invited to ask question for TeamXYZ and their pitch on an Air Pollution management solution-suite designed for Mumbai. We asked about their future plans and the reply was solid and informative, their overall design and open approach to stakeholder engagement plans are quite impressive.\n\n\n\nMe Presenting Our Methodology Design"
   },
   {
     "objectID": "summary.html#rs-theory-and-ml-learning",
@@ -250,5 +250,19 @@
     "title": "Week 4 Remote Sensing and Policy Implications",
     "section": "Summary of Remote Sensing and Policy Implications",
     "text": "Summary of Remote Sensing and Policy Implications\nThe lecture first introduced the significance of multi-temporal land cover mapping in understanding and managing environmental changes, where remote sensing is particularly meaningful for researchers and policymakers to identify land use changes, deforestation, and urban sprawl. (Bhatta, Saraswati, and Bandyopadhyay 2010)\nAnother major application of remote sensing in terms of shaping the policies, is environmental monitoring. With remote sensing measures such as Synthetic Aprture Radar (SAR), for example, environmental researchers and policy makers are able to monitor the changes of the forests (Hansen et al. 2013) therefore formulate instruments that directly contributes to containing illegal logging. Another key application for remote sensing is for disaster monitoring and response, with high-quality and timely remote sensing data, policymakers now have the capability to tackle large-scale disastrous events such as droughts and forest fires. (Van Westen 2000)\nWith the insights extracted from remote sensing, cities can now monitor and construct strategies for complicated problems such as urban heat island, (Stefanov and Brazel 2007) inner city floods, (Li, Xu, and Chen 2016) further increasing the urban resilience. (Ghaffarian, Kerle, and Filatova 2018) By incorporating spatial data and remote sensing into the making of policy instruments through aligning with the global sustainability agendas such as the New Urban Agenda and the Sustainable Development Goals (SDGs), stakeholders from all aspects can work together to face challenges raised by rapid urbanisation."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CASA0023 Remote Sensing Learning Diary",
+    "section": "",
+    "text": "Overview\nThis is the learning diary for CASA0023 Remotely Sensing Cities and Environments."
+  },
+  {
+    "objectID": "index.html#table-of-content",
+    "href": "index.html#table-of-content",
+    "title": "CASA0023 Remote Sensing Learning Diary",
+    "section": "Table of Content",
+    "text": "Table of Content\n\nPersonal Introduction\nPart I. Intro to Remote Sensing\n\nWeek 1 Introduction to Remote Sensing\nWeek 2 Quarto and Xaringan\nWeek 3 Atmosphere Corrections\nWeek 4 Remote Sensing and Policy Implications\nWeek 5 More on Temperature and Group Work Discussion\n\nPart II. Remote Sensing with GEE\n\nWeek 6 Introduction to Google Earth Engine\nWeek 7 Classification with GEE Part 1\nWeek 8 Classification with GEE Part 2\nWeek 9 Synthetic Aperture Radar\n\nWeek 10 Group Presentation Week\nSummary\nRemote Sensing Acronyms\nReference"
   }
 ]
