@@ -1,29 +1,17 @@
 # Week 10 Group Presentations {.unnumbered}
 
-This week we had two intense sessions packed with interesting remote sensing pitch-style presentations.
-
-The following is a Google Earth Engine App that I have made for viewing parts of the intended raw data for our pitch.
-
-The app may take a while to load as the Google Open Buildings dataset is large.
+This week we had two intense sessions packed with interesting remote sensing pitch-style presentations. The following is a Google Earth Engine App that I have made for viewing parts of the intended raw data for our pitch. The app may take a while to load as the Google Open Buildings dataset is large.
 
 <p align="center">
 
-<iframe title="vimeo-player" width="700" height="600" src="https://ee-derekding727.projects.earthengine.app/view/jakartabuidlingandndvilookup" title="GEE App for Jakarta" frameborder="0">
+<iframe title="GEE-Jakarta" width="700" height="600" src="https://ee-derekding727.projects.earthengine.app/view/jakartabuidlingandndvilookup" title="GEE App for Jakarta" frameborder="0">
 
 </iframe>
 
 </p>
 
-For our project, I have made a GEE application
+Our team's nameis developed from Roman Goddess of Flowers and Olympian Goddess of the harvest and agriculture. The slides are [here](https://dereksgithub.github.io/group_RS_casa0023/).
 
-Our team's presented on: "time_presentation"
+We are honored to be invited to ask question for TeamXYZ and their pitch on an Air Pollution management solution-suite designed for Mumbai. We asked about their future plans and the reply was solid and informative, their overall design and open approach to stakeholder engagement plans are quite impressive.
 
-Out topic is: "group_topic"
-
-We are honored to be invited to ask question for team: "team_name" and their pitch on "topic_quesionts"
-
-The sessions are ,
-
-It has been a journey
-
-Special thanks to
+![Me Presenting Our Methodology Design](images/wk10/presentationday.jpg){fig-align="center" width="628"}

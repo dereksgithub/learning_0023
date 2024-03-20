@@ -43,7 +43,7 @@ For the legend in this GEE app, I have modified and derived the code from: [Open
 For week 6, the author downloaded the [Bristol City Boundary](https://opendata.bristol.gov.uk/datasets/bcc::bristol-boundary/explore) shape file, uploaded to the assets and clipped out images with only Bristol. This is smaller compared to the GAUL level 2 boundary used in the GEE app.
 
 ::: {.image-container style="display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(2,1fr); gap:5px;"}
-<img src="images/wk6/wk6_ndvi.png" alt="NDVI for Bristol" height="310" width="340px"/>
+![](images/wk6/wk6_ndvi.png){alt="NDVI for Bristol" width="340" height="310"}
 
 <img src="images/wk6/wk6_ndwi.png" alt="NDWI for Bristol" height="310" width="340px"/>
 
@@ -62,9 +62,9 @@ NDVI, NDWI, SAVI and ARVI bounded by the Bristol Boundary
 
 GEE can run PCA for satellite data, but the browser froze for a few minutes before the results are ready.
 
-::: {.image-container style="display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(3,1fr); gap:5px;"}
+::: {.image-container style="display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(4,1fr); gap:5px;"}
 ::: image-item
-<img src="images/wk6/bristolbound.png" alt="NDVI for Bristol" height="310" width="340px"/>
+![](images/wk6/bristolbound.png){width="340" height="310"}
 
 <p align="center" class="caption">
 
@@ -74,7 +74,7 @@ Bristol Boundary
 :::
 
 ::: image-item
-<img src="images/wk6/bristolclip.png" alt="SAVI for Bristol" height="310" width="340px"/>
+![](images/wk6/bristolclip.png){width="340" height="310"}
 
 <p align="center" class="caption">
 
@@ -84,7 +84,7 @@ Bristol Clip
 :::
 
 ::: image-item
-<img src="images/wk6/glcm.png" alt="NDWI for Bristol" height="310" width="340px"/>
+![](images/wk6/glcm.png){width="340" height="310"}
 
 <p align="center" class="caption">
 
@@ -94,7 +94,7 @@ GLCM
 :::
 
 ::: image-item
-<img src="images/wk6/PC1_and_PC2.png" alt="ARVI for Bristol" height="310" width="340px"/>
+![](images/wk6/PC1_and_PC2.png){width="340" height="310"}
 
 <p align="center" class="caption">
 
@@ -104,7 +104,7 @@ P1 and P2
 :::
 
 ::: image-item
-<img src="images/wk6/PC1.png" alt="ARVI for Bristol" height="230" width="340px"/>
+![](images/wk6/PC1.png){width="340" height="230"}
 
 <p align="center" class="caption">
 
@@ -114,11 +114,31 @@ PC1
 :::
 
 ::: image-item
-<img src="images/wk6/PC2.png" alt="ARVI for Bristol" height="230" width="340px"/>
+![](images/wk6/PC2.png){width="341"}
 
 <p align="center" class="caption">
 
 PC2
+
+</p>
+:::
+
+::: image-item
+![](images/wk6/PC5.png){width="340"}
+
+<p align="center" class="caption">
+
+PC5
+
+</p>
+:::
+
+::: image-item
+![](images/wk6/PC6.png){width="340" height="230"}
+
+<p align="center" class="caption">
+
+PC6
 
 </p>
 :::
@@ -127,32 +147,46 @@ PC2
 PC1 explains 77.17% of the variance in the dataset. With my visual assessment of the GLCM and PCA results, it is obvious PC1 and PC2 captures high NDWI and highly building dense areas repectively, whereas GLCM captures high-reflectance areas, it performs well on flat rooftops, making it suitable for identifying buildings.[@christaki2022building] Such results are essential as the input of more complex models, such as classification models with dimensionalities reduced to PC1, PC2 and PC3 (together they explain 95.88% of variances). However, PC4 to PC6, or the other PCs on condition that they are still meaningful and not rounded to 0, can provide crucial insights to anomalies and noises.
 
 | PC         | Percentage Variance Explained |
-|------------|-------------------------------|
-| PC1        | 77.17                         |
-| PC2        | 11.40                         |
-| PC3        | 7.31                          |
-| PC4        | 2.41                          |
-| PC5        | 1.58                          |
-| PC6        | 0.11                          |
-| PC7        | 0.03                          |
-| PC8 - PC20 | 0.00                          |
+|------------|:-----------------------------:|
+| PC1        |             77.17             |
+| PC2        |             11.40             |
+| PC3        |             7.31              |
+| PC4        |             2.41              |
+| PC5        |             1.58              |
+| PC6        |             0.11              |
+| PC7        |             0.03              |
+| PC8 - PC20 |             0.00              |
 
 : PCA Variance Results
 
-## Reflection and Literature Review
+## More on GEE and Literature Review
 
-Employing Google Earth Engine (GEE) certainly rekindles memories of my extensive collaborative efforts on diverse projects in Melbourne. During those projects, I relied on Nearmap to coordinate with the design team and worked closely alongside engineers and GIS specialists. Together, we organised design modifications and participated the digital transformation of the construction processes. Unlike those days when my role was more supervisory and collaborative, I now find myself directly engaged with GEE, utilizing its powerful remote sensing capabilities for urban analysis and environmental applications.
+Google Earth Engine (GEE) offers a wide range of Earth data for researchers to use with easy access, this has led to a surge in publication using GEE. As a ECE major, I first explored the how GEE can support a vast user group scattered around the planet, and then looked into the recent trend in the scientific community with GEE.
+
+### GEE Capabilities and Trend in Scientific Research
+
+The [system architecture](https://www.sciencedirect.com/science/article/pii/S0034425717302900?via%3Dihub) of GEE is well designed to offer services at a large scale. This design allows the GEE to host massive amount of data while being scalable. Of course, being the birth-company for the famous MapReduce, it is obvious that hadnling massive amount of data is what Google does best. GEE offers a seamless integration with machine learning, whether it is using the API from python or code editor, the ML-workflow is well-integrated.
+
+Due to its advantages, [more members from the scientific research](https://link.springer.com/article/10.1007/s12145-023-01035-2#Fig6)community have been adapting GEE into their research in recent years.[@pham2023trends] GEE can provide geo-spatial analysis at a large-scale for free and its ample image series datasets are attractive features that drive a growing usage from the researchers. Furthermore, GEE can meet the needs of urban researcher since the nature or urban science research requires multi-faceted data and spatiotemporal data at large scale. GEE's abundant city bird-view images in with sufficient temporal richness, encourages urban researcher to utilise it in conjunction with other urban data, sparking novel research findings about our growing metropolitan environment.
 
 <div class="image-container" style="display: grid; grid-template-columns: repeat(2,1fr); gap:5px;">
 
-<img src="images/wk6/1-s2.0-S0034425717302900-gr2.jpg" alt="NDVI for Bristol" height="290" width="340px"/>
+![](images/wk6/1-s2.0-S0034425717302900-gr2.jpg){width="340" height="290"}
 
-<img src="images/wk6/12145_2023_1035_Fig6_HTML.png" alt="NDWI for Bristol" height="290" width="340px"/>
+![](images/wk6/12145_2023_1035_Fig6_HTML.png){width="340" height="290"}
 
 `</div><p align="center" class="grid-caption"> System architecture of GEE (left)`{=html} [@gorelick2017google] `and Annual number of articles published by the top ten journals`{=html} [@pham2023trends]
 
 </p>
 
-The [system architecture](https://www.sciencedirect.com/science/article/pii/S0034425717302900?via%3Dihub) of GEE is well designed to offer services at a large sacle. In addition, there is also a [increasing trend](https://link.springer.com/article/10.1007/s12145-023-01035-2#Fig6) for the authors to publish using GEE in the current literature.[@pham2023trends] In the context of remote sensing, GEE are employed in a diverse range of new applications and publications.[@amani2020google] Therefore, using GEE for urban spatial analysis and research is certainly a good choice. During the practical, I dived into the GLCM (Grey-Level Co-occurrence Matrix) and its applications in identifying potentials buildings in remote sensing datasets, this enabled me to have a wider range of methodology design for both my future research and the group assessment. There are many unique publications regarding GLCM, in the aspects of the theoretical construct of GLCM methods, Lan et al. @lan2018study proposed a method to optimse the multi-scale parameters for the GLCM texture window. On the application side, researchers developed methods that combine the GLCM with SNIC (Simple Non-Iterative Clustering) to process the data for classification input in LULC (Land Use and Land Cover) research. [@tassi2020object] Other researchers have extended the GLCM methods to process multi-layered data and combined the modified GLCM with SVM (Support Vector Machine) to analyse collapsed buildings.[@moya20193d] These new developments highlight the innovative usage and adaptation of GLCM for remote sensing research, however, it also indicates that such numeric methods should be handled with caution as its limitations may hinder the analysis accuracy if proper fine-tuning are not performed.
+### GEE Applications with GLCM
 
-Overall, researching with GEE on urban topics is promising as the platform itself is robust and powerful for large datasets, in addition, the GEE community is open and vibrant, there are many resources and people for turn to for collaboration and assistance.
+In the context of remote sensing for cities, GEE is employed in a diverse range of new applications and publications.[@amani2020google] During the practical, I dived into the GLCM (Grey-Level Co-occurrence Matrix) and its applications in identifying potentials buildings in remote sensing datasets, this enabled me to have a wider range of methodology design for both my future research and the group assessment. There are many unique publications regarding GLCM, in the aspects of the theoretical construct of GLCM methods, Lan et al. @lan2018study proposed a method to optimse the multi-scale parameters for the GLCM texture window. On the application side, researchers developed methods that combine the GLCM with SNIC (Simple Non-Iterative Clustering) to process the data for classification input in LULC (Land Use and Land Cover) research. [@tassi2020object] Other researchers have extended the GLCM methods to process multi-layered data and combined the modified GLCM with SVM (Support Vector Machine) to analyse collapsed buildings.[@moya20193d] These new developments highlight the innovative usage and adaptation of GLCM for remote sensing research, however, it also indicates that such numeric methods should be handled with caution as its limitations may hinder the analysis accuracy if proper fine-tuning are not performed.
+
+## Reflection
+
+Employing Google Earth Engine (GEE) certainly rekindles memories of my extensive collaborative efforts on diverse projects in Melbourne. During those projects, I relied on Nearmap (which was really high-res!) to coordinate with the design team and worked closely alongside engineers and GIS specialists. Together, we organised design modifications and participated the digital transformation of the construction processes. Unlike those days when my role was more supervisory and collaborative, I now find myself directly engaged with GEE, utilizing its powerful remote sensing capabilities for urban analysis and environmental applications.
+
+Although GEE offers a powerful tool suite for urban research, there may be certain limitations. First, it fosters a level of vendor lock-in where extensive use of GEE can lead to dependence on Google's infrastructure, terms and conditions, posing risks to the research workflow. Furthermore, GEE is challenging to work with offline. Researchers with poor internet connection or working on remote sites may struggle to gain access to GEE. Data sharing with GEE can be more complicated than other platforms. Sharing custom-made shapefiles might turn out to be a complex process due to GEE's data management policies and permissions. Finally but not the least, GEE can be difficult for non-coders to learn, what is available to it JavaScript library can be occasionally counter-intuitive.
+
+Despite GEE's limitations, its versatile and lightweight nature, combined with its openness and collection of data, still weighs out its limitations. Researching with GEE on urban topics is still promising as the platform itself is robust and powerful for large datasets, besides, the GEE community is open and vibrant, there are many [resources](summary.qmd) and people for turn to for collaboration and assistance.

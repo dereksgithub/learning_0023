@@ -6,8 +6,24 @@ My name is Mengyu Ding, I am an engineer by training. Graduated from University 
 
 Besides working, I like hiking, cooking and reading science literature or science fictions. I also enjoy building small gadgets, for example, I was into hand-made Corsi-Rosenthal boxes during 2021 and 2022.
 
-<div class="image-container" style="display: grid; grid-template-columns: repeat(2,1fr); gap:15px;">
+::: {.image-container style="display: grid; grid-template-columns: repeat(2,1fr); gap:15px;"}
+::: image-item
+<img src="images/intro/personal_intro.png" alt="NDVI for Bristol" height="290" width="320px"/>
 
-<div class="image-item"><img src="images/intro/personal_intro.png" height = 290 width= 320px alt="NDVI for Bristol"><p align="center" class="caption">GIS Crew and I (in the middle) Surveying Hu-Hang-Yong Highway in Zhejiang Province for Installing RSUs (Road Side Units)</p></div>
+<p align="center" class="caption">
 
-<div class="image-item"><img src="images/intro/cr_portable_01.png" height = 290 width= 220px alt="SAVI for Bristol"><p align="center" class="caption">My Hand-made Portable Air-Filtering System (HEPA-13 + 2 x turbo fans + Active charcoal Filter) Powered bn a Powerbank</p></div></div>
+GIS Crew and I (in the middle) Surveying Hu-Hang-Yong Highway in Zhejiang Province for Installing RSUs (Road Side Units)
+
+</p>
+:::
+
+::: image-item
+<img src="images/intro/cr_portable_01.png" alt="SAVI for Bristol" height="290" width="220px"/>
+
+<p align="center" class="caption">
+
+My Hand-made Portable Air-Filtering System (HEPA-13 + 2 x turbo fans + Active charcoal Filter) Powered bn a Powerbank
+
+</p>
+:::
+:::

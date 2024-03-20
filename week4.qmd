@@ -1,12 +1,22 @@
 # Week 4 Remote Sensing and Policy Implications {.unnumbered}
 
+In this week the lecture covered remote sesnsing and its involvement with policies. We first reviewed and extended on the significance of spectral bands and wavelength, then moved to remote sensing's application in environmental monitoring applications, urban green spaces, disaster responses, policy implications, remote sensing's integration with GIS, and how spatial data analysis is incorporated into policy making.
+
+## Summary of Remote Sensing and Policy Implications
+
+The lecture first introduced the significance of multi-temporal land cover mapping in understanding and managing environmental changes, where remote sensing is particularly meaningful for researchers and policymakers to identify land use changes, deforestation, and urban sprawl. [@bhatta2010urban]
+
+Another major application of remote sensing in terms of shaping the policies, is environmental monitoring. With remote sensing measures such as Synthetic Aprture Radar (SAR), for example, environmental researchers and policy makers are able to monitor the changes of the forests [@hansen2013high] therefore formulate instruments that directly contributes to containing illegal logging. Another key application for remote sensing is for disaster monitoring and response, with high-quality and timely remote sensing data, policymakers now have the capability to tackle large-scale disastrous events such as droughts and forest fires. [@van2000remote]
+
+With the insights extracted from remote sensing, cities can now monitor and construct strategies for complicated problems such as urban heat island, [@stefanov2007challenges] inner city floods, [@li2016improved] further increasing the urban resilience. [@ghaffarian2018remote] By incorporating spatial data and remote sensing into the making of policy instruments through aligning with the global sustainability agendas such as the New Urban Agenda and the Sustainable Development Goals (SDGs), stakeholders from all aspects can work together to face challenges raised by rapid urbanisation.
+
+## Wildfire Monitoring for Air Quality with Remote Sensing
+
 Remote sensing and policy implications are intricately linked, playing a pivotal role in addressing some of our most pressing challenges. The United Nations Sustainable Development Goals (UN SDGs) outline numerous objectives for urban and built environments. Recently, mountain and bush fires have significantly deteriorated the air quality in major parts of the world, to make the matters worse, the smogs can travel far from time to time, threatening the health and quality of life for a great many residents.
 
 Consequently, my case study, centred around Melbourne and its adjacent suburbs, aims to explore the integration of remote sensing for wildfire monitoring with urban air quality forecasting. This short study intends identify the potentials of integrating remote sensing into the current pipelines, thus provide policymakers and city councils with sufficient lead time to implement measures before smog affects residential areas. Potential policy integration could include distribution of air filtration systems, masks or the evacuation of affected populations. This pilot study seeks to investigate the policy ramifications of establishing such operational frameworks.
 
-## Wildfire Monitoring for Air Quality with Remote Sensing
-
-### Case Study and Policy Implications for the Greater Melbourne Area
+### A Case Study and Policy Implications for the Greater Melbourne Area
 
 The goal for this short study is to explore the forecasting of smoke plume bush-fire to areas that may impact the residents and discuss policy implications. Focusing on Melbourne, with framework that includes remote sensing, intended to be integrated with sustainable future planning inspired the use of remote sensing for monitoring urban growth in Perth, WA. [@maclachlan2017urban]
 
@@ -23,7 +33,7 @@ As for the imagery, Sentinel 5P from Copernicus Program is offering sufficient r
 Utilizing the Sentinel 5P data[@trinder2020], this proposed project aligns with the following UN Sustainable Development Goals:
 
 | Contribution (by Implementing Proposed Research/Development)                                                               |    SDG    | Description                                                                                             |
-|:---------------------------------------------------------------------------------------------------------------------------|:---------:|---------------------------------------------------------------------------------------------------------|
+|:----------------------------|:----------------:|-------------------------|
 | Contribute to the prevention of human respiratory damage caused by smogs from burning forest.                              | UN SDG 3  | Good Health and Well-being, ensure people lives a healthy environment, promote well-being for all ages. |
 | Proper monitoring and timely alerts, contributes to the enhancement of the built environment and overall community safety. | UN SDG 11 | Sustainable, resilient, inclusive and safe cities/communities.                                          |
 | Actively monitoring wild fires and smogs produced can offer insights and guidance for mitigation.                          | UN SDG 13 | Take urgent actions against climate change.                                                             |
@@ -67,7 +77,7 @@ Our methodology leverages state-of-the-art remote sensing technology, including 
 
 By integrating advanced remote sensing technology into the city's existing workflow, we aim not only to protect the well-being of Melbourne’s citizens but also to set a new standard for urban air quality management worldwide.
 
-## Literature Review
+## Literature Review and Applications
 
 The exploration of policy and global agenda, combined with the review of current literature, made this week's class and practical a proper warm-up for the group assessment. I have also combed through the literature and policy base briefly, to further analyze the interplay between remote sensing, policy and air quality.
 

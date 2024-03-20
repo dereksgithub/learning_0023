@@ -1,6 +1,6 @@
 # Week 3 Atmosphere Corrections {.unnumbered}
 
-This week we covered the corrections and enhancements for satellite imagery. It is importance to select proper appropriate imagery (Collection, Level, Tier) and understanding limitations like Top-of-Atmosphere (TOA) vs. Bottom-of-Atmosphere (BOA) reflectance.
+This week we covered the corrections and enhancements for satellite imagery. It is importance to select proper appropriate imagery (Collection, Level, Tier) and understanding limitations like Top-of-Atmosphere (TOA) vs. Bottom-of-Atmosphere (BOA) reflectance. For this week's diary, I **presented the practical walk-through first** and then summarised the lecture content with slight extension to other metrics that may be helpful. The application and literature review follows the course content summary.
 
 ## Case Study of Bristol - Continued
 
@@ -98,6 +98,14 @@ Aside from the NDVI, here are some other indicators that I have investigated and
 
 These indicators, are sufficient only for basic analysis demands, to derive more hidden relations, more modern techniques such as deep learning,[@ma2019deep] and Semi-supervised representation learning [@yan2020semi] can also be employed.
 
-## Reflection and Literature Review
+## Literature Review and Applications
 
 Integrating the most appropriate remote sensing metrics for urban analytics is pivotal effective city planning or addressing other built-environment challenges. Among these measures, NDVI as is widely used for monitoring urban vegetation and urban green space,[@xue2017significant] whereas NDWI plays a critical role in urban water body and drought monitoring, it is also important for urban fire prevention.[@zhu2017change] Other metrics, such as ARVI, EVI, SAVI, MSAVI, and NDMI are still relevant in the industry and contemporary urban science, but recent studies call for both enhancement of the indices and nuanced applications. As suggested in many publications, such correction methods can be further refined to optimized the data contamination brought by atmospheric or other factors. @zhou2021optimal proposed the use of HANTS model (Harmonic Analysis of Time Series) to further optimize the parameter settings for NDVI reconstruction at a global scale and over longer period of time. Such methods are unique and well-rooted under today's hype of LLM or "trying DL/complex machine learning frameworks on all problems". Thus, investigations on further optimising the traditional correction methods with explainable models future research remains relevant and important.
+
+## Reflection
+
+Reflecting on this week's learning, it's evident that the field of remote sensing is both complex and immensely powerful. Although, I am still seeing just seeing the tip of the iceberg by far, I do believe in the future of interdisciplinary potentials of remote sensing with city research. The process of selecting appropriate RS imagery, applying correction techniques, and utilizing various indices for environmental analysis is intricate but essential for extracting meaningful and reliable insights from the satellite data.[@jensen1996introductory] This knowledge not only enriched my technical skills but also enhanced myappreciation for the meticulous work behind the scenes of environmental monitoring and analysis.
+
+In my continued case study of Bristol, served as a concept preview of the corrections in remote sensing and its applicability in real-world scenarios such as vegetation monitoring. The processed illustrated the importance of careful data selection, processing, and analytically flow in achieving robust outcomes. Furthermore, the discussion on correction methods and the summary of detailes of various vegetation and soil indices provided a comprehensive understanding of the tools and techniques.
+
+As we continue our journey through the remote sensing module, this week's focus on image correction and enhancements has laid a solid foundation for understanding the nuanced internal mechanics of satellite data processing. It has also sparked my curiosity about how these techniques can be applied to other areas of study, especially for urban resilience planning, smart cities design and disaster management. The insights gained this week will prepare us well regarding the basics for our future remote sensing projects.
