@@ -8,9 +8,8 @@ In summary, our module was a valuable process for using remote sensing to analyz
 
 -   Lecture series on [GIS and remote sensing](https://youtu.be/VfDAd-MO94o?si=GsM4nYqmlHjU8WO1)
 
-```{=html}
 <!-- -->
-```
+
 -   [Clipping Polygons](https://www.youtube.com/watch?v=E2MyYxkV7oY) in GEE by Youtuber [Fech](https://www.youtube.com/@fech1285)
 
 -   [GEE data catalog](https://developers.google.com/earth-engine/datasets)

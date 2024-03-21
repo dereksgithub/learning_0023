@@ -236,8 +236,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#sar-overview" id="toc-sar-overview" class="nav-link" data-scroll-target="#sar-overview">SAR Overview</a></li>
   <li><a href="#optical-vs.-radar-remote-sensing" id="toc-optical-vs.-radar-remote-sensing" class="nav-link" data-scroll-target="#optical-vs.-radar-remote-sensing">Optical vs.&nbsp;Radar Remote Sensing</a></li>
   <li><a href="#recent-research" id="toc-recent-research" class="nav-link" data-scroll-target="#recent-research">Recent Research</a></li>
-  <li><a href="#practical-london-outdoor-gym-identification" id="toc-practical-london-outdoor-gym-identification" class="nav-link" data-scroll-target="#practical-london-outdoor-gym-identification">Practical: London Outdoor Gym Identification</a></li>
+  <li><a href="#practical-running-sar-analysis" id="toc-practical-running-sar-analysis" class="nav-link" data-scroll-target="#practical-running-sar-analysis">Practical: Running SAR Analysis</a></li>
   </ul></li>
+  <li><a href="#sar-and-its-application-in-research" id="toc-sar-and-its-application-in-research" class="nav-link" data-scroll-target="#sar-and-its-application-in-research">SAR and Its Application in Research</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dereksgithub/learning_0023/edit/main/week9.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/dereksgithub/learning_0023/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -290,11 +292,51 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="recent-research">Recent Research</h3>
 <p>embed js code:</p>
 </section>
-<section id="practical-london-outdoor-gym-identification" class="level3">
-<h3 class="anchored" data-anchor-id="practical-london-outdoor-gym-identification">Practical: London Outdoor Gym Identification</h3>
-
-
+<section id="practical-running-sar-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="practical-running-sar-analysis">Practical: Running SAR Analysis</h3>
+<p>Using Ollie’s code for Blast Damage Assessment, I was able to assess the 2019 <a href="https://en.wikipedia.org/wiki/2019_Xiangshui_chemical_plant_explosion">Xiangshui Chemical Plant Explosion</a> which happened in Jiangsu Province, China.</p>
+<div class="image-container" style="display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(2,1fr); gap:5px;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wk9/sentinel2before.png" width="340" height="310" class="figure-img"></p>
+<figcaption class="figure-caption">Sentinel 2 Image Before Explosion</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wk9/sentinel2after.png" width="340" height="310" class="figure-img"></p>
+<figcaption class="figure-caption">Sentinel 2 Image After Explosion</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wk9/overall_assessment_area.png" class="img-fluid figure-img" width="340"></p>
+<figcaption class="figure-caption">Overall Assessment Area</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wk9/zoomed_in.png" width="340" height="340" class="figure-img"></p>
+<figcaption class="figure-caption">Zoomed-in to the Factory and Surrounding Residential Area</figcaption>
+</figure>
+</div>
+</div>
+<p>There is no open-building-footprint datasets that is freely available via GEE, I will be searching for available data to perform more detailed reports later on.</p>
+<p>The results are published in a GEE App, with layer of 2018 and 2022 Sentinel Images of the explosion site.</p>
+<p align="left">
+<iframe title="gee_app_01" width="680" height="700" src="https://ee-mengyu-derek-ding.projects.earthengine.app/view/xiangshui-chemical-plant-explosian-damage-assessment-jiangsu" frameborder="0">
+</iframe>
+</p>
 </section>
+</section>
+<section id="sar-and-its-application-in-research" class="level2">
+<h2 class="anchored" data-anchor-id="sar-and-its-application-in-research">SAR and Its Application in Research</h2>
+<p>SAR in the current literature</p>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+
+
 </section>
 
 </main> <!-- /main -->

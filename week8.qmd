@@ -4,13 +4,17 @@ This week we delved into more advanced topics in land cover classification, the 
 
 ## Summary
 
-With our quest in classifying land cover types from remote sensing imagery continued, Andy introduced the significance of accuracy to us.
+With our quest in classifying land cover types from remote sensing imagery continued, this week's lecture also emphasised on the significance of accuracy and other performance measures of classification. First, we were introduced to pre-classified datasets available online. I was impressed by the scale of Dynamic World, which uses a CNN-based classification model on Sentinel-2 imagery. Such sources highlights the evolution and ever-growing field of integrating AI or GeoAI with remote sensing.
 
-## Remarks on the Weekly Practical
+### Remarks on the Weekly Practical
+
+This week's practical is an enhanced version of last week's version, GEE limitation, GEE in-house classification methods seems to
 
 ## Literature Review and Applications
 
 In this week, I have investigated more on the temporal complexity of classifying remote sensing imagery data.
+
+Detailed [@truong2024jaxa]
 
 Look into the landuse data, the paper can be found [here](https://www.nature.com/articles/s41598-024-54308-1).
 

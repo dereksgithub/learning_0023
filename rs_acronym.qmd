@@ -2,6 +2,8 @@
 
 AOI: Area of Interest.
 
+ARD: Analysis Ready Data
+
 ARVI: [Atmospherically Resistant Vegetation Index](week3.qmd).
 
 AVHRR: [Advanced Very High Resolution Radiometer](https://en.wikipedia.org/wiki/Advanced_very-high-resolution_radiometer).

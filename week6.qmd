@@ -43,13 +43,13 @@ For the legend in this GEE app, I have modified and derived the code from: [Open
 For week 6, the author downloaded the [Bristol City Boundary](https://opendata.bristol.gov.uk/datasets/bcc::bristol-boundary/explore) shape file, uploaded to the assets and clipped out images with only Bristol. This is smaller compared to the GAUL level 2 boundary used in the GEE app.
 
 ::: {.image-container style="display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(2,1fr); gap:5px;"}
-![](images/wk6/wk6_ndvi.png){alt="NDVI for Bristol" width="340" height="310"}
+<img src="images/wk6/wk6_ndvi.png" alt="NDVI for Bristol" height="310px" width="340px"/>
 
-<img src="images/wk6/wk6_ndwi.png" alt="NDWI for Bristol" height="310" width="340px"/>
+<img src="images/wk6/wk6_ndwi.png" alt="NDWI for Bristol" height="310px" width="340px"/>
 
-<img src="images/wk6/wk6_savi.png" alt="SAVI for Bristol" height="310" width="340px"/>
+<img src="images/wk6/wk6_savi.png" alt="SAVI for Bristol" height="310px" width="340px"/>
 
-<img src="images/wk6/wk6_arvi.png" alt="ARVI for Bristol" height="310" width="340px"/>
+<img src="images/wk6/wk6_arvi.png" alt="ARVI for Bristol" height="310px" width="340px"/>
 :::
 
 <p align="center" class="grid-caption">
@@ -181,7 +181,11 @@ Due to its advantages, [more members from the scientific research](https://link.
 
 ### GEE Applications with GLCM
 
-In the context of remote sensing for cities, GEE is employed in a diverse range of new applications and publications.[@amani2020google] During the practical, I dived into the GLCM (Grey-Level Co-occurrence Matrix) and its applications in identifying potentials buildings in remote sensing datasets, this enabled me to have a wider range of methodology design for both my future research and the group assessment. There are many unique publications regarding GLCM, in the aspects of the theoretical construct of GLCM methods, Lan et al. @lan2018study proposed a method to optimse the multi-scale parameters for the GLCM texture window. On the application side, researchers developed methods that combine the GLCM with SNIC (Simple Non-Iterative Clustering) to process the data for classification input in LULC (Land Use and Land Cover) research. [@tassi2020object] Other researchers have extended the GLCM methods to process multi-layered data and combined the modified GLCM with SVM (Support Vector Machine) to analyse collapsed buildings.[@moya20193d] These new developments highlight the innovative usage and adaptation of GLCM for remote sensing research, however, it also indicates that such numeric methods should be handled with caution as its limitations may hinder the analysis accuracy if proper fine-tuning are not performed.
+In the context of remote sensing for cities, GEE is employed in a diverse range of new applications and publications.[@amani2020google] During the practical, I dived into the GLCM (Grey-Level Co-occurrence Matrix) and its applications in identifying potentials buildings in remote sensing datasets, this enabled me to have a wider range of methodology design for both my future research and the group assessment.
+
+There are many unique publications regarding GLCM, in the aspects of the theoretical construct of GLCM methods, Lan et al. @lan2018study proposed a method to optimse the multi-scale parameters for the GLCM texture window. On the application side, researchers developed methods that combine the GLCM with SNIC (Simple Non-Iterative Clustering) to process the data for classification input in LULC (Land Use and Land Cover) research. [@tassi2020object]
+
+Other researchers have extended the GLCM methods to process multi-layered data and combined the modified GLCM with SVM (Support Vector Machine) to analyse collapsed buildings.[@moya20193d] These new developments highlight the innovative usage and adaptation of GLCM for remote sensing research, however, it also indicates that such numeric methods should be handled with caution as its limitations may hinder the analysis accuracy if proper fine-tuning are not performed.
 
 ## Reflection
 

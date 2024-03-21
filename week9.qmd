@@ -36,4 +36,34 @@ getting the SAR collections in GEE:
 
 embed js code:
 
-### Practical: London Outdoor Gym Identification
+### Practical: Running SAR Analysis
+
+Using Ollie's code for Blast Damage Assessment, I was able to assess the 2019 [Xiangshui Chemical Plant Explosion](https://en.wikipedia.org/wiki/2019_Xiangshui_chemical_plant_explosion) which happened in Jiangsu Province, China.
+
+::: {.image-container style="display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(2,1fr); gap:5px;"}
+![Sentinel 2 Image Before Explosion](images/wk9/sentinel2before.png){alt="Sentinel 2 Image Before Explosion" width="340" height="310"}
+
+![Sentinel 2 Image After Explosion](images/wk9/sentinel2after.png){alt="Sentinel 2 Image After Explosion" width="340" height="310"}
+
+![Overall Assessment Area](images/wk9/overall_assessment_area.png){alt="Overall Assessment Area" width="340"}
+
+![Zoomed-in view of the Factory and Surrounding Residential Area](images/wk9/zoomed_in.png){alt="Zoomed-in to the Factory and Surrounding Residential Area" width="340" height="340"}
+:::
+
+There is no open-building-footprint datasets that is freely available via GEE, I will be searching for available data to perform more detailed reports later on.
+
+The results are published in a GEE App, with layer of 2018 and 2022 Sentinel Images of the explosion site.
+
+<p align="left">
+
+<iframe title="gee_app_01" width="680" height="700" src="https://ee-mengyu-derek-ding.projects.earthengine.app/view/xiangshui-chemical-plant-explosian-damage-assessment-jiangsu" title="GEE App Bristol Look-up" frameborder="0">
+
+</iframe>
+
+</p>
+
+## SAR and Its Application in Research
+
+SAR in the current literature
+
+## Reflection

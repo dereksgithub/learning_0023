@@ -54,7 +54,26 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -265,8 +284,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a>
+  <ul class="collapse">
   <li><a href="#remarks-on-the-weekly-practical" id="toc-remarks-on-the-weekly-practical" class="nav-link" data-scroll-target="#remarks-on-the-weekly-practical">Remarks on the Weekly Practical</a></li>
+  </ul></li>
   <li><a href="#literature-review-and-applications" id="toc-literature-review-and-applications" class="nav-link" data-scroll-target="#literature-review-and-applications">Literature Review and Applications</a></li>
   <li><a href="#more-practical-on-identification-of-water-bodies" id="toc-more-practical-on-identification-of-water-bodies" class="nav-link" data-scroll-target="#more-practical-on-identification-of-water-bodies">More Practical on Identification of Water Bodies</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
@@ -296,15 +317,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This week we delved into more advanced topics in land cover classification, the key role of accuracy and model validation in classification, other methodologies for classification, and a revisit of spatial autocorrelation.</p>
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>With our quest in classifying land cover types from remote sensing imagery continued, Andy introduced the significance of accuracy to us.</p>
+<p>With our quest in classifying land cover types from remote sensing imagery continued, this week’s lecture also emphasised on the significance of accuracy and other performance measures of classification. First, we were introduced to pre-classified datasets available online. I was impressed by the scale of Dynamic World, which uses a CNN-based classification model on Sentinel-2 imagery. Such sources highlights the evolution and ever-growing field of integrating AI or GeoAI with remote sensing.</p>
+<section id="remarks-on-the-weekly-practical" class="level3">
+<h3 class="anchored" data-anchor-id="remarks-on-the-weekly-practical">Remarks on the Weekly Practical</h3>
+<p>This week’s practical is an enhanced version of last week’s version, GEE limitation, GEE in-house classification methods seems to</p>
 </section>
-<section id="remarks-on-the-weekly-practical" class="level2">
-<h2 class="anchored" data-anchor-id="remarks-on-the-weekly-practical">Remarks on the Weekly Practical</h2>
 </section>
 <section id="literature-review-and-applications" class="level2">
 <h2 class="anchored" data-anchor-id="literature-review-and-applications">Literature Review and Applications</h2>
 <p>In this week, I have investigated more on the temporal complexity of classifying remote sensing imagery data.</p>
-<p>the paper can be found <a href="https://www.nature.com/articles/s41598-024-54308-1">here</a>.</p>
+<p>Detailed <span class="citation" data-cites="truong2024jaxa">(<a href="references.html#ref-truong2024jaxa" role="doc-biblioref">Truong et al. 2024</a>)</span></p>
+<p>Look into the landuse data, the paper can be found <a href="https://www.nature.com/articles/s41598-024-54308-1">here</a>.</p>
 <p align="left">
 <iframe title="jaxa_viet_hi_rez" width="680" height="700" src="https://www.eorc.jaxa.jp/ALOS/jp/dataset/lulc/gsimap_lulc_vt_ver2309.htm" frameborder="0">
 </iframe>
@@ -350,6 +373,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>GEEStyduRoom is just one of the many well-established GEE user-organised online communities that contributes to my learning this semester.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-truong2024jaxa" class="csl-entry" role="listitem">
+Truong, Van Thinh, Sota Hirayama, Duong Cao Phan, Thanh Tung Hoang, Takeo Tadono, and Kenlo Nishida Nasahara. 2024. <span>“JAXA’s New High-Resolution Land Use Land Cover Map for Vietnam Using a Time-Feature Convolutional Neural Network.”</span> <em>Scientific Reports</em> 14 (1): 3926.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
