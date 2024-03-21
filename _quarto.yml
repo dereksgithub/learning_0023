@@ -34,7 +34,7 @@ book:
   repo-actions: [edit, issue]
   favicon: images/favicon.png
   reader-mode: true
-  
+prefer-html: true
   
 bibliography: references.bib
 

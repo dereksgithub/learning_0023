@@ -1,22 +1,29 @@
 # Remote Sensing Term Recap {.unnumbered}
 
-In summary, .
+In summary, our module was a valuable process for using remote sensing to analyze and understand the complexities of urban environments. During the term we learnt about creating reproducible remote sensing workflows, policy application of remote sensing, using SNAP for basic operations and Google Earth Engine. I have recorded some of the resources that was helpful to my journey:
 
-## RS Theory and ML Learning
+## Remote Sensing Basics, Machine Learning and GEE
 
 -   [PCA](https://grantkim94.medium.com/cracking-principal-components-analysis-pca-part-1-1372736ebac7) explained by [Hyeon Gu Kim](https://grantkim94.medium.com/)
 
--   
+-   Lecture series on [GIS and remote sensing](https://youtu.be/VfDAd-MO94o?si=GsM4nYqmlHjU8WO1)
 
-## Additional GEE Materials
-
+```{=html}
+<!-- -->
+```
 -   [Clipping Polygons](https://www.youtube.com/watch?v=E2MyYxkV7oY) in GEE by Youtuber [Fech](https://www.youtube.com/@fech1285)
 
 -   [GEE data catalog](https://developers.google.com/earth-engine/datasets)
 
 -   [GEE community catalog](https://gee-community-catalog.org/)
 
+-   GEE [polygon](https://developers.google.com/earth-engine/apidocs/ee-geometry-polygon)
+
+-   GEE upload [your own shapefile](https://stackoverflow.com/questions/68663744/how-do-you-use-a-shapefile-asset-as-your-aoi-in-gee)
+
 -   [GEE Map](https://book.geemap.org/) by Professor. [Qiusheng Wu](https://dot.cards/giswqs)
+
+-   GEE [slider](https://developers.google.com/earth-engine/apidocs/ui-slider) (feature to be added to Jakarta NDVI/Building Lookup APP later )
 
 ## HTML, CSS and Quarto
 
@@ -25,6 +32,10 @@ Here are a list of resources that I have used and adapted for this Quarto book:
 -   [Embedding multiple images](https://www.shecodes.io/athena/1837-how-to-put-2-images-on-one-line-with-css)
 
 -   [Embedding videos](https://quarto.org/docs/authoring/videos.html)
+
+-   Data visualisation in [quarto with Observable JS](https://quarto.org/docs/interactive/ojs/)
+
+-   General introduction to [CSS](https://www.w3schools.com/css/default.asp)
 
 ## Future Works
 

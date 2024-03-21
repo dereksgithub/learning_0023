@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -227,7 +261,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#remarks-on-the-weekly-practical" id="toc-remarks-on-the-weekly-practical" class="nav-link" data-scroll-target="#remarks-on-the-weekly-practical">Remarks on the Weekly Practical</a></li>
+  <li><a href="#literature-review-and-applications" id="toc-literature-review-and-applications" class="nav-link" data-scroll-target="#literature-review-and-applications">Literature Review and Applications</a></li>
+  <li><a href="#more-practical-on-identification-of-water-bodies" id="toc-more-practical-on-identification-of-water-bodies" class="nav-link" data-scroll-target="#more-practical-on-identification-of-water-bodies">More Practical on Identification of Water Bodies</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dereksgithub/learning_0023/edit/main/week8.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/dereksgithub/learning_0023/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -249,11 +293,64 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>asdasd</p>
-<p>1.&nbsp;&nbsp;&nbsp;&nbsp; Add more Critiques to the literature you reviewed, extend the current research.</p>
-<p>2.&nbsp;&nbsp;&nbsp;&nbsp; Structure the contents better, give a clear architecture on the right sides of the webpage.</p>
+<p>This week we delved into more advanced topics in land cover classification, the key role of accuracy and model validation in classification, other methodologies for classification, and a revisit of spatial autocorrelation.</p>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>With our quest in classifying land cover types from remote sensing imagery continued, Andy introduced the significance of accuracy to us.</p>
+</section>
+<section id="remarks-on-the-weekly-practical" class="level2">
+<h2 class="anchored" data-anchor-id="remarks-on-the-weekly-practical">Remarks on the Weekly Practical</h2>
+</section>
+<section id="literature-review-and-applications" class="level2">
+<h2 class="anchored" data-anchor-id="literature-review-and-applications">Literature Review and Applications</h2>
+<p>In this week, I have investigated more on the temporal complexity of classifying remote sensing imagery data.</p>
+<p>the paper can be found <a href="https://www.nature.com/articles/s41598-024-54308-1">here</a>.</p>
+<p align="left">
+<iframe title="jaxa_viet_hi_rez" width="680" height="700" src="https://www.eorc.jaxa.jp/ALOS/jp/dataset/lulc/gsimap_lulc_vt_ver2309.htm" frameborder="0">
+</iframe>
+</p>
+</section>
+<section id="more-practical-on-identification-of-water-bodies" class="level2">
+<h2 class="anchored" data-anchor-id="more-practical-on-identification-of-water-bodies">More Practical on Identification of Water Bodies</h2>
+<p>I was curious about the identification of water back in the week 7 practical, while searching online, I discovered this an open GEE module to identify water with deep learning developed by: <a href="https://blog.csdn.net/adhuahd/category_11656718.html">GEE StudyRoom on CSDN</a> (CSDN is the Chinese version of StackOverflow). The code to use the module is:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> dataset_lv2 <span class="op">=</span> ee<span class="op">.</span><span class="fu">FeatureCollection</span>(<span class="st">"FAO/GAUL/2015/level2"</span>)<span class="op">;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> Bristol_point <span class="op">=</span> ee<span class="op">.</span><span class="at">Geometry</span><span class="op">.</span><span class="fu">Point</span>([<span class="op">-</span><span class="fl">2.5879</span><span class="op">,</span> <span class="fl">51.4545</span>])<span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">The visualization and image selected ommitted</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">*/</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> model <span class="op">=</span> <span class="pp">require</span>(<span class="st">'users/nietaoyuan/aGEECommonModule:geeDLWaterModel.js'</span>)<span class="op">;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> imgPredict <span class="op">=</span> model<span class="op">.</span><span class="fu">waterModel</span>(imgMedian<span class="op">,</span>roi)<span class="op">;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(imgPredict<span class="op">,</span>{<span class="st">'palette'</span><span class="op">:</span><span class="st">'red'</span>}<span class="op">,</span><span class="st">'water'</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>With the help of deep learning, (potentially CNN, the author did not give details to their published module) the accuracy of identifying water has improved significantly, some creeks still not identified, but the overall performance in water body identification is much better.</p>
+<div class="image-container" style="display: grid; grid-template-columns: repeat(2,1fr); gap:5px;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wk8/result1_bristol_water.png" width="340" height="290" class="figure-img"></p>
+<figcaption class="figure-caption">Result with image layer transparent</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wk8/result2_bristol_water.png" width="340" height="290" class="figure-img"></p>
+<figcaption class="figure-caption">Result on image layer</figcaption>
+</figure>
+</div>
+</div>
+<p>Detailed result presented in a GEE App:</p>
+<p align="left">
+<iframe title="gee_app_03" width="680" height="700" src="https://ee-mengyu-derek-ding.projects.earthengine.app/view/bristolwaterbodiesidwithdl" frameborder="0">
+</iframe>
+</p>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>GEEStyduRoom is just one of the many well-established GEE user-organised online communities that contributes to my learning this semester.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -620,4 +717,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dereksgithub/learning_0023/edit/main/week8.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/dereksgithub/learning_0023/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>
+</body></html>

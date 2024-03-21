@@ -1,6 +1,6 @@
 # Week 9 Synthetic Aperture Radar {.unnumbered}
 
-This week we cover the Synthetic Aperture Radar (SAR) and application of SAR data. SAR employs radar to create images of the Earth's surface which makes it an active sensor.
+This week we covered the Synthetic Aperture Radar (SAR) and application of SAR data. SAR employs radar to create images of the Earth's surface which makes it an active sensor.
 
 1.     Add more Critiques to the literature you reviewed, extend the current research.
 

@@ -1,7 +1,63 @@
 # Week 8 Classification with Google Earth Engine II {.unnumbered}
 
-asdasd
+This week we delved into more advanced topics in land cover classification, the key role of accuracy and model validation in classification, other methodologies for classification, and a revisit of spatial autocorrelation.
 
-1.     Add more Critiques to the literature you reviewed, extend the current research.
+## Summary
 
-2.     Structure the contents better, give a clear architecture on the right sides of the webpage.
+With our quest in classifying land cover types from remote sensing imagery continued, Andy introduced the significance of accuracy to us.
+
+## Remarks on the Weekly Practical
+
+## Literature Review and Applications
+
+In this week, I have investigated more on the temporal complexity of classifying remote sensing imagery data.
+
+Look into the landuse data, the paper can be found [here](https://www.nature.com/articles/s41598-024-54308-1).
+
+<p align="left">
+
+<iframe title="jaxa_viet_hi_rez" width="680" height="700" src="https://www.eorc.jaxa.jp/ALOS/jp/dataset/lulc/gsimap_lulc_vt_ver2309.htm" title="GEE App Bristol Look-up" frameborder="0">
+
+</iframe>
+
+</p>
+
+## More Practical on Identification of Water Bodies
+
+I was curious about the identification of water back in the week 7 practical, while searching online, I discovered this an open GEE module to identify water with deep learning developed by: [GEE StudyRoom on CSDN](https://blog.csdn.net/adhuahd/category_11656718.html) (CSDN is the Chinese version of StackOverflow). The code to use the module is:
+
+``` javascript
+var dataset_lv2 = ee.FeatureCollection("FAO/GAUL/2015/level2");
+
+var Bristol_point = ee.Geometry.Point([-2.5879, 51.4545]);
+
+/*
+The visualization and image selected ommitted
+*/
+
+var model = require('users/nietaoyuan/aGEECommonModule:geeDLWaterModel.js');
+var imgPredict = model.waterModel(imgMedian,roi);
+Map.addLayer(imgPredict,{'palette':'red'},'water');
+```
+
+With the help of deep learning, (potentially CNN, the author did not give details to their published module) the accuracy of identifying water has improved significantly, some creeks still not identified, but the overall performance in water body identification is much better.
+
+::: {.image-container style="display: grid; grid-template-columns: repeat(2,1fr); gap:5px;"}
+![Result with image layer transparent](images/wk8/result1_bristol_water.png){width="340" height="290"}
+
+![Result on image layer](images/wk8/result2_bristol_water.png){width="340" height="290"}
+:::
+
+Detailed result presented in a GEE App:
+
+<p align="left">
+
+<iframe title="gee_app_03" width="680" height="700" src="https://ee-mengyu-derek-ding.projects.earthengine.app/view/bristolwaterbodiesidwithdl" title="GEE App Bristol Look-up" frameborder="0">
+
+</iframe>
+
+</p>
+
+## Reflection
+
+GEEStyduRoom is just one of the many well-established GEE user-organised online communities that contributes to my learning this semester.

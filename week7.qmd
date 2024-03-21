@@ -1,46 +1,44 @@
 # Week 7 Classification with Google Earth Engine I {.unnumbered}
 
-For this week's diary, find studies that use GEE with classification
+For this week's diary, I summarised a few classification methods and studies on classification methods in remote sensing. The lecture covered some common classification methods basics of classifying remote sensing data, and its applications.
 
-Existing study using classification GEE, critique/pros/cons
+## Classification Methods
 
-note down some of the classifiers, and describe in your own words.
+In the context of remote sensing, there are several common classification methods. These algorithms are designed to categorise data points. CART (Classification and Regression Trees) builds a tree-like structure where splits are based on the features that yield optimal separation the data. Random Forest (RF) combines multiple CARTs, which is a form of ensemble learning, to produce a more reliable outcome. SVM (Support Vector Machine) finds a best-fit hyperplane that divides the data into classes, offering good performance for high-dimensional data. Here is a visualised tree that I have found [here](https://wiki.q-researchsoftware.com/wiki/Machine_Learning_-_Classification_And_Regression_Trees_(CART)):
 
-Summarize how I would like to use for other research
+<p align="left">
 
-Your own case not the focus,
+<iframe title="gee_app_02" width="680" height="700" src="https://displayr-app-embed.displayr.com/66578/175314/524dbd2c-0e23-49cf-bd55-7bd2969e31e1.html?v=34784975843740" title="App to view A tree" frameborder="0">
 
-theory extension / literature
+</iframe>
 
-A couple of paragraphs on each classification method.
+</p>
 
-RF – Boosting — CNN
+### Classification and Regression Trees (CART)
 
-1.     Add more Critiques to the literature you reviewed, extend the current research.
+CART was originally proposed by Breiman et al. @breiman1984classification It is a type of predictive algorithm that can be used for both classification and regression. It splits data at each "node" with the goal of sub-setting the data into the target classes.
 
-2.     Structure the contents better, give a clear architecture on the right sides of the webpage.
+![Decision Tree used in the work by Winstral et al. [@winstral2002spatial] Pruned 16-node regression tree grown on Sx100 (°), D0 (dimensionless), elevation (m), net potential radiation index (W m–2), and slope. None of the splits were based on slope. Values within the ellipses and rectangles (terminal nodes) are the mean depth (m) of all samples falling within that node.](images/wk7/tree.png){fig-align="center" width="303"}
 
-## Classification Methods in Remote Sensing
-
-In the context of remote sensing, there are several classification methods, ranging from logistic regression to
-
-### CART
-
-CART was originally proposed by Breiman et al. @breiman1984classification
+Starting at the root node, CART determines which split is optimal by examining all possible splits for each feature. Gini Impurity or MSE (Mean Square Error) are usually used for measuring the quality of classification or regression. Gini impurity is often measured to evaluate the purity of nodes. Other metrics like accuracy, recall, precision, and the F1 scores are also considered.
 
 ### Random Forest
 
-Consumer's/User's accuracy refers to the probability that a pixel classified into a given category actually represents that category on the ground. It is calculated for each class by dividing the number of correctly classified pixels (true positives) for that class by the total number of pixels that were classified into that class (both true positives and false positives).
+An ensemble learning method for classification, there is also RF regression, but I will focus on classification here. RF is often constructed by building a large group of decision trees i.e. CARTs. The classification result is the class selected by most trees.
 
-Here's a more detailed breakdown:
+The model building of RF starts with Bagging or [Bootstrap Aggregating](https://en.wikipedia.org/wiki/Bootstrap_aggregating), this is essentially a re-sampling methods designed to improve RF's stability. Each tree is then allowed to consider only a subset of data, then the class with most trees' vote, was considered as the model output.
 
--   **Correct (True Positives)**: The number of instances where the model correctly predicted a specific class.
+The performance of RF is assessed by Out-of-Bag Error. OOB is usually used for measuring models that involve Bagging. OOB records the average prediction error on each training sample and are often referred to in guiding the hyper-parameter-tuning regarding the trees. RF's performance measurement also involves the ones derived from confusion matrices such as accuracy, recall etc. similar to CART.
 
--   **Total (True Positives + False Positives)**: The sum of instances where the model predicted a specific class (correctly or incorrectly).
+### Support Vector Machine (SVM)
 
-The Resubstitution Error Matrix, also known as a confusion matrix or error matrix, is a specific type of confusion matrix generated by evaluating the classification algorithm on the same dataset that was used to train the model. In other words, it's the classification report you get when you test your model on the training data itself.
+SVM is a popular yet relatively lightweight model, with linear and nonlinear classification capacity. The fundamental principle for SVM is to search for a optimal hyper plane that best separates the data classes. SVM has many roots, many statisticians and computer scientists have proposed hyperplane-like methods before, but it was formally proposed and coined by Boser et al. [@boser1992training] in 1992.
 
-Here's what it typically includes:
+To build a SVM, first we need to transform the data into a feature space in which each data point was regarded as a vector. Then we construct the hyperplane and adjust it till an optimal state (maximum margin hyperplanes) where the distance from it to the nearest data point on each side is maximised. The performance measurement for SVM is similar to other classification methods.
+
+### Confusion Matrix:
+
+A confusion matrix is calculated to evaluate the performance of classification methods. It records, for example, each row indicates the actual class A is labelled by the model to be class A to Z. With confusion matrix we can calculate the following:
 
 -   **True Positives (TP)**: Correctly classified positive cases.
 
@@ -50,31 +48,31 @@ Here's what it typically includes:
 
 -   **False Negatives (FN)**: Positive cases incorrectly classified as negative (Type II error).
 
-The Resubstitution Error Matrix is a tool for understanding the performance of a classification model, and it's particularly useful for identifying the types of errors a model is making. However, because it uses the same data for both training and testing, it may not provide a realistic estimate of the model's performance on unseen data due to overfitting.
+From such a matrix, we can calculate metrics such as Consumer's/User's accuracy used in the practical, which refers to the probability that a pixel classified into a given class actually represents that category in reality. It is calculated as follows:
 
-It's important to use this matrix with caution and to complement it with additional validation techniques, such as cross-validation or a test on a separate validation dataset, to evaluate the model's ability to generalize to new, unseen data.
+-   **Correct (True Positives)**: The number of instances where the model correctly identified as a specific class.
 
-### Practical Results Analysis
+-   **Total (True Positives + False Positives)**: The sum of instances where the model recognised to be in a specific class (correctly or incorrectly).
 
-Pixel wise, 70/30 split,
+The Resubstitution Error Matrix used in the practical, is a confusion matrix calculated for training process. Testing confusion matrix is the confusion matrix for testing. The resubstitution Error Matrix is a tool for understanding the performance of a classification model, and it's particularly useful for identifying the archetypes of errors a model tend to make, helping users to identify model limits. However, because it uses the same data for both training and testing, it does not realistically reflect the model's performance on unseen data due to over-fitting, for that, testing confusion matrix is more relied upon. It is crucial to treat confusion matrix with caution, as it alone will not reduce variance or bias of the model, usually it is combined with additional validation techniques, such as k-fold cross-validation or a test on another validation dataset.
 
-how is it splitted?
+## Practical Results Analysis
 
 ::: {.image-container style="display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(2,1fr); gap:5px;"}
 ![Greater Bristol Clip Median](images/wk7/bristol_clip.png){width="340" height="290"}
 
 ![Comparison of Satellite Layer from GEE and Classification Result](images/wk7/comparison.png){width="340" height="290"}
 
-![First Classification](images/wk7/basic_classifier.png){width="340" height="290"}
+![CART Classification](images/wk7/basic_classifier.png){width="340" height="290"}
 
-![Pixel-wise Classification](images/wk7/pixel_wise_classifier.png){width="340" height="290"}
+![RF with Pixel-wise Split](images/wk7/pixel_wise_classifier.png){width="340" height="290"}
 :::
 
 Overall results in GEE App:
 
 <p align="left">
 
-`<iframe title="gee_app_02" width="680" height="700" src="`{=html}https://ee-mengyu-derek-ding.projects.earthengine.app/view/bristolclassifierv1`" title="GEE App Bristol Look-up" frameborder="0">`{=html}
+<iframe title="gee_app_02" width="680" height="700" src="https://ee-mengyu-derek-ding.projects.earthengine.app/view/bristolclassifierv1" title="GEE App Bristol Look-up" frameborder="0">
 
 </iframe>
 
@@ -82,58 +80,46 @@ Overall results in GEE App:
 
 ### Models Used in Practical
 
-The pixel-wise approach divided the image pixel points randomly into training (70%) and validation (30%) sets. The training set was then fed to train a random forest to classify the image, and the the RF classifier classified the Bristol clip image to create a classified map.
+In the practical, we used the pixel-wise approach to divide the image pixel points randomly into training (70%) and validation (30%) sets. The training set was then fed to train a random forest to classify the image, and the the RF classifier classified the Bristol clip image to create a classified map. By visual assessment, the result for random forest with a pixel-wise split a significant improvement.
 
 ### Interpreting the Model Metrics
 
-Confusion matrix for training results:
+Confusion matrix for training:
 
-$$
-Confusion Matrix = \begin{bmatrix} 
-\ 709&0&2&0&0&1 \\
-\ 0&0&0&0&0&0 \\
-\ 9&0&712&0&0&1 \\
-\ 0&0&0&738&0&0 \\
-\ 0&0&0&0&704&0 \\
-\ 0&0&0&0&0&678 \\
-\end{bmatrix}
-$$
+![](images/wk7/confusion_matrix_train.png){fig-align="center"}
 
 The overall training accuracy is calculated at:
 
-$$
-Training \ Accucracy = \frac{3541}{3554} = 99.63\%
-$$
+![](images/wk7/training_accu.png){fig-align="center"}
 
 For testing the confusion matrix is:
 
-$$
-Confusion Matrix = \begin{bmatrix} 
-\ 265&0&14&0&0&9 \\
-\ 0&0&0&0&0&0 \\
-\ 43&0&233&1&0&1 \\
-\ 1&0&0&261&0&1 \\
-\ 0&0&0&0&296&0 \\
-\ 0&0&0&0&0&322 \\
-\end{bmatrix}
-$$
+![](images/wk7/confusion_matrix_test.png){fig-align="center"}
 
 Testing Accuracy
 
-$$
-Validation \ Accucracy = \frac{1377}{1446} = 95.23\%
-$$
+![](images/wk7/test_accu.png){fig-align="center"}
 
-This suggest a high testing accuracy, but it may also indicate over-fitting for we did not calibrate the model carefully and perform solid feature engineering.
+This suggest a high testing accuracy, but it may also indicate over-fitting for we did not calibrate the model carefully and perform solid feature engineering. However, the results still proved that with performing train-test split the model tend to curb the over-fitting down. (the math component of Quarto had an upgrade with latex, my previous latex stopped working, thus I have replaced the math with screenshots of them.)
 
-## Outlook of SSL in Remote Sensing
+## Classification in Remote Sensing
 
-The current development in the literature of remote sensing image classification, CNN and other supervised learning approaches, although have gained much attention in the past 10 years, may be limited. Large amount of labelled cat images is hard to acquire, not to mention the satellite images covering years of daily images over vast lands, thus small amount of labelled data paradigm will be promising. [@alosaimi2023self] The challenge, however, still lies in the fact that massive amount of data cannot be sole relied on unsupervised clustering methods, on top of that, iterative clustering methods lacks explanability too. Therefore, researcher checking out the usage of SSL do find out that
+Classification plays a key role in information retrieval from the satellite images covering a wide range of applications. The first is identifying land cover types such as water, forest, grasslands, high/low urban areas, and agricultural fields. This application is crucial for environmental monitoring. Currently the researchers are employing deep learning techniques on RS classifications, with many pivotal works using methods such as Convolutional Neural Networks (CNN), autoencoders and Boltzmann Machines. [@yuan2021review] Another important application with regard to urban context is to monitor the urban sprawl, mapping infrastructural changes.
 
-<https://pubmed.ncbi.nlm.nih.gov/36624136/#full-view-affiliation-1>
+However, there are major challenges to the current development in remote sensing classification:
+
+-   **Labelled Data Volume and Accuracy:** The overarching reliance on supervised techniques such as CNN resulted in an ever-increasing demand of properly labelled data which is made more challenging by the fact that the complexity of remote sensing data makes extremely difficult to label. [@cheng2020remote]
+
+-   **Object Class Imbalances:** EO data naturally have imbalanced classes in which certain classes are more prevalent than other classes which is risky for training models, [@wang2024addressing] for instance, in a RS image of a city, the buildings will be more common than water. This can lead to the models performing well on popular classes and losing accuracy for rare cases similar to what happened in my practical run, where the model failed to identify the water in Bristol.
+
+-   **Computing Cost:** Performing model training for more complicated models cost more energy and time, generating more demand on high-performance computation resources. [@tornede2023towards]
+
+Therefore, paradigms such as Self-Supervised Learning, which can perform consistently on small amount of labelled data, are gaining more momentum recently. [@alosaimi2023self] Further investigation into such areas, including Semi-Supervised Learning, is necessary and crucial for lowering the demand on labelling datasets. The innovation at the framework level for existing models is also important, for example, CMID (Contrastive Mask Image Distillation) is proposed to offer a novel Self-Supervised Learning approach that performs more consistently across various tasks types. [@muhtar2023cmid] Another prespective is that innovation could also focus on is the improvement of understanding the RS image series, with potential integration of reinforcement learning [@subramanian2017learning] to optimise model performance across time which I will focus in week 8.
 
 ## Reflection
 
-For this week's practical, I picked the water polygon from the sea near Bristol, on further remark, I realised that the model probably did not capture Bristol's rivers, due to the fact that I have selected sea water as sample class for water. Such a result may also stem from the fact that the Bristol river in the image was not significant, thus, such algorithms for now could improve performance for a finer resolution satellite image collection.
+For this week's practical, the model probably did not capture Bristol's rivers, this is probably caused by the model's inability to tell the water from high urban input, likely attributed by my selection of input polygons. I'm curious about water identification in an urban context, as it is important to identify the water body at a pixel and object level. [@huang2015combining]
 
-On further notice, I do find tree-based methods deeply rooted from traditional statistics and computer science. I could recall a concept named B-Tree that I learnt in the big data courses back then. With Upon reviewing the history of machine learning, I do realised how powerful inter-disciplinary research and studies can boost the development of an area of study. It felt like as if statistics is the Midas golden touch for ML to boom. It was only the combination of many subjects and paradigms that give birth to the modern statistical learning.
+In addition, recalling my previous learning experience with learnt index in B-tree and R-tree algorithms, I could not help but to review the symbiotic relationship between statistics and computer science as the fundamentals of ML are often intriguing. This review further illustrate me the transformative impact of inter-disciplinary research on statistical learning, sort of a Midas touch to what fueled the current phase of machine learning research and application.
+
+While time and space constraints precluded my more detailed revisit to Naive Bayes and GMM, they are interesting models nonetheless, both are still popular in the IT industry. These models are swift for everyday tasks such as email spam filtering and customer segmentation, but for imagery tasks in remote sensing their capacity may be limited, especially when it is difficult for GMM to determine optimal number of classes. With my endeavor into remote sensing and other machine learning paradigms such as SSL or RL, I would also propose that continuing updating the framework and innovating towards potential paradigm shifts of classification for remote sensing is still of high significant.
