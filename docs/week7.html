@@ -82,6 +82,8 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -326,6 +328,13 @@ div.csl-indent {
 <li><p><strong>False Positives (FP)</strong>: Negative cases incorrectly classified as positive (Type I error).</p></li>
 <li><p><strong>False Negatives (FN)</strong>: Positive cases incorrectly classified as negative (Type II error).</p></li>
 </ul>
+<p>A detailed expansion of <a href="https://en.wikipedia.org/wiki/Confusion_matrix">most of the confusion matrix metrics:</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wk7/all_confusionMatrix_Metrics.png" class="img-fluid figure-img" width="806"></p>
+<figcaption class="figure-caption">Summary of Classification Metrics [12] <span class="citation" data-cites="balayla2020prevalence">(<a href="references.html#ref-balayla2020prevalence" role="doc-biblioref">Balayla 2020</a>)</span> [13] <span class="citation" data-cites="fawcett2006introduction">(<a href="references.html#ref-fawcett2006introduction" role="doc-biblioref">Fawcett 2006</a>)</span> [14] <span class="citation" data-cites="piryonesi2020data">(<a href="references.html#ref-piryonesi2020data" role="doc-biblioref">Piryonesi and El-Diraby 2020</a>)</span> [15] <span class="citation" data-cites="dm2011evaluation">(<a href="references.html#ref-dm2011evaluation" role="doc-biblioref">DM 2011</a>)</span> [16] <span class="citation" data-cites="sammut2011encyclopedia">(<a href="references.html#ref-sammut2011encyclopedia" role="doc-biblioref">Sammut and Webb 2011</a>)</span> [17] <span class="citation" data-cites="cawcr2017verification">(<a href="references.html#ref-cawcr2017verification" role="doc-biblioref">CAWCR, n.d.</a>)</span> [18] <span class="citation" data-cites="chicco2020advantages">(<a href="references.html#ref-chicco2020advantages" role="doc-biblioref">Chicco and Jurman 2020</a>)</span> [19] <span class="citation" data-cites="chicco2021matthews">(<a href="references.html#ref-chicco2021matthews" role="doc-biblioref">Chicco, Tötsch, and Jurman 2021</a>)</span> [20] <span class="citation" data-cites="tharwat2020classification">(<a href="references.html#ref-tharwat2020classification" role="doc-biblioref">Tharwat 2020</a>)</span></figcaption>
+</figure>
+</div>
 <p>From such a matrix, we can calculate metrics such as Consumer’s/User’s accuracy used in the practical, which refers to the probability that a pixel classified into a given class actually represents that category in reality. It is calculated as follows:</p>
 <ul>
 <li><p><strong>Correct (True Positives)</strong>: The number of instances where the model correctly identified as a specific class.</p></li>
@@ -422,14 +431,32 @@ div.csl-indent {
 <div id="ref-alosaimi2023self" class="csl-entry" role="listitem">
 Alosaimi, Najd, Haikel Alhichri, Yakoub Bazi, Belgacem Ben Youssef, and Naif Alajlan. 2023. <span>“Self-Supervised Learning for Remote Sensing Scene Classification Under the Few Shot Scenario.”</span> <em>Scientific Reports</em> 13 (1): 433.
 </div>
+<div id="ref-balayla2020prevalence" class="csl-entry" role="listitem">
+Balayla, Jacques. 2020. <span>“Prevalence Threshold (<span class="math inline">\(\phi\)</span> e) and the Geometry of Screening Curves.”</span> <em>Plos One</em> 15 (10): e0240215.
+</div>
 <div id="ref-boser1992training" class="csl-entry" role="listitem">
 Boser, Bernhard E, Isabelle M Guyon, and Vladimir N Vapnik. 1992. <span>“A Training Algorithm for Optimal Margin Classifiers.”</span> In <em>Proceedings of the Fifth Annual Workshop on Computational Learning Theory</em>, 144–52.
 </div>
 <div id="ref-breiman1984classification" class="csl-entry" role="listitem">
 Breiman, L., J. Friedman, C. J. Stone, and R. A. Olshen. 1984. <em>Classification and Regression Trees</em>. Taylor &amp; Francis. <a href="https://books.google.co.uk/books?id=JwQx-WOmSyQC">https://books.google.co.uk/books?id=JwQx-WOmSyQC</a>.
 </div>
+<div id="ref-cawcr2017verification" class="csl-entry" role="listitem">
+CAWCR. n.d. <span>“Forecast Verification - Methods and FAQ.”</span> <a href="https://www.cawcr.gov.au/projects/verification/">https://www.cawcr.gov.au/projects/verification/</a>.
+</div>
 <div id="ref-cheng2020remote" class="csl-entry" role="listitem">
 Cheng, Gong, Xingxing Xie, Junwei Han, Lei Guo, and Gui-Song Xia. 2020. <span>“Remote Sensing Image Scene Classification Meets Deep Learning: Challenges, Methods, Benchmarks, and Opportunities.”</span> <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em> 13: 3735–56.
+</div>
+<div id="ref-chicco2020advantages" class="csl-entry" role="listitem">
+Chicco, Davide, and Giuseppe Jurman. 2020. <span>“The Advantages of the Matthews Correlation Coefficient (MCC) over F1 Score and Accuracy in Binary Classification Evaluation.”</span> <em>BMC Genomics</em> 21: 1–13.
+</div>
+<div id="ref-chicco2021matthews" class="csl-entry" role="listitem">
+Chicco, Davide, Niklas Tötsch, and Giuseppe Jurman. 2021. <span>“The Matthews Correlation Coefficient (MCC) Is More Reliable Than Balanced Accuracy, Bookmaker Informedness, and Markedness in Two-Class Confusion Matrix Evaluation.”</span> <em>BioData Mining</em> 14: 1–22.
+</div>
+<div id="ref-dm2011evaluation" class="csl-entry" role="listitem">
+DM, W. 2011. <span>“Evaluation: From Precision Recall and f-Factor to ROC Informedness Markedness &amp; Correlation.”</span> <em>Journal of Machine Learning Technologies</em> 2: 6.
+</div>
+<div id="ref-fawcett2006introduction" class="csl-entry" role="listitem">
+Fawcett, Tom. 2006. <span>“An Introduction to ROC Analysis.”</span> <em>Pattern Recognition Letters</em> 27 (8): 861–74.
 </div>
 <div id="ref-huang2015combining" class="csl-entry" role="listitem">
 Huang, Xin, Cong Xie, Xing Fang, and Liangpei Zhang. 2015. <span>“Combining Pixel-and Object-Based Machine Learning for Identification of Water-Body Types from Urban High-Resolution Remote-Sensing Imagery.”</span> <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em> 8 (5): 2097–2110.
@@ -437,8 +464,17 @@ Huang, Xin, Cong Xie, Xing Fang, and Liangpei Zhang. 2015. <span>“Combining Pi
 <div id="ref-muhtar2023cmid" class="csl-entry" role="listitem">
 Muhtar, Dilxat, Xueliang Zhang, Pengfeng Xiao, Zhenshi Li, and Feng Gu. 2023. <span>“Cmid: A Unified Self-Supervised Learning Framework for Remote Sensing Image Understanding.”</span> <em>IEEE Transactions on Geoscience and Remote Sensing</em>.
 </div>
+<div id="ref-piryonesi2020data" class="csl-entry" role="listitem">
+Piryonesi, S Madeh, and Tamer E El-Diraby. 2020. <span>“Data Analytics in Asset Management: Cost-Effective Prediction of the Pavement Condition Index.”</span> <em>Journal of Infrastructure Systems</em> 26 (1): 04019036.
+</div>
+<div id="ref-sammut2011encyclopedia" class="csl-entry" role="listitem">
+Sammut, Claude, and Geoffrey I Webb. 2011. <em>Encyclopedia of Machine Learning</em>. Springer Science &amp; Business Media.
+</div>
 <div id="ref-subramanian2017learning" class="csl-entry" role="listitem">
 Subramanian, Sriram Ganapathi, and Mark Crowley. 2017. <span>“Learning Forest Wildfire Dynamics from Satellite Images Using Reinforcement Learning.”</span> In <em>Conference on Reinforcement Learning and Decision Making</em>. Ann Arbor MI.
+</div>
+<div id="ref-tharwat2020classification" class="csl-entry" role="listitem">
+Tharwat, Alaa. 2020. <span>“Classification Assessment Methods.”</span> <em>Applied Computing and Informatics</em> 17 (1): 168–92.
 </div>
 <div id="ref-tornede2023towards" class="csl-entry" role="listitem">
 Tornede, Tanja, Alexander Tornede, Jonas Hanselle, Felix Mohr, Marcel Wever, and Eyke Hüllermeier. 2023. <span>“Towards Green Automated Machine Learning: Status Quo and Future Directions.”</span> <em>Journal of Artificial Intelligence Research</em> 77: 427–57.

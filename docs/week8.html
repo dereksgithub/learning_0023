@@ -286,7 +286,8 @@ div.csl-indent {
   <ul>
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a>
   <ul class="collapse">
-  <li><a href="#remarks-on-the-weekly-practical" id="toc-remarks-on-the-weekly-practical" class="nav-link" data-scroll-target="#remarks-on-the-weekly-practical">Remarks on the Weekly Practical</a></li>
+  <li><a href="#accuracy-measurements" id="toc-accuracy-measurements" class="nav-link" data-scroll-target="#accuracy-measurements">Accuracy Measurements</a></li>
+  <li><a href="#kappa-coefficient" id="toc-kappa-coefficient" class="nav-link" data-scroll-target="#kappa-coefficient"><strong>Kappa Coefficient</strong></a></li>
   </ul></li>
   <li><a href="#literature-review-and-applications" id="toc-literature-review-and-applications" class="nav-link" data-scroll-target="#literature-review-and-applications">Literature Review and Applications</a></li>
   <li><a href="#more-practical-on-identification-of-water-bodies" id="toc-more-practical-on-identification-of-water-bodies" class="nav-link" data-scroll-target="#more-practical-on-identification-of-water-bodies">More Practical on Identification of Water Bodies</a></li>
@@ -318,20 +319,36 @@ div.csl-indent {
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
 <p>With our quest in classifying land cover types from remote sensing imagery continued, this week’s lecture also emphasised on the significance of accuracy and other performance measures of classification. First, we were introduced to pre-classified datasets available online. I was impressed by the scale of Dynamic World, which uses a CNN-based classification model on Sentinel-2 imagery. Such sources highlights the evolution and ever-growing field of integrating AI or GeoAI with remote sensing.</p>
-<section id="remarks-on-the-weekly-practical" class="level3">
-<h3 class="anchored" data-anchor-id="remarks-on-the-weekly-practical">Remarks on the Weekly Practical</h3>
-<p>This week’s practical is an enhanced version of last week’s version, GEE limitation, GEE in-house classification methods seems to</p>
+<section id="accuracy-measurements" class="level3">
+<h3 class="anchored" data-anchor-id="accuracy-measurements">Accuracy Measurements</h3>
+<p>There are multiple accuracy measurements and metrics that are covered in this week:</p>
+<ul>
+<li><p><strong>Producer’s Accuracy:</strong> The number of true positives (TP), divided by total of ground truth data correctly labeled (TP+FN). This is the error from the point of view of a map maker. In a RS context, it is the actually site A identified that is site A divided by the number of site A in the classifier output. This measures how correct reference pixels are categorised.</p></li>
+<li><p><strong>User’s Accuracy:</strong> From the usually the angle of a map user, refers to type 1 error, or reliability. This measures the ratio of a class identified by the classifier correctly divided by the total number of that class that the model identified. For example, the classifier identified 500 sides to be water, and among them only 450 is actually water, the rest are wrongly labelled. Then the user accuracy is 90%. (TP / TP + FP)</p></li>
+<li><p><strong>Overall Accuracy:</strong> Total correctly labelled data points divided total number of data points.</p></li>
+</ul>
+</section>
+<section id="kappa-coefficient" class="level3">
+<h3 class="anchored" data-anchor-id="kappa-coefficient"><strong>Kappa Coefficient</strong></h3>
+<p>Kappa coefficient is based upon the concepts of producer’s and user’s accuracy with a more consistent measure of classification performance for remote sensing, this metric is especially robust for severe class imbalance. Addressing the issues that I discovered in week 7 regarding potential large imbalances in RS images. Using the week 7 practical result of Bristol for example, the overall accuracy did not make up to the fact that the algorithms missed out the water classes, which is extremely misleading in certain scenarios. Thus, Kappa calculates two sets of measures:</p>
+<ul>
+<li><p><strong>Observed Agreement:</strong> The proportion of pixels correctly labelled.</p></li>
+<li><p><strong>Expected Agreement by Chance:</strong> What will the probability be if a total random classifying process happened? (all classes assigned randomly)</p></li>
+</ul>
+<p>By considering both the above agreements, Kappa is derived. Kappa ranges from -1 (perfect disagreement, classifier performing worse than random) to 1, (perfect classification) and 0 representing no difference between the classifier and randomly assigning classes.</p>
+<p>In addition, advanced methods for RS image classification and cross-validation techniques are introduced. The first one is OBIA (Object-Based Image Analysis) and Sub Pixel Analysis. OBIA focuses on image segments that represents meaningful objects or regions in RS context. It also analyses the characteristics within a cell considering both the how similar the features are within the cell (homogeneity) and how diverse the features are in one cell. (heterogeneity) OBIA can group similar pixels together to form super-pixels, which is a novel methods that drastically improved the segmentation and classification performance.</p>
+<p>For this week’s practical, I tested the classifications from GEE and after visual assessment I discovered that although the train/test accuracy is still high, the actual performance is still lacking. It is because that the GEE in-house classification methods seems to be less ideal than many of the demo GEE applications published by other researchers with CNN or other deep-learning approaches. Therefore, I investigated further into the literature for classification with GEE.</p>
 </section>
 </section>
 <section id="literature-review-and-applications" class="level2">
 <h2 class="anchored" data-anchor-id="literature-review-and-applications">Literature Review and Applications</h2>
-<p>In this week, I have investigated more on the temporal complexity of classifying remote sensing imagery data.</p>
-<p>Detailed <span class="citation" data-cites="truong2024jaxa">(<a href="references.html#ref-truong2024jaxa" role="doc-biblioref">Truong et al. 2024</a>)</span></p>
-<p>Look into the landuse data, the paper can be found <a href="https://www.nature.com/articles/s41598-024-54308-1">here</a>.</p>
+<p>For last week’s diary, I mainly looked into how the advanced techniques handle the spatial or image complexity, in this week, I have also investigated on some of the work in bringing novel frameworks on the the temporal complexity of remote sensing imagery time series data. One of the first applications of integrating temporal characteristics with classifiers was to monitor vegetation diversity and changes, <span class="citation" data-cites="ravcivc2020application">(<a href="references.html#ref-ravcivc2020application" role="doc-biblioref">Račič et al. 2020</a>)</span> but the resolution and scale of areas covered are limited.</p>
+<p>Recently, Truong et al. <span class="citation" data-cites="truong2024jaxa">Truong et al. (<a href="references.html#ref-truong2024jaxa" role="doc-biblioref">2024</a>)</span> published their recent work on high resolution land use map of Vietnam using optical and SAR images from Japan Aerospace Exploration Agency. (JAXA) They designed a CNN approach over a time-feature domain and the new output outperformed the existing LULC map for Vietnam. Their innovation highlights a CNN, contrasting to the traditional framework, that focus on extracting both temporal and feature information from pixels. (A look into the Vietnam LULC data on JAXA, the paper can be found <a href="https://www.nature.com/articles/s41598-024-54308-1">here</a>.)</p>
 <p align="left">
 <iframe title="jaxa_viet_hi_rez" width="680" height="700" src="https://www.eorc.jaxa.jp/ALOS/jp/dataset/lulc/gsimap_lulc_vt_ver2309.htm" frameborder="0">
 </iframe>
 </p>
+<p>The limitation to integrating temporal information with feature classifiers, is that the temporal resolution and the corresponding sampling rate is not consistent, although the revisit of a satellite is regular and predictable, not all images in a series are of high quality and suitable for analysis. <span class="citation" data-cites="bazi2019simple">(<a href="references.html#ref-bazi2019simple" role="doc-biblioref">Bazi et al. 2019</a>)</span> However, such considerations are worth investigating for remote sensing to construct more accurate and context-aware model. Researching into the potential of traditional complex feature models’ integration with temporal information can also benefit the urban sustainability assessment with RS data. <span class="citation" data-cites="li2023machine">(<a href="references.html#ref-li2023machine" role="doc-biblioref">Li et al. 2023</a>)</span></p>
 </section>
 <section id="more-practical-on-identification-of-water-bodies" class="level2">
 <h2 class="anchored" data-anchor-id="more-practical-on-identification-of-water-bodies">More Practical on Identification of Water Bodies</h2>
@@ -370,10 +387,24 @@ div.csl-indent {
 </section>
 <section id="reflection" class="level2">
 <h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
-<p>GEEStyduRoom is just one of the many well-established GEE user-organised online communities that contributes to my learning this semester.</p>
+<p>Throughout the learning journey thus far, I have cultivated a fundational understanding of the basics of UI design and GEE analytic workflow. This could not be possible without a vibrant open-source community with many well-established GEE user-organised online communities , among wich GEEStyduRoom stands out as a particularly invaluable and timely resource with its generous sharing of latest publication analysis and codes.</p>
+<p>Reflecting on this week’s learning, I was to learn OBIA and Kappa, as these concepts are key to establish sound models for proper classification. Moving forward, I am curious about the next week’s SAR contents as in my literature review, there have been many cases where optical and SAR images are combined to analyse LULC classes. Due to the space and time constrains, I will not develop more apps, but I certainly in be interested to, with the help of the GEE community develop reinforcement learning models <span class="citation" data-cites="subramanian2017learning">(<a href="references.html#ref-subramanian2017learning" role="doc-biblioref">Subramanian and Crowley 2017</a>)</span> for extracting the land cover dynamics.</p>
+<p>As a enthusiast of methodology research, my brief exploratory quest in to the integration of spatial and temporal information with RS classifiers has also concluded. This literature review practice, afforded me a comprehensive look in to the contemporary evolution of RS classification methodologies, alongside an exploratory attempt to identify their limitation and future applications. I realised that RS is a crucial tool in delivering fine-grained data for urban environment monitoring and sustainable urban development.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-bazi2019simple" class="csl-entry" role="listitem">
+Bazi, Yakoub, Mohamad M Al Rahhal, Haikel Alhichri, and Naif Alajlan. 2019. <span>“Simple yet Effective Fine-Tuning of Deep CNNs Using an Auxiliary Classification Loss for Remote Sensing Scene Classification.”</span> <em>Remote Sensing</em> 11 (24): 2908.
+</div>
+<div id="ref-li2023machine" class="csl-entry" role="listitem">
+Li, Fei, Tan Yigitcanlar, Madhav Nepal, Kien Nguyen, and Fatih Dur. 2023. <span>“Machine Learning and Remote Sensing Integration for Leveraging Urban Sustainability: A Review and Framework.”</span> <em>Sustainable Cities and Society</em>, 104653.
+</div>
+<div id="ref-ravcivc2020application" class="csl-entry" role="listitem">
+Račič, Matej, Krištof Oštir, Devis Peressutti, Anže Zupanc, and Luka Čehovin Zajc. 2020. <span>“Application of Temporal Convolutional Neural Network for the Classification of Crops on Sentinel-2 Time Series.”</span> <em>The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences</em> 43: 1337–42.
+</div>
+<div id="ref-subramanian2017learning" class="csl-entry" role="listitem">
+Subramanian, Sriram Ganapathi, and Mark Crowley. 2017. <span>“Learning Forest Wildfire Dynamics from Satellite Images Using Reinforcement Learning.”</span> In <em>Conference on Reinforcement Learning and Decision Making</em>. Ann Arbor MI.
+</div>
 <div id="ref-truong2024jaxa" class="csl-entry" role="listitem">
 Truong, Van Thinh, Sota Hirayama, Duong Cao Phan, Thanh Tung Hoang, Takeo Tadono, and Kenlo Nishida Nasahara. 2024. <span>“JAXA’s New High-Resolution Land Use Land Cover Map for Vietnam Using a Time-Feature Convolutional Neural Network.”</span> <em>Scientific Reports</em> 14 (1): 3926.
 </div>

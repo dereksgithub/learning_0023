@@ -48,6 +48,10 @@ A confusion matrix is calculated to evaluate the performance of classification m
 
 -   **False Negatives (FN)**: Positive cases incorrectly classified as negative (Type II error).
 
+A detailed expansion of [most of the confusion matrix metrics:](https://en.wikipedia.org/wiki/Confusion_matrix)
+
+![Summary of Classification Metrics \[12\] [@balayla2020prevalence] \[13\] [@fawcett2006introduction] \[14\] [@piryonesi2020data] \[15\] [@dm2011evaluation] \[16\] [@sammut2011encyclopedia] \[17\] [@cawcr2017verification] \[18\] [@chicco2020advantages] \[19\] [@chicco2021matthews] \[20\] [@tharwat2020classification]](images/wk7/all_confusionMatrix_Metrics.png){width="806"}
+
 From such a matrix, we can calculate metrics such as Consumer's/User's accuracy used in the practical, which refers to the probability that a pixel classified into a given class actually represents that category in reality. It is calculated as follows:
 
 -   **Correct (True Positives)**: The number of instances where the model correctly identified as a specific class.
