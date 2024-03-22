@@ -20,6 +20,8 @@ EOS: [Earth Observing System](https://eospso.nasa.gov/content/nasas-earth-observ
 
 ESA: [European Space Agency](https://www.esa.int/).
 
+EuroSAT: [Papers with Code](https://paperswithcode.com/sota/image-classification-on-eurosat): "a dataset and deep learning benchmark for land use and land cover classification."
+
 EVI: [Enhanced Vegetation Index](week3.qmd).
 
 GIS: [Geographic Information System](https://www.usgs.gov/faqs/what-geographic-information-system-gis).

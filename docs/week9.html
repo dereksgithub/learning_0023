@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -231,8 +250,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction-to-sar" id="toc-introduction-to-sar" class="nav-link active" data-scroll-target="#introduction-to-sar">Introduction to SAR</a></li>
-  <li><a href="#practical-running-sar-analysis" id="toc-practical-running-sar-analysis" class="nav-link" data-scroll-target="#practical-running-sar-analysis">Practical: Running SAR Analysis</a></li>
+  <li><a href="#introduction-to-sar" id="toc-introduction-to-sar" class="nav-link active" data-scroll-target="#introduction-to-sar">Introduction to SAR</a>
+  <ul class="collapse">
+  <li><a href="#sar-fundamentals" id="toc-sar-fundamentals" class="nav-link" data-scroll-target="#sar-fundamentals">SAR Fundamentals</a></li>
+  <li><a href="#insar-and-sar" id="toc-insar-and-sar" class="nav-link" data-scroll-target="#insar-and-sar">InSAR and SAR</a></li>
+  </ul></li>
+  <li><a href="#practical-running-sar-for-blast-damage-analysis" id="toc-practical-running-sar-for-blast-damage-analysis" class="nav-link" data-scroll-target="#practical-running-sar-for-blast-damage-analysis">Practical: Running SAR for Blast Damage Analysis</a></li>
   <li><a href="#sar-and-its-application-in-research" id="toc-sar-and-its-application-in-research" class="nav-link" data-scroll-target="#sar-and-its-application-in-research">SAR and Its Application in Research</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
   </ul>
@@ -261,15 +284,71 @@ ul.task-list li input[type="checkbox"] {
 <p>This week we covered the Synthetic Aperture Radar (SAR) and application of SAR data. SAR employs radar to create images of the Earth’s surface which makes it an active sensor.</p>
 <section id="introduction-to-sar" class="level2">
 <h2 class="anchored" data-anchor-id="introduction-to-sar">Introduction to SAR</h2>
-<p>SAR is a powerful remote sensing method for gathering high-resolution images of the Earth’s surface. With its active nature, the SAR can penetrate the could and weather conditions yielding highly accurate surface texture data.</p>
-<p>can collect data using different polarization.</p>
-<p>Longer Apertures = Finer Resolution</p>
-<p>Pros and Cons</p>
-<p>Penetrating cloud cover</p>
-<p>getting the SAR collections in GEE:</p>
+<p>SAR is a powerful remote sensing method for gathering high-resolution images of the Earth’s surface. With its active nature, the SAR can penetrate the could and weather conditions yielding highly accurate surface texture data. SAR measures the backscatter of the EM waves it emitted.</p>
+<section id="sar-fundamentals" class="level3">
+<h3 class="anchored" data-anchor-id="sar-fundamentals">SAR Fundamentals</h3>
+<p>Understanding the signatures of SAR’s complex nature, along with speckle noise and polarisation is crucial for accurate interpretation. SAR emits shorer wavelength (i.e.&nbsp;higher frequency waves) on the microwave band, which could yield high-resolution results, allowing us to extract finer details.</p>
+<p>The aperture size on SAR is a concept from its optical systems, where a synthetic aperture is created by the movement of the sensor in orbit. Longer aperture effectively translates to finer resolution in the processed images. For SAR, it inherently has a speckle noise which can cause constructive and destructive interference when the reflected signals recombine. Fortunately, we can perform filtering or multi-looking which combines multiple images from different sensors, to mitigate the negative effects. SAR can have different types of polarisation such as horizontal (H), vertical (V) or both (HH, HV, VH, VV) caused by its position in space and the electric field. Polarisation offers valuable additional information about the scene features such as dielectric properties of the material which is useful in distinguishing vegetation types.</p>
+<table class="table">
+<caption>SAR v.s. Optical</caption>
+<colgroup>
+<col style="width: 21%">
+<col style="width: 38%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">SAR/InSAR</th>
+<th style="text-align: center;">Optical</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Condition of Operation</strong></td>
+<td style="text-align: center;">All weather all time</td>
+<td style="text-align: center;">Enough light (Day time only) and clear sky</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Surface Deformation Capacities</strong></td>
+<td style="text-align: center;">Accurate and sufficient measures over time</td>
+<td style="text-align: center;">Limited</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Data Interpretation Complexity</strong></td>
+<td style="text-align: center;">High, requires sophisticated processing</td>
+<td style="text-align: center;">Low, easier to process</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Noise</strong></td>
+<td style="text-align: center;">Speckle noise, can be tricky</td>
+<td style="text-align: center;">If cloudy or other bad weather condition, data is much less usable</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Resolution</strong></td>
+<td style="text-align: center;">High if processed well and little interference from other radars</td>
+<td style="text-align: center;">Sensor dependent, certain sensors have high resolution</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Cost / Accessibility</strong></td>
+<td style="text-align: center;">Expensive and data can be difficult to acquire</td>
+<td style="text-align: center;">Low cost and ample open-source datasets</td>
+</tr>
+</tbody>
+</table>
+<p>Getting the <a href="https://ee-mengyu-derek-ding.projects.earthengine.app/view/practicalsamplesar">SAR data collection in GEE</a>: (please wait for a bit longer as there are some errors due to outdated dependencies, but other parts of the dataset are still visible, all credits goes to <a href="https://www.youtube.com/@ksabmagar7">ktmagar’s YT</a> )</p>
+<p align="left">
+<iframe title="gee_SAR_01" width="680" height="700" src="https://ee-mengyu-derek-ding.projects.earthengine.app/view/practicalsamplesar" frameborder="0">
+</iframe>
+</p>
 </section>
-<section id="practical-running-sar-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="practical-running-sar-analysis">Practical: Running SAR Analysis</h2>
+<section id="insar-and-sar" class="level3">
+<h3 class="anchored" data-anchor-id="insar-and-sar">InSAR and SAR</h3>
+<p>Interferometric SAR extends SAR’s capacities by performing cross-references on different phases between two or more SAR images taken at different times from locations that are close to each other. This methods enables the measurement of surface deformations, providing insights for surface changes caused by events such as earthquakes, land slides, subsidence. In comparison to SAR, InSAR emphasises more on the slight changes at temporal level.</p>
+</section>
+</section>
+<section id="practical-running-sar-for-blast-damage-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="practical-running-sar-for-blast-damage-analysis">Practical: Running SAR for Blast Damage Analysis</h2>
 <p>Using Ollie’s code for Blast Damage Assessment, I was able to assess the 2019 <a href="https://en.wikipedia.org/wiki/2019_Xiangshui_chemical_plant_explosion">Xiangshui Chemical Plant Explosion</a> which happened in Jiangsu Province, China.</p>
 <div class="image-container" style="display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(2,1fr); gap:5px;">
 <div class="quarto-figure quarto-figure-center">
@@ -298,7 +377,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>There is no open-building-footprint datasets that is freely available via GEE, I will be searching for available data to perform more detailed reports later on.</p>
-<p>The results are published in a GEE App, with layer of 2018 and 2022 Sentinel Images of the explosion site.</p>
+<p>The results are published in a <a href="https://ee-mengyu-derek-ding.projects.earthengine.app/view/xiangshui-chemical-plant-explosian-damage-assessment-jiangsu">GEE App</a>, with layer of 2018 and 2022 Sentinel Images of the explosion site.</p>
 <p align="left">
 <iframe title="gee_app_01" width="680" height="700" src="https://ee-mengyu-derek-ding.projects.earthengine.app/view/xiangshui-chemical-plant-explosian-damage-assessment-jiangsu" frameborder="0">
 </iframe>
@@ -306,12 +385,39 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="sar-and-its-application-in-research" class="level2">
 <h2 class="anchored" data-anchor-id="sar-and-its-application-in-research">SAR and Its Application in Research</h2>
-<p>SAR in the current literature</p>
+<p>Utilising the sensitivity of SAR to structures, a group of researchers discovered that CNN can be employed on SAR images to capture the newly built construction. <span class="citation" data-cites="jaturapitpornchai2019newly">(<a href="references.html#ref-jaturapitpornchai2019newly" role="doc-biblioref">Jaturapitpornchai et al. 2019</a>)</span> However, this work is limited by the size of the labelled dataset and the accuracy of CNN. <span class="citation" data-cites="lattari2022deep">Lattari, Rucci, and Matteucci (<a href="references.html#ref-lattari2022deep" role="doc-biblioref">2022</a>)</span> proposed a novel model based on the combination of LSTM (Long Short-Term Memory) and Time-Gated LSTM (TGLSTM) for InSAR image series. They have also synthesised data to compensate for the lack of ground truth InSAR images. To measure the model’s performance, the authoers combined quantitative metrics such as precision, recall and F1 scores with a qualitative assessment of an actual project in the Tuscany region. The model was proven to outperform previous models, however the dependence on data simulation, limited computation resources, and assumption of linear change rather than taking seasonality and non-linear trends into consideration, may limit the generalisability and applicability of their new models.</p>
+<p>Another group of researchers utilised InSAR’s capacity further to predict deformation. <span class="citation" data-cites="ma2020prediction">(<a href="references.html#ref-ma2020prediction" role="doc-biblioref">Ma, Zhang, and Lin 2020</a>)</span> Their DCNN (Deep Convolutional Neural Network) model, which is trained to capture different types of deformations in the building, can offer insights into intricate non-linear thermal deformation in the future. However, their focus on the Hong Kong Airport may limit the generalisability of the model.</p>
+<p>In terms of Self-Supervised Learning with SAR for urban researches, one of the common use case is to enhance CNN reliability, perform <a href="https://github.com/yusin2it/SARoptical_fusion">robust data fusion</a>, <span class="citation" data-cites="chen2021self">(<a href="references.html#ref-chen2021self" role="doc-biblioref">Chen and Bruzzone 2021b</a>)</span> and de-noising <span class="citation" data-cites="tan2021cnn">(<a href="references.html#ref-tan2021cnn" role="doc-biblioref">Tan et al. 2021</a>)</span>, in a limited labelled dataset context. Aside from the methodological aspect, researchers also optimsed urban change detection <span class="citation" data-cites="chen2021self_1">(<a href="references.html#ref-chen2021self_1" role="doc-biblioref">Chen and Bruzzone 2021a</a>)</span> with the SSL for SAR data. <span class="citation" data-cites="peng2020urban">Peng et al. (<a href="references.html#ref-peng2020urban" role="doc-biblioref">2020</a>)</span> used SSL framework to produce near-real-time patch-wise urban flood mapswith multi-spectral satellite combined with SAR images. Their model demonstrated satisfying generalisability and strong performance. With more work to address the current low computational efficiency, SSL frameworks for near or real-time urban flood monitoring would be feasible.</p>
 </section>
 <section id="reflection" class="level2">
 <h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>The introduction of SAR and advanced techniques with it, has broadened my horizon for remote sensing, further enhanced my understanding of the application of RS data in a temporal aspect. Data fusion for SAR and InSAR is also promising realm of research in terms of optimising the available data. To tackle the challenge of limited quality data, I also delved further into the incorporating SSL with remote sensing, particularly, in an urban context with SAR data. This reminded me that introducing other machine learning paradigms could optimise the usage of data while improving model performance.</p>
+<p>To reflect on the data integrity of SAR, I appreciate the complex approach of the sensors determined that factors like speckle noise and radar backscatter variations, which demand specialised process to properly treat the data. I do believe future research of more accuracy and high-performing models to extract the information from SAR, and data fusion with other sources are still pillars to better utilising SAR data. Overall, despite the limitations, ongoing urban research and innovation that uses SAR and InSAR, are indicative of a bright future. Such efforts singfinifies the continuous and profound comprehension of SAR and InSAR applications, extending meaningful beyond the academia, which could ultimately lead to a future of more sustainable and resilient urban environment.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-chen2021self_1" class="csl-entry" role="listitem">
+Chen, Yuxing, and Lorenzo Bruzzone. 2021a. <span>“Self-Supervised Change Detection by Fusing SAR and Optical Multi-Temporal Images.”</span> In <em>2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS</em>, 3101–4. IEEE.
+</div>
+<div id="ref-chen2021self" class="csl-entry" role="listitem">
+———. 2021b. <span>“Self-Supervised SAR-Optical Data Fusion of Sentinel-1/-2 Images.”</span> <em>IEEE Transactions on Geoscience and Remote Sensing</em> 60: 1–11.
+</div>
+<div id="ref-jaturapitpornchai2019newly" class="csl-entry" role="listitem">
+Jaturapitpornchai, Raveerat, Masashi Matsuoka, Naruo Kanemoto, Shigeki Kuzuoka, Riho Ito, and Ryosuke Nakamura. 2019. <span>“Newly Built Construction Detection in SAR Images Using Deep Learning.”</span> <em>Remote Sensing</em> 11 (12): 1444.
+</div>
+<div id="ref-lattari2022deep" class="csl-entry" role="listitem">
+Lattari, Francesco, Alessio Rucci, and Matteo Matteucci. 2022. <span>“A Deep Learning Approach for Change Points Detection in InSAR Time Series.”</span> <em>IEEE Transactions on Geoscience and Remote Sensing</em> 60: 1–16.
+</div>
+<div id="ref-ma2020prediction" class="csl-entry" role="listitem">
+Ma, Peifeng, Fan Zhang, and Hui Lin. 2020. <span>“Prediction of InSAR Time-Series Deformation Using Deep Convolutional Neural Networks.”</span> <em>Remote Sensing Letters</em> 11 (2): 137–45.
+</div>
+<div id="ref-peng2020urban" class="csl-entry" role="listitem">
+Peng, Bo, Qunying Huang, Jamp Vongkusolkit, Song Gao, Daniel B Wright, Zheng N Fang, and Yi Qiang. 2020. <span>“Urban Flood Mapping with Bitemporal Multispectral Imagery via a Self-Supervised Learning Framework.”</span> <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em> 14: 2001–16.
+</div>
+<div id="ref-tan2021cnn" class="csl-entry" role="listitem">
+Tan, Shen, Xin Zhang, Han Wang, Le Yu, Yanlei Du, Junjun Yin, and Bingfang Wu. 2021. <span>“A CNN-Based Self-Supervised Synthetic Aperture Radar Image Denoising Approach.”</span> <em>IEEE Transactions on Geoscience and Remote Sensing</em> 60: 1–15.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

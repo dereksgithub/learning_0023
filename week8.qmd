@@ -34,7 +34,7 @@ For this week's practical, I tested the classifications from GEE and after visua
 
 For last week's diary, I mainly looked into how the advanced techniques handle the spatial or image complexity, in this week, I have also investigated on some of the work in bringing novel frameworks on the the temporal complexity of remote sensing imagery time series data. One of the first applications of integrating temporal characteristics with classifiers was to monitor vegetation diversity and changes, [@ravcivc2020application] but the resolution and scale of areas covered are limited.
 
-Recently, Truong et al. @truong2024jaxa published their recent work on high resolution land use map of Vietnam using optical and SAR images from Japan Aerospace Exploration Agency. (JAXA) They designed a CNN approach over a time-feature domain and the new output outperformed the existing LULC map for Vietnam. Their innovation highlights a CNN, contrasting to the traditional framework, that focus on extracting both temporal and feature information from pixels. (A look into the Vietnam LULC data on JAXA, the paper can be found [here](https://www.nature.com/articles/s41598-024-54308-1).)
+Recently, @truong2024jaxa published their recent work on high resolution land use map of Vietnam using optical and SAR images from Japan Aerospace Exploration Agency. (JAXA) They designed a CNN approach over a time-feature domain and the new output outperformed the existing LULC map for Vietnam. Their innovation highlights a CNN, contrasting to the traditional framework, that focus on extracting both temporal and feature information from pixels. (A look into the Vietnam LULC data on JAXA, the paper can be found [here](https://www.nature.com/articles/s41598-024-54308-1).)
 
 <p align="left">
 
@@ -72,7 +72,7 @@ With the help of deep learning, (potentially CNN, the author did not give detail
 ![Result on image layer](images/wk8/result2_bristol_water.png){width="340" height="290"}
 :::
 
-Detailed result presented in a GEE App:
+Detailed result presented in a [GEE App](https://ee-mengyu-derek-ding.projects.earthengine.app/view/bristolwaterbodiesidwithdl):
 
 <p align="left">
 

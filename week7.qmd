@@ -16,9 +16,9 @@ In the context of remote sensing, there are several common classification method
 
 ### Classification and Regression Trees (CART)
 
-CART was originally proposed by Breiman et al. @breiman1984classification It is a type of predictive algorithm that can be used for both classification and regression. It splits data at each "node" with the goal of sub-setting the data into the target classes.
+CART was originally proposed by @breiman1984classification It is a type of predictive algorithm that can be used for both classification and regression. It splits data at each "node" with the goal of sub-setting the data into the target classes.
 
-![Decision Tree used in the work by Winstral et al. [@winstral2002spatial] Pruned 16-node regression tree grown on Sx100 (°), D0 (dimensionless), elevation (m), net potential radiation index (W m–2), and slope. None of the splits were based on slope. Values within the ellipses and rectangles (terminal nodes) are the mean depth (m) of all samples falling within that node.](images/wk7/tree.png){fig-align="center" width="303"}
+![Decision Tree used in the work by @winstral2002spatial Pruned 16-node regression tree grown on Sx100 (°), D0 (dimensionless), elevation (m), net potential radiation index (W m–2), and slope. None of the splits were based on slope. Values within the ellipses and rectangles (terminal nodes) are the mean depth (m) of all samples falling within that node.](images/wk7/tree.png){fig-align="center" width="303"}
 
 Starting at the root node, CART determines which split is optimal by examining all possible splits for each feature. Gini Impurity or MSE (Mean Square Error) are usually used for measuring the quality of classification or regression. Gini impurity is often measured to evaluate the purity of nodes. Other metrics like accuracy, recall, precision, and the F1 scores are also considered.
 
@@ -72,7 +72,7 @@ The Resubstitution Error Matrix used in the practical, is a confusion matrix cal
 ![RF with Pixel-wise Split](images/wk7/pixel_wise_classifier.png){width="340" height="290"}
 :::
 
-Overall results in GEE App:
+Overall results in [GEE App](https://ee-mengyu-derek-ding.projects.earthengine.app/view/bristolclassifierv1):
 
 <p align="left">
 

@@ -1,6 +1,6 @@
 # Overview {.unnumbered}
 
-This is the learning diary for CASA0023 Remotely Sensing Cities and Environments.
+Hi, welcome to my learning diary for CASA0023 Remotely Sensing Cities and Environments. Because I have not taken [CASA0025](https://oballinger.github.io/CASA0025/), I have practiced and showcased my GEE skills by building small GEE apps throughout the diary.
 
 ## Table of Content
 

@@ -1,6 +1,6 @@
 # Week 10 Group Presentations {.unnumbered}
 
-This week we had two intense sessions packed with interesting remote sensing pitch-style presentations. The following is a Google Earth Engine App that I have made for viewing parts of the intended raw data for our pitch. The app may take a while to load as the Google Open Buildings dataset is large.
+This week we had two intense sessions packed with interesting remote sensing pitch-style presentations. The following is a [Google Earth Engine App](https://ee-derekding727.projects.earthengine.app/view/jakartabuidlingandndvilookup) that I have made for viewing parts of the intended raw data for our pitch. The app may take a while to load as the Google Open Buildings dataset is large.
 
 <p align="center">
 
